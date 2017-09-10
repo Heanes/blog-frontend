@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+    <meta charset="UTF-8"/>
+    <!-- responsive -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="renderer" content="webkit"/>
+    <meta name="author" content="Heanes heanes.com email(heanes@163.com)"/>
+    <meta name="keywords" content="软件,商务,HTML,tutorials,source codes"/>
+    <meta name="description" content="描述，不超过150个字符"/>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="/public/static/image/favicon/favicon.ico"/>
+    <link rel="bookmark" href="/public/static/image/favicon/favicon.ico"/>
+    <!-- style -->
+    <link rel="stylesheet" type="text/css" href="//ui.heanes.com/dist/css/heanesUI.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/css.css"/>
+    <title>文章详情页面 - 文章模块</title>
+</head>
+<body class="full-frame-example">
+<!-- S 左侧功能区 S -->
+<div class="left-bar clearfix">
+    <div class="left-bar-content"></div>
+</div>
+<!-- E 左侧功能区 E -->
+<div class="wrap">
+    <!-- S header 头部 S -->
+    <div class="header"></div>
+    <!-- E header 头部 E-->
+    <!-- S main 主要内容 S -->
+    <div class="main">
+        <!-- 顶部全宽度内容区域 -->
+        <div class="full-width-block">
+            <div class="main-top-block"></div>
+        </div>
+        <div class="main-width-block main-wrap">
+            <!-- 顶部内容 -->
+            <div class="main-top-content"></div>
+            <!-- 主体内容 -->
+            <div class="main-content clearfix">
+                <!-- 左侧区域 -->
+                <div class="left-block left-wrap fl"></div>
+                <!-- 中心区域 -->
+                <div class="center-block center-wrap fl">
+                    <div class="article-page">
+                        <!-- 面包屑导航链接 -->
+                        <div class="page-breadcrumb article-category">
+                        </div>
+                        <!-- 单篇文章 -->
+                        <div class="article-block">
+                            <div class="article-title-block">
+                                <!-- 文章标题 -->
+                                <div class="article-title">
+                                    <h1 class="entry-title">友谊的小船说翻就翻</h1>
+                                </div>
+                                <!-- 文章相关属性信息 -->
+                                <div class="article-info">
+                                    <dl class="article-info-dl">
+                                        <dt>人气:</dt>
+                                        <dd>987</dd>
+                                        <dt><a href="#comment-list" class="comment-count">评论:</a></dt>
+                                        <dd><a href="#comment-list" class="comment-count">2</a></dd>
+                                        <dt>作者:</dt>
+                                        <dd>Heanes</dd>
+                                        <dt>责编:</dt>
+                                        <dd>Heanes</dd>
+                                        <dt>时间:</dt>
+                                        <dd>2015-05-19 09:46:35</dd>
+                                        <dt>来源:</dt>
+                                        <dd>原创</dd>
+                                    </dl>
+                                </div>
+                                <div class="article-operate">
+                                    <span class="op-to-small-text" id="opToSmallTextBtn" title="减小正文字体">T</span>
+                                    <span class="op-to-large-text" id="opToLargeTextBtn" title="增大正文字体">T</span>
+                                    <!--<span class="op-share-btn"><i class="fa fa-share-alt"></i></span>-->
+                                </div>
+                            </div>
+                            <div class="article-title-block-placeholder" id="articleTitleBlockPlaceholder"></div>
+                            <!-- 文章摘要 -->
+                            <!--<div class="article-abstract">
+                                <strong>摘要：</strong>摘要内容....
+                            </div>-->
+                            <!-- 文章主体 -->
+                            <div class="article-content" id="articleContent">
+                                <p>最近有个句式在网上火了，那就是“友谊的小船说翻就翻”，相信你的朋友圈已经被这个句式刷屏了吧，那么它到底是什么梗呢，或者说这个句子的来源是哪里呢？</p>
+                                <p>据悉，该句式来自微博用户<a href="http://weibo.com/zld8">@喃东尼</a> 把翻船的过程画了出来的漫画《友谊的小船说翻就翻》，表达了友谊是一种很玄很玄的东西，它可以经受诱惑也坚韧不破，但也可以因为鸡毛蒜皮说翻就翻。不过也有网友表示这个句式已经在网上出现很长时间了。</p>
+                                <p>看了那么多“改编”的句式，不妨来看一下原版的漫画是怎么说的吧：</p>
+                                <h2 class="title-text">初版</h2>
+                                <h3 class="title-text">第一种</h3>
+                                <p style="text-align:center"><img src="../image/upload/friendShip/1.jpg"></p>
+                                <h3 class="title-text">第二种</h3>
+                                <p style="text-align:center"><img src="../image/upload/friendShip/2.jpg"></p>
+                                <h3 class="title-text">第三种</h3>
+                                <p style="text-align:center"><img src="../image/upload/friendShip/3.jpg"></p>
+                                <h2 class="title-text">女生版</h2>
+                                <h3 class="title-text">（一）</h3>
+                                <p style="text-align:center"><img src="../image/upload/friendShip/4.jpg"></p>
+                                <h3 class="title-text">（二）</h3>
+                                <p style="text-align:center"><img src="../image/upload/friendShip/5.jpg"></p>
+                                <h2 class="title-text">第六种</h2>
+                                <p style="text-align:center"><img src="../image/upload/friendShip/6.jpg"></p>
+                                <h2 class="title-text">第七种</h2>
+                                <p style="text-align:center"><img src="../image/upload/friendShip/7_1.jpg"></p>
+                                <p style="text-align:center"><img src="../image/upload/friendShip/7_2.jpg"></p>
+                                <p>至于爱情的巨轮说沉就沉，原因主要有—— </p>
+                                <h2 class="title-text">【爱情的巨轮说沉就沉】</h2>
+                                <h3 class="title-text">第一种</h3>
+                                <p style="text-align:center"><img src="../image/upload/friendShip/8.jpg"></p>
+                                <h3 class="title-text">第二种</h3>
+                                <p style="text-align:center"><img src="../image/upload/friendShip/9.jpg"></p>
+                                <h3 class="title-text">第三种</h3>
+                                <p style="text-align:center"><img src="../image/upload/friendShip/10.jpg"></p>
+                                <h3 class="title-text">第四种</h3>
+                                <p style="text-align:center"><img src="../image/upload/friendShip/11.jpg"></p>
+                                <h3 class="title-text">第五种</h3>
+                                <p style="text-align:center"><img src="../image/upload/friendShip/12_1.jpg"></p>
+                                <p style="text-align:center"><img src="../image/upload/friendShip/12_2.jpg"></p>
+                                <h3 class="title-text">第六种</h3>
+                                <p style="text-align:center"><img src="../image/upload/friendShip/13.jpg"></p>
+                                <h3 class="title-text">第七种</h3>
+                                <p style="text-align:center"><img src="../image/upload/friendShip/14.jpg"></p>
+                                <h2 class="title-text">最后</h2>
+                                <p style="text-align:center"><img src="../image/upload/friendShip/15.jpg"></p>
+                                <p>爱情的巨轮需要好好开</p>
+                                <p>祝你好运</p>
+                            </div>
+                        </div>
+                        <!-- 作者相关信息 -->
+                        <div class="article-author-info relative">
+                            <div class="author-avatar inline-block">
+                                <i style="background-image:url('../image/upload/user/avatar/anonymous.jpg')" class="avatar-img"></i>
+                            </div>
+                            <div class="author-info inline-block">
+                                <a href="javascript:;"><strong class="author-nickname inline-block">Heanes</strong></a>
+                                <p class="author-about">津乐网创始人，一个全栈爱好者</p>
+                                <p class="author-description">喜欢各种技术</p>
+                                <p class="author-links">
+                                    <a href="javascript:;" class="donate-to-author"><i class="fa fa-coffee" aria-hidden="true"></i>  请作者喝杯咖啡?</a>
+                                    <span class="vertical-line-margin">|</span>
+                                    <a href="javascript:;">看他的专栏</a>
+                                    <span class="vertical-line-margin">|</span>
+                                    <a href="javascript:;">新浪微博</a>
+                                    <span class="vertical-line-margin">|</span>
+                                    <a href="javascript:;">邮箱</a>
+                                </p>
+                            </div>
+                            <div class="article-author-info-title absolute">
+                                <i class="fa fa-edit" aria-hidden="true"></i>
+                                <span>关于本文的作者</span>
+                            </div>
+                        </div>
+                        <!-- 文章相关信息 -->
+                        <div class="article-meta">
+                            <dl class="meta-define-list">
+                                <dt>本文分类：</dt>
+                                <dd><a href="javascript:;">闲言碎语</a></dd>
+                            </dl>
+                            <dl class="meta-define-list">
+                                <dt>本文标签：</dt>
+                                <dd><a href="javascript:;">漫画</a></dd>
+                                <dd>，<a href="javascript:;">友谊</a></dd>
+                                <dd>，<a href="javascript:;">网络</a></dd>
+                            </dl>
+                            <dl class="meta-define-list">
+                                <dt>流行热度：</dt>
+                                <dd>已超过 6,998 人围观了本文</dd>
+                            </dl>
+                            <dl class="meta-define-list">
+                                <dt>生产日期：</dt>
+                                <dd>异次纪元 16年07月8日 - 21时36分08秒</dd>
+                            </dl>
+                            <dl class="meta-define-list">
+                                <dt>文章链接：</dt>
+                                <dd>
+                                    <strong class="url">http://blog.heanes.com/article/1.html</strong>
+                                    <span class="copy-link">[<a href="javascript:;" id="copyUrl">复制</a>]</span>
+                                    <span>(转载时请注明本文出处及文章链接)</span>
+                                </dd>
+                            </dl>
+                        </div>
+                        <!-- 文章相关交互 -->
+                        <div class="article-handle">
+                            <div class="article-vote">
+                                <span class="article-collect"><a href="javascript:;" class="collect-count" id="collectArticle"><i class="fa fa-star" aria-hidden="true"></i>收藏(<span id="articleCollectCount">134</span>)</a></span>
+                                <span class="article-thumbs-up"><a href="javascript:;" class="thumbs-up" id="thumbsUpArticle"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i>点赞(<span id="articleThumbsUpCount">247</span>)</a></span>
+                            </div>
+                            <!-- 文章分享按钮 -->
+                            <div class="article-share-block">
+                                <div class="share-title">
+                                    <span class="share-title-text">分享给小伙伴</span>
+                                </div>
+                                <!-- 百度分享 -->
+                                <div class="bdsharebuttonbox">
+                                    <a href="#" class="bds_more" data-cmd="more"></a>
+                                    <a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+                                    <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+                                    <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+                                    <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+                                    <a href="#" class="bds_douban" data-cmd="douban" title="分享到豆瓣"></a>
+                                    <a href="#" class="bds_youdao" data-cmd="youdao" title="分享到有道云笔记"></a>
+                                    <a class="bds_more" data-cmd="more"></a>
+                                    <a class="bds_count" data-cmd="count"></a>
+                                </div>
+                                <script>
+                                    window._bd_share_config = {
+                                        "common": {
+                                            "bdSnsKey": {},
+                                            "bdText": "",
+                                            "bdMini": "2",
+                                            "bdMiniList": false,
+                                            "bdPic": "",
+                                            "bdStyle": "0",
+                                            "bdSize": "32"
+                                        },
+                                        "share": {}
+                                    };
+                                    with (document)0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src =
+                                        'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];
+                                </script>
+                            </div>
+                        </div>
+                        <!-- 评论区域 -->
+                        <div class="article-comment-block margin-common" id="comment">
+                            <div class="add-comment-block">
+                                <h1 class="add-comment-title"><a id="add-comment">发表评论</a></h1>
+                                <p class="add-comment-remind">愿您的每句评论，都能给大家的生活添色彩，带来共鸣，带来思索，带来快乐。</p>
+                                <div class="add-comment">
+                                    <form class="comment-add-form" id="commentAddForm">
+                                        <div class="input-group inline">
+                                            <label for="userName"><span class="must">*</span>姓名：</label>
+                                            <input type="text" name="userName" id="userName" />
+                                        </div>
+                                        <div class="input-group inline">
+                                            <label for="email"><span class="must">*</span>E-Mail：</label>
+                                            <input type="text" name="email" id="email" />
+                                        </div>
+                                        <div class="input-group inline">
+                                            <label for="website">你的网站：</label>
+                                            <input type="text" name="website" id="website" />
+                                        </div>
+                                        <div class="input-group">
+                                            <label for="commentContent"></label>
+                                            <textarea name="commentContent" id="commentContent" class="comment-textarea"></textarea>
+                                        </div>
+                                        <div class="add-comment-handle">
+                                            <input type="submit" class="btn submit-button button-normal" id="commentAddSubmit" />
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="comment-list relative">
+                                <!-- 评论列表刷新、排序 -->
+                                <div class="comment-list-handle">
+                                    <div class="input-row inline-block">
+                                        <a href="javascript:;" id="refreshCommentList" class="refresh-comment-list">刷新</a>
+                                        <input type="radio" name="sort" id="newest"/>
+                                        <label for="newest">最新</label>
+                                        <input type="radio" name="sort" id="earliest"/>
+                                        <label for="earliest">最早</label>
+                                    </div>
+                                </div>
+                                <h3 class="comment-list-title"><a id="comment-list">评论列表</a></h3>
+                                <ul class="comment-list-ul">
+                                    <li>
+                                        <div class="no-data">
+                                            <p>暂无评论</p>
+                                        </div>
+                                    </li>
+                                    <li class="get-data-error" id="getCommentListDataError">
+                                        <div class="no-data">
+                                            <p>暂无评论</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="comment-info">
+                                            <span class="comment-user-avatar"><i class="user-avatar" style="background-image:url('../image/upload/user/avatar/anonymous.jpg')"></i></span>
+                                            <span class="comment-user-name"><a href="javascript:;" class="user-name-a">蒲常莹</a></span>
+                                            <span class="comment-user-ip">北京海淀</span>
+                                            <span>2015-05-19 17:26:28</span>
+                                            <span class="comment-floor"><a id="comment-floor-4" class="comment-floor-a">4楼</a></span>
+                                        </div>
+                                        <div class="comment-content">
+                                            <p>楼下的一看就是小白。阿里微贷的1年利息接近10%。是工行的2倍，至于广发 平安更是高达17%-20%</p>
+                                        </div>
+                                        <div class="comment-handle">
+                                            <span class="comment-complain"><a href="javascript:;">举报</a></span>
+                                            <i class="border-separate"></i>
+                                            <span class="comment-vote-up"><a href="javascript:;">支持(46)</a></span>
+                                            <i class="border-separate"></i>
+                                            <span class="comment-vote-down"><a href="javascript:;">反对(0)</a></span>
+                                            <i class="border-separate"></i>
+                                            <span class="comment-reply"><a href="javascript:;">回复</a></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="comment-info">
+                                            <span class="comment-user-avatar"><i class="user-avatar" style="background-image:url('../image/upload/user/avatar/anonymous.jpg')"></i></span>
+                                            <span class="comment-user-name"><a href="javascript:;" class="user-name-a">蒲常莹</a></span>
+                                            <span class="comment-user-ip">北京海淀</span>
+                                            <span>2015-05-19 17:26:28</span>
+                                            <span class="comment-floor"><a id="comment-floor-3" class="comment-floor-a">3楼</a></span>
+                                        </div>
+                                        <div class="comment-content">
+                                            <p>扯淡！就目前大数的利息来看还不是跟银行差不多？！根本就没有解决他所说的40%~70%的企业融资难的问题，准入条件还是限制了很多企业！
+                                                小编了解还很少！还有平安，南粤，友金所等等那些！</p>
+                                        </div>
+                                        <div class="comment-handle">
+                                            <span class="comment-complain"><a href="javascript:;">举报</a></span>
+                                            <i class="border-separate"></i>
+                                            <span class="comment-vote-up"><a href="javascript:;">支持(46)</a></span>
+                                            <i class="border-separate"></i>
+                                            <span class="comment-vote-down"><a href="javascript:;">反对(0)</a></span>
+                                            <i class="border-separate"></i>
+                                            <span class="comment-reply"><a href="javascript:;">回复</a></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="comment-info">
+                                            <span class="comment-user-avatar"><i class="user-avatar" style="background-image:url('../image/upload/user/avatar/anonymous.jpg')"></i></span>
+                                            <span class="comment-user-name"><a href="javascript:;" class="user-name-a">蒲常莹</a></span>
+                                            <span class="comment-user-ip">北京海淀</span>
+                                            <span>2015-05-19 17:26:28</span>
+                                            <span class="comment-floor"><a id="comment-floor-2" class="comment-floor-a">2楼</a></span>
+                                        </div>
+                                        <div class="comment-content">
+                                            <p>缺钱，小企业普遍遇到的问题。</p>
+                                        </div>
+                                        <div class="comment-handle">
+                                            <span class="comment-complain"><a href="javascript:;">举报</a></span>
+                                            <i class="border-separate"></i>
+                                            <span class="comment-vote-up"><a href="javascript:;">支持(46)</a></span>
+                                            <i class="border-separate"></i>
+                                            <span class="comment-vote-down"><a href="javascript:;">反对(0)</a></span>
+                                            <i class="border-separate"></i>
+                                            <span class="comment-reply"><a href="javascript:;">回复</a></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="comment-info">
+                                            <span class="comment-user-avatar"><i class="user-avatar" style="background-image:url('../image/upload/user/avatar/anonymous.jpg')"></i></span>
+                                            <span class="comment-user-name"><a href="javascript:;" class="user-name-a">蒲常莹</a></span>
+                                            <span class="comment-user-ip">北京海淀</span>
+                                            <span>2015-05-19 17:26:28</span>
+                                            <span class="comment-floor"><a id="comment-floor-1" class="comment-floor-a">1楼</a></span>
+                                        </div>
+                                        <div class="comment-content">
+                                            <p>呵呵</p>
+                                        </div>
+                                        <div class="comment-handle">
+                                            <span class="comment-complain"><a href="javascript:;">举报</a></span>
+                                            <i class="border-separate"></i>
+                                            <span class="comment-vote-up"><a href="javascript:;">支持(46)</a></span>
+                                            <i class="border-separate"></i>
+                                            <span class="comment-vote-down"><a href="javascript:;">反对(0)</a></span>
+                                            <i class="border-separate"></i>
+                                            <span class="comment-reply"><a href="javascript:;">回复</a></span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 右侧区域 -->
+                <div class="right-block right-wrap fl"></div>
+            </div>
+            <!-- 底部区域 -->
+            <div class="main-bottom-content"></div>
+        </div>
+        <div class="full-width-block">
+            <!-- 底部全宽度内容区域 -->
+            <div class="main-bottom-block"></div>
+        </div>
+    </div>
+    <!-- E main 主要内容 E -->
+    <!-- S footer 脚部 S -->
+    <div class="footer"></div>
+    <!-- E footer 脚部 E -->
+</div>
+<!-- S 右侧功能区 S -->
+<div class="right-bar clearfix">
+    <div class="right-bar-content"></div>
+</div>
+<!-- E 右侧功能区 E -->
+<cite>
+    <!-- S js S -->
+    <script type="text/javascript" src="/public/static/libs/js/jquery/2.1.4/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="../js/common.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            ;
+        });
+    </script>
+    <!-- E js E -->
+</cite>
+</body>
+</html>
