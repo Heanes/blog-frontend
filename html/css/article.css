@@ -1,26 +1,5 @@
 @charset "UTF-8";
 /**
- * @doc css
- * @author Heanes
- * @time 2017-09-07 19:45:24 周四
- */
-/**
- * @doc common
- */
-/**
- * @doc common
- * @author Heanes
- * @time 2017-09-07 19:44:42 周四
- */
-/**
- * @doc style 基本风格样式
- * @author Heanes
- * @time 2017-09-10 19:42:53 周日
- */
-/**
- * @doc article 文章
- */
-/**
  * @doc 文章相关
  * @author Heanes
  * @time 2017-09-08 18:44:06 周五
@@ -524,4 +503,4 @@
 .comment-list .comment-list-ul .comment-handle i {
   margin: 0 2px; }
 
-/*# sourceMappingURL=css.css.map */
+/*# sourceMappingURL=article.css.map */
