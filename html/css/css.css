@@ -91,6 +91,12 @@
 .article-detail-page .article-content img {
   max-width: 100%; }
 
+/* 面包屑导航 */
+.article-detail-page .page-breadcrumb {
+  padding: 2px 5px;
+  border-bottom: 3px solid #57adfd;
+  line-height: 24px; }
+
 .article-detail-page .article-category,
 .article-detail-page .article-detail-page,
 .article-detail-page .article-relate-block,
@@ -100,11 +106,6 @@
 
 .article-detail-page .article-block {
   padding-top: 20px; }
-
-.article-detail-page .article-category {
-  padding: 10px 5px;
-  border-bottom: 3px solid #57adfd;
-  line-height: 24px; }
 
 .article-detail-page .article-block .article-title-block {
   position: relative;
