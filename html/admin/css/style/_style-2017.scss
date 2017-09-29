@@ -1,8 +1,8 @@
 @charset "UTF-8";
 /**
- * @doc style 基本风格样式
+ * @doc 样式风跟
  * @author Heanes
- * @time 2017-09-10 19:42:53 周日
+ * @time 2017-09-29 18:59:06 周五
  */
 
 // ------------------------------ 变量值定义区 ------------------------------
@@ -32,9 +32,6 @@ $selectionColor:#fff;
 // E 文字被选中样式
 
 // ------------------------------ 代码区 ------------------------------
-html,body{
-  background:url("../image/common/bg.jpg") repeat #eee;
-}
 /* S 字体样式 S */
 body,button,input,select,textarea{
   font:$font;

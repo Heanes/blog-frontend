@@ -1,0 +1,37 @@
+@charset "UTF-8";
+/**
+ * @doc 登录后欢迎样式
+ * @author Heanes
+ * @time 2017-09-29 19:01:02 周五
+ */
+
+/**
+ * @doc 欢迎页面
+ * @author Heanes
+ * @time 2016-08-17 17:46:53 周三
+ */
+body.start{background-color:#ecf0f5;}
+.box-normal{box-shadow:0 0 2px 2px rgba(225,225,225,0.5);border-radius:4px;}
+.report-count-block{font-size:0;margin:20px 10px;}
+.report-count-block .report-count-one{display:inline-table;min-height:90px;vertical-align:top;font-size:14px;background-color:#fff;margin-right:20px;margin-bottom:20px;}
+.report-count-block .report-count-one .report-icon-field,
+.report-count-block .report-count-one .report-content{display:table-cell;vertical-align:middle;}
+.report-count-block .report-count-one .report-icon-field{width:60px;text-align:center}
+.report-count-block .report-count-one .report-icon-field.article{background-color:#00a65a;}
+.report-count-block .report-count-one .report-icon-field.comment{background-color:#00c0ef;}
+.report-count-block .report-count-one .report-icon-field.member{background-color:#f39c12;}
+.report-count-block .report-count-one .report-icon-field.visitor{background-color:#2ec7c9;}
+.report-count-block .report-count-one .report-icon-field .report-icon{font-size:28px;line-height:60px;color:#fff;}
+.report-count-block .report-count-one .report-content{margin-right:10px;vertical-align:top;min-width:180px;}
+.report-count-block .report-count-one .report-content .report{display:block;line-height:18px;color:#555;margin:0 10px;}
+.report-count-block .report-count-one .report-content .report.main{font-size:17px;line-height:30px;margin:8px 10px 4px;}
+.report-count-block .report-count-one .report-content .report dt,
+.report-count-block .report-count-one .report-content .report dd{display:inline-block;}
+.report-count-block .report-count-one .report-content .report .value{font-weight:600;color:#000;margin-right:5px;}
+.report-count-block .report-count-one .report-content .report .title{font-weight:300;text-align:right;}
+
+.report-chart-block{_max-width:900px;}
+.report-chart-block .report-chart{border-top:4px solid #ddd;background-color:#fff;margin:10px;font-size:0;}
+.report-chart-block .report-chart .content-block .count-report{display:inline-block;width:70%;height:400px;margin-right:4%;}
+.report-chart-block .report-chart .content-block .count-report:last-child{padding-right:0;margin-right:0;}
+.report-chart-block .report-chart .content-block .count-report.count-browser{width:26%;}
