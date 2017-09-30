@@ -1,6 +1,6 @@
 [
   {
-    "text": "Usually 常用",
+    "text": "常用",
     "href": "",
     "nodeIcon": "",
     "iconSelected": "",
@@ -65,6 +65,20 @@
           "disabled": false
         },
         "nodes": [
+          {
+            "text": "网站导航",
+            "href": "color/color.html",
+            "nodeIcon": "fa fa-dashboard",
+            "iconSelected": "",
+            "selectable": true,
+            "state": {
+              "selected": false,
+              "expanded": true,
+              "disabled": false
+            },
+            "nodes": [
+            ]
+          },
           {
             "text": "友情链接",
             "href": "color/color.html",
