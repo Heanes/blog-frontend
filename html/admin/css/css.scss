@@ -11,10 +11,20 @@
 // 导入前台公共样式
 @import "common";
 
+/**
+ * @doc layout-布局样式
+ */
 // 导入layout-布局样式
 @import 'layout';
 
 /**
- * @doc start 登录后欢迎样式
+ * @doc login-登录页面样式
  */
+// 导入login-登录页面样式
+@import 'login';
+
+/**
+ * @doc start-登录后起始页样式
+ */
+//start-登录后起始页样式
 @import "start";

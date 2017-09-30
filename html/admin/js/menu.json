@@ -24,7 +24,21 @@
         },
         "nodes": [
           {
-            "text": "文章分类",
+            "text": "文章内容",
+            "href": "color/color.html",
+            "nodeIcon": "fa fa-dashboard",
+            "iconSelected": "",
+            "selectable": true,
+            "state": {
+              "selected": false,
+              "expanded": true,
+              "disabled": false
+            },
+            "nodes": [
+            ]
+          },
+          {
+            "text": "文章评论",
             "href": "color/color.html",
             "nodeIcon": "fa fa-dashboard",
             "iconSelected": "",
@@ -39,6 +53,20 @@
           },
           {
             "text": "文章标签",
+            "href": "color/color.html",
+            "nodeIcon": "fa fa-dashboard",
+            "iconSelected": "",
+            "selectable": true,
+            "state": {
+              "selected": false,
+              "expanded": true,
+              "disabled": false
+            },
+            "nodes": [
+            ]
+          },
+          {
+            "text": "文章分类",
             "href": "color/color.html",
             "nodeIcon": "fa fa-dashboard",
             "iconSelected": "",

@@ -30,7 +30,58 @@
             <!-- 左侧区域 -->
             <div class="left-block left-wrap left-width"></div>
             <!-- 中心区域 -->
-            <div class="center-block center-wrap"></div>
+            <div class="center-block center-wrap">
+                <div class="admin-login background-image"></div>
+                <div class="admin-login-box-background"></div>
+                <div class="admin-login-box login-block">
+                    <h1>后台管理系统登录</h1>
+                    <form action="" method="post" name="login-form" class="login-form normal-width" id="login-form">
+                        <div class="input-row">
+                            <div class="input-field">
+                                <label for="adminName">管理账号:</label>
+                                <div class="input-unit">
+                                    <input type="text" name="adminName" id="adminName" class="normal-input" title="请输入管理员账号" placeholder="请输入管理员账号" required="" autofocus />
+                                    <i class="reset-input-icon">x</i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input-row">
+                            <div class="input-field">
+                                <label for="adminPassword">密码:</label>
+                                <div class="input-unit">
+                                    <input type="password" name="adminPassword" id="adminPassword" class="normal-input" title="请输入密码" placeholder="请输入密码" required="" />
+                                    <i class="reset-input-icon">x</i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input-row">
+                            <div class="input-field captcha">
+                                <label for="adminCaptcha">验证码:</label>
+                                <div class="input-unit">
+                                    <input type="text" name="adminCaptcha" id="adminCaptcha" class="normal-input" title="请输入验证码" placeholder="请输入验证码" required="" />
+                                    <i class="reset-input-icon">x</i>
+                                </div>
+                                <div class="input-reference">
+                                    <img class="admin-captcha" src="../image/captcha/captcha1.png" id="adminCaptchaImage">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="login-handle">
+                            <div class="login-handle-field">
+                                <input type="submit" class="login-submit" name="login-form-submit" value="登录" />
+                            </div>
+                        </div>
+                        <div class="login-handle-extra">
+                            <div class="inline inline-half remember-account">
+                                <label class="color-dark"><input type="checkbox" name="rememberAccount" class="inline v-middle" value="1"><span class="checkbox-text inline v-middle">记住我</span></label>
+                            </div>
+                            <div class="inline inline-half forget-password">
+                                <a href="javascript:;" class="color-dark">忘记密码？</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
             <!-- 右侧区域 -->
             <div class="right-block right-wrap"></div>
         </div>
