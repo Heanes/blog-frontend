@@ -28,7 +28,7 @@
         <!-- 主体内容 -->
         <div class="main-content main-wrap clearfix">
             <!-- 左侧区域 -->
-            <div class="left-block left-wrap left-width"></div>
+            <div class="left-block left-wrap"></div>
             <!-- 中心区域 -->
             <div class="center-block center-wrap">
                 <div class="admin-login background-image"></div>
@@ -97,6 +97,38 @@
     <script type="text/javascript" src="/public/static/libs/js/jquery/2.2.4/jquery.min.js"></script>
     <script type="text/javascript" src="/public/static/libs/js/jquery.cookie/1.4.1/jquery.cookie.js"></script>
     <script type="text/javascript" src="../js/common.js"></script>
+    <script>
+        $(function () {
+
+            var $adminLoginBG = $('.admin-login.background-image');
+            var $bgArr = [
+                '../image/login/login-bg-1.jpg',
+                '../image/login/login-bg-2.jpg',
+                '../image/login/login-bg-3.jpg',
+                '../image/login/login-bg-4.jpg',
+                '../image/login/login-bg-5.jpg',
+                '../image/login/login-bg-6.jpg',
+                '../image/login/login-bg-7.jpg',
+                '../image/login/login-bg-8.jpg',
+                '../image/login/login-bg-9.jpg'
+            ];
+
+            /**
+             * @doc 随机更换背景
+             * @param $dom
+             * @param $bgArr
+             * @author Heanes
+             * @time 2017-10-01 08:25:23 周天
+             */
+            function setRandomAdminLoginBg($dom, $bgArr) {
+                var total = $bgArr.length;
+                var choseNumber = Math.floor(Math.random() * total);
+                $dom.css('background-image', 'url(' + $bgArr[choseNumber] + ')');
+            }
+            setRandomAdminLoginBg($adminLoginBG, $bgArr);
+
+        });
+    </script>
     <!-- E js E -->
 </cite>
 </body>

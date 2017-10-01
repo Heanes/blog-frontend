@@ -4,7 +4,7 @@
  * @author Heanes
  * @time 2016-10-30 18:46:32 周日
  */
-.admin-login.background-image{position:fixed;width:100%;height:100%;display:block;background:url(../image/login/login-bg.jpg) no-repeat;background-size:cover;overflow:hidden;filter:blur(6px);}
+.admin-login.background-image{position:fixed;width:100%;height:100%;display:block;background:url(../image/login/login-bg-1.jpg) no-repeat;background-size:cover;overflow:hidden;filter:blur(4px);}
 
 .admin-login-box-background{z-index:888;height:380px;width:540px;position:absolute;margin-left:-270px;margin-top:-190px;left:50%;top:50%;background:#808080;opacity:.3;border-top-left-radius:30px;border-bottom-right-radius:30px;background:-moz-linear-gradient(left,#F00,#0F0,#00F,#FF0,#0FF,#FF00FF);background:-webkit-linear-gradient(left,#F00,#0F0,#00F,#FF0,#0FF,#FF00FF);background:-o-linear-gradient(left,#F00,#0F0,#00F,#FF0,#0FF,#FF00FF)}
 .admin-login-box{z-index:889;text-align:center;opacity:.8;height:360px;width:520px;position:absolute;margin-left:-260px;margin-top:-180px;left:50%;top:50%;background:#fff;border-top-left-radius:30px;border-bottom-right-radius:30px;background:-moz-linear-gradient(top,#fff,#ccc);background:-webkit-linear-gradient(top,#fff,#ccc);background:-o-linear-gradient(top,#fff,#ccc)}
