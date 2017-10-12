@@ -6,3 +6,37 @@
  */
 .main-content .center-block.right-content{padding:20px;}
 .box-normal{box-shadow:0 0 2px 2px rgba(225,225,225,0.5);border-radius:4px;}
+
+/**
+ * @doc 全局快速公用样式
+ * @author Heanes
+ * @time 2017-10-12 17:46:28 周四
+ */
+.pull-right{float:right;}
+
+/**
+ * @doc 页面面包屑导航
+ * @author Heanes
+ * @time 2017-10-12 17:02:07 周四
+ */
+$pageBreadcrumbBgColor:#f5f5f5;
+$pageBreadcrumbMargin:14px;
+$pageBreadcrumbPadding:8px;
+.page-breadcrumb{margin:$pageBreadcrumbMargin;padding:$pageBreadcrumbPadding;background-color:$pageBreadcrumbBgColor;}
+
+/**
+ * @doc 页面框架
+ * @author Heanes
+ * @time 2017-10-12 17:11:53 周四
+ */
+$pageContentPadding:16px;
+.page-content{padding:$pageContentPadding;}
+
+/**
+ * @doc 数据列表脚部区域
+ * @author Heanes
+ * @time 2017-10-12 17:45:49 周四
+ */
+$dataListFooterMargin:10px auto;
+.data-list-footer{margin:$dataListFooterMargin;}
+

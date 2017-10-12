@@ -20,6 +20,40 @@
   border-radius: 4px; }
 
 /**
+ * @doc 全局快速公用样式
+ * @author Heanes
+ * @time 2017-10-12 17:46:28 周四
+ */
+.pull-right {
+  float: right; }
+
+/**
+ * @doc 页面面包屑导航
+ * @author Heanes
+ * @time 2017-10-12 17:02:07 周四
+ */
+.page-breadcrumb {
+  margin: 14px;
+  padding: 8px;
+  background-color: #f5f5f5; }
+
+/**
+ * @doc 页面框架
+ * @author Heanes
+ * @time 2017-10-12 17:11:53 周四
+ */
+.page-content {
+  padding: 16px; }
+
+/**
+ * @doc 数据列表脚部区域
+ * @author Heanes
+ * @time 2017-10-12 17:45:49 周四
+ */
+.data-list-footer {
+  margin: 10px auto; }
+
+/**
  * @doc layout-布局样式
  */
 /**
