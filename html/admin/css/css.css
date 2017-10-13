@@ -27,6 +27,9 @@
 .pull-right {
   float: right; }
 
+.hide {
+  display: none; }
+
 /**
  * @doc 页面面包屑导航
  * @author Heanes
@@ -37,6 +40,10 @@
   padding: 8px;
   background-color: #f5f5f5; }
 
+.page-breadcrumb.bg-normal {
+  background-color: #f5f5f5;
+  border: 1px solid #ddd; }
+
 /**
  * @doc 页面框架
  * @author Heanes
@@ -44,6 +51,157 @@
  */
 .page-content {
   padding: 16px; }
+
+/**
+ * @doc 查询表单
+ * @author Heanes
+ * @time 2017-10-12 17:11:53 周四
+ */
+.search-form-wrap {
+  position: relative;
+  margin-bottom: 20px;
+  background-color: #f5f5f5; }
+
+.search-form-wrap.bg-normal {
+  background-color: #f5f5f5;
+  border: 1px solid #ddd; }
+
+.search-form-wrap.bg-normal .search-form {
+  padding: 20px; }
+
+.search-form .input-block,
+.search-form .form-handle {
+  display: table-cell; }
+
+.search-form .line-group.last,
+.search-form .line-group:last-child {
+  margin-bottom: 0; }
+
+.search-form .line-group .form-group {
+  margin-bottom: 20px; }
+
+.search-form .line-group .control-label {
+  min-width: 84px;
+  text-align: right; }
+
+.search-form .line-group .control-label.text-center {
+  text-align: center; }
+
+.search-form .line-group .form-control {
+  min-width: 140px; }
+
+.search-form .line-group .normal-input-width,
+.search-form .line-group .select2-container {
+  min-width: 178px; }
+
+.search-form .form-handle {
+  vertical-align: middle;
+  padding: 0 50px 0; }
+
+.search-form .form-handle .handle-inline {
+  display: inline-block;
+  vertical-align: bottom;
+  margin-right: 20px; }
+
+.search-form .form-handle .handle-inline:last-child {
+  margin-right: 0; }
+
+.search-form .form-handle .handle-inline input[type="reset"],
+.search-form .form-handle .handle-inline button[type="reset"] {
+  margin-left: 40px; }
+
+/**
+ * @doc 全局消息
+ * @author Heanes
+ * @time 2016-09-08 18:36:48 周四
+ */
+.global-message {
+  margin: 20px 0; }
+
+/**
+ * @doc 数据列表统计区域
+ * @author Heanes
+ * @time 2016-09-08 18:36:38 周四
+ */
+.data-statistics {
+  margin: 20px 0; }
+
+.data-statistics .statistics-content {
+  padding: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px; }
+
+.data-statistics .statistics-content p {
+  margin: 0; }
+
+/**
+ * @doc 数据操作区域
+ * @author Heanes
+ * @time 2016-09-08 19:15:09 周四
+ */
+.date-handle {
+  display: table;
+  width: 100%;
+  padding: 10px 0; }
+
+.date-handle .table-cell {
+  display: table-cell;
+  vertical-align: bottom; }
+
+.date-handle .handle-right {
+  text-align: right; }
+
+.date-handle .handle-right .handle:hover {
+  text-decoration: none; }
+
+.date-handle .handle-right .handle.disabled {
+  color: #ddd;
+  pointer-events: none;
+  cursor: not-allowed; }
+
+.date-handle .handle-right .handle-inline {
+  margin: 0 10px; }
+
+/**
+ * @doc 数据列表区域
+ * @author Heanes
+ * @time 2017-10-12 18:19:33 周四
+ */
+.data-list {
+  margin: 10px auto; }
+
+.data-list .table .select-row {
+  width: 60px;
+  text-align: center; }
+
+.data-list .bg-normal {
+  background-color: #ededed; }
+
+.table.thead-tr-bg-normal thead tr {
+  background-color: #ededed; }
+
+/**
+ * @doc 选中后的数据的批量操作
+ * @author Heanes
+ * @time 2016-09-11 17:35:39
+ */
+.data-selected-handle {
+  margin: 20px 0; }
+
+.data-selected-handle .handle-one {
+  margin-right: 20px; }
+
+.data-selected-handle .inline-block {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0; }
+
+.data-selected-handle input.inline-block {
+  margin-right: 6px; }
+
+.data-selected-handle .selected-count {
+  color: #ff0000;
+  margin: 0 4px; }
 
 /**
  * @doc 数据列表脚部区域
@@ -599,10 +757,6 @@ iframe {
  */
 body.start {
   background-color: #ecf0f5; }
-
-.box-normal {
-  box-shadow: 0 0 2px 2px rgba(225, 225, 225, 0.5);
-  border-radius: 4px; }
 
 .report-count-block {
   font-size: 0;
