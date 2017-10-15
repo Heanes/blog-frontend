@@ -14,6 +14,7 @@
  */
 .pull-right{float:right;}
 .hide{display:none;}
+[disabled="disabled"],.disabled{pointer-events:none;}
 
 /**
  * @doc 页面面包屑导航
@@ -50,7 +51,7 @@ $pageContentPadding:16px;
 .search-form .line-group .form-group{margin-bottom:20px;}
 .search-form .line-group .control-label{min-width:84px;text-align:right;}
 .search-form .line-group .control-label.text-center{text-align:center;}
-.search-form .line-group .form-control{min-width:140px;}
+.search-form .line-group .form-control{min-width:178px;}
 .search-form .line-group .normal-input-width,
 .search-form .line-group .select2-container{min-width:178px;}
 .search-form .form-handle{vertical-align:middle;padding:0 50px 0;}
@@ -72,9 +73,9 @@ $pageContentPadding:16px;
  * @author Heanes
  * @time 2016-09-08 18:36:38 周四
  */
-.data-statistics{margin:20px 0;}
-.data-statistics .statistics-content{padding:16px;border:1px solid #ddd;border-radius:4px;}
-.data-statistics .statistics-content p{margin:0;}
+.data-info{margin:20px 0;}
+.data-info .data-statistics{padding:16px;border:1px solid #ddd;border-radius:4px;}
+.data-info .data-statistics p{margin:0;}
 
 /**
  * @doc 数据操作区域
@@ -99,12 +100,17 @@ $pageContentPadding:16px;
 .data-list .bg-normal{background-color:#ededed;}
 .table.thead-tr-bg-normal thead tr{background-color:#ededed;}
 
+$statusEnableColor:#008000;
+$statusUnableColor:#f00;
+i.fa.on{color:$statusEnableColor;}
+i.fa.off{color:$statusUnableColor;}
+
 /**
  * @doc 选中后的数据的批量操作
  * @author Heanes
  * @time 2016-09-11 17:35:39
  */
-.data-selected-handle{margin:20px 0;}
+.data-selected-handle{margin:20px 0 0 20px;}
 .data-selected-handle .handle-one{margin-right:20px;}
 .data-selected-handle .inline-block{display:inline-block;vertical-align:middle;margin:0;}
 .data-selected-handle input.inline-block{margin-right:6px;}

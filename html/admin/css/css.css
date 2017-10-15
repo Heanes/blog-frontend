@@ -30,6 +30,9 @@
 .hide {
   display: none; }
 
+[disabled="disabled"], .disabled {
+  pointer-events: none; }
+
 /**
  * @doc 页面面包屑导航
  * @author Heanes
@@ -88,7 +91,7 @@
   text-align: center; }
 
 .search-form .line-group .form-control {
-  min-width: 140px; }
+  min-width: 178px; }
 
 .search-form .line-group .normal-input-width,
 .search-form .line-group .select2-container {
@@ -123,15 +126,15 @@
  * @author Heanes
  * @time 2016-09-08 18:36:38 周四
  */
-.data-statistics {
+.data-info {
   margin: 20px 0; }
 
-.data-statistics .statistics-content {
+.data-info .data-statistics {
   padding: 16px;
   border: 1px solid #ddd;
   border-radius: 4px; }
 
-.data-statistics .statistics-content p {
+.data-info .data-statistics p {
   margin: 0; }
 
 /**
@@ -180,13 +183,19 @@
 .table.thead-tr-bg-normal thead tr {
   background-color: #ededed; }
 
+i.fa.on {
+  color: #008000; }
+
+i.fa.off {
+  color: #f00; }
+
 /**
  * @doc 选中后的数据的批量操作
  * @author Heanes
  * @time 2016-09-11 17:35:39
  */
 .data-selected-handle {
-  margin: 20px 0; }
+  margin: 20px 0 0 20px; }
 
 .data-selected-handle .handle-one {
   margin-right: 20px; }

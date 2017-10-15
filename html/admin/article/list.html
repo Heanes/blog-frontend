@@ -140,9 +140,9 @@
                             </div>
                         </div>
                     </div>
-                    <!-- 数据统计相关显示区域 -->
-                    <div class="data-statistics box-normal">
-                        <div class="statistics-content">
+                    <!-- 数据相关信息显示区域 -->
+                    <div class="data-info box-normal">
+                        <div class="data-statistics">
                             <p>当前共有<strong class="value total">124</strong>条数据</p>
                         </div>
                     </div>
@@ -160,7 +160,7 @@
                     <div class="data-list article-list">
                         <!-- 数据列表 -->
                         <div class="data-list-table box-normal">
-                            <table class="table table-striped table-hover table-condensed thead-tr-bg-normal" data-toggle="table">
+                            <table class="table table-bordered table-striped table-hover table-condensed thead-tr-bg-normal" data-toggle="table">
                             <thead>
                             <tr class="bg-normal">
                                 <th class="select-row">选择</th>
@@ -172,6 +172,8 @@
                                 <th>状态</th>
                                 <th>发表时间</th>
                                 <th>创建时间</th>
+                                <th>置顶</th>
+                                <th>热门</th>
                                 <th>操作</th>
                             </tr>
                             </thead>
@@ -186,6 +188,16 @@
                                 <td>已发布</td>
                                 <td>2017-10-12 17:24:19 周四</td>
                                 <td>2017-10-12 17:24:19 周四</td>
+                                <td class="text-center">
+                                    <a href="javascript:">
+                                        <i class="fa fa-check on" aria-hidden="true"></i>
+                                    </a>
+                                </td>
+                                <td class="text-center">
+                                    <a href="javascript:">
+                                        <i class="fa fa-close off" aria-hidden="true"></i>
+                                    </a>
+                                </td>
                                 <td>
                                     <a href="javascript:;" class="op-btn btn btn-primary btn-mini"><i class="op-icon fa fa-edit" aria-hidden="true"></i><span class="btn-text">编辑</span></a>
                                     <a href="javascript:;" class="op-btn btn btn-info btn-mini"><i class="op-icon fa fa-search-plus" aria-hidden="true"></i><span class="btn-text">查看</span></a>
@@ -203,6 +215,16 @@
                                 <td>草稿</td>
                                 <td>2017-10-12 17:24:19 周四</td>
                                 <td>2017-10-12 17:24:19 周四</td>
+                                <td class="text-center">
+                                    <a href="javascript:">
+                                        <i class="fa fa-close off" aria-hidden="true"></i>
+                                    </a>
+                                </td>
+                                <td class="text-center">
+                                    <a href="javascript:">
+                                        <i class="fa fa-check on" aria-hidden="true"></i>
+                                    </a>
+                                </td>
                                 <td>
                                     <a href="javascript:;" class="op-btn btn btn-primary btn-mini"><i class="op-icon fa fa-edit" aria-hidden="true"></i><span class="btn-text">编辑</span></a>
                                     <a href="javascript:;" class="op-btn btn btn-info btn-mini"><i class="op-icon fa fa-search-plus" aria-hidden="true"></i><span class="btn-text">查看</span></a>
@@ -220,11 +242,22 @@
                                 <td>草稿</td>
                                 <td>2017-10-12 17:24:19 周四</td>
                                 <td>2017-10-12 17:24:19 周四</td>
+                                <td class="text-center">
+                                    <a href="javascript:">
+                                        <i class="fa fa-check on" aria-hidden="true"></i>
+                                    </a>
+                                </td>
+                                <td class="text-center">
+                                    <a href="javascript:">
+                                        <i class="fa fa-close off" aria-hidden="true"></i>
+                                    </a>
+                                </td>
                                 <td>
-                                    <a href="javascript:;" class="op-btn btn btn-primary btn-mini"><i class="op-icon fa fa-edit" aria-hidden="true"></i><span class="btn-text">编辑</span></a>
-                                    <a href="javascript:;" class="op-btn btn btn-info btn-mini"><i class="op-icon fa fa-search-plus" aria-hidden="true"></i><span class="btn-text">查看</span></a>
-                                    <a href="javascript:;" class="op-btn btn btn-success btn-mini"><i class="op-icon fa fa-clock-o" aria-hidden="true"></i><span class="btn-text">历史</span></a>
-                                    <a href="javascript:;" class="op-btn btn btn-danger btn-mini"><i class="op-icon fa fa-trash" aria-hidden="true"></i><span class="btn-text">删除</span></a>
+                                    <!-- 不可用样式 -->
+                                    <a href="javascript:;" class="op-btn btn btn-primary btn-xs" disabled="disabled"><i class="op-icon fa fa-edit" aria-hidden="true"></i><span class="btn-text">编辑</span></a>
+                                    <a href="javascript:;" class="op-btn btn btn-info btn-xs" disabled="disabled"><i class="op-icon fa fa-search-plus" aria-hidden="true"></i><span class="btn-text">查看</span></a>
+                                    <a href="javascript:;" class="op-btn btn btn-success btn-xs" disabled="disabled"><i class="op-icon fa fa-clock-o" aria-hidden="true"></i><span class="btn-text">历史</span></a>
+                                    <a href="javascript:;" class="op-btn btn btn-danger btn-xs" disabled="disabled"><i class="op-icon fa fa-trash" aria-hidden="true"></i><span class="btn-text">删除</span></a>
                                 </td>
                             </tr>
                             <tr>
@@ -237,6 +270,16 @@
                                 <td>草稿</td>
                                 <td>2017-10-12 17:24:19 周四</td>
                                 <td>2017-10-12 17:24:19 周四</td>
+                                <td class="text-center">
+                                    <a href="javascript:">
+                                        <i class="fa fa-check on" aria-hidden="true"></i>
+                                    </a>
+                                </td>
+                                <td class="text-center">
+                                    <a href="javascript:">
+                                        <i class="fa fa-check on" aria-hidden="true"></i>
+                                    </a>
+                                </td>
                                 <td>
                                     <a href="javascript:;" class="op-btn btn btn-primary btn-mini"><i class="op-icon fa fa-edit" aria-hidden="true"></i><span class="btn-text">编辑</span></a>
                                     <a href="javascript:;" class="op-btn btn btn-info btn-mini"><i class="op-icon fa fa-search-plus" aria-hidden="true"></i><span class="btn-text">查看</span></a>
@@ -251,7 +294,7 @@
                         <div class="data-selected-handle">
                             <span class="handle-one"><input type="checkbox" id="selectAll" class="inline-block"/><label for="selectAll" class="inline-block">全选</label></span>
                             <span class="handle-one"><input type="checkbox" id="selectReserve" class="inline-block"/><label for="selectReserve" class="inline-block">反选</label></span>
-                            <span class="handle-one"><button class="btn btn-danger">删除</button></span><span class="handle-desc">当前已选中<strong class="selected-count">8</strong>条数据</span>
+                            <span class="handle-one"><button class="btn btn-danger btn-small">删除</button></span><span class="handle-desc">当前已选中<strong class="selected-count">8</strong>条数据</span>
                         </div>
                     </div>
                     <!-- 列表脚部区域 -->
@@ -265,7 +308,7 @@
                                     </li>
                                     <li class="page-item">
                                         <a class="page-link current" href="javascript:;">1</a>
-                                    </li>
+                                    </li>`
                                     <li class="page-item">
                                         <a class="page-link" href="javascript:;">2</a>
                                     </li>
@@ -304,10 +347,6 @@
     <!-- S js S -->
     <script type="text/javascript" src="/public/static/libs/js/jquery/2.2.4/jquery.min.js"></script>
     <script type="text/javascript" src="/public/static/libs/js/jquery.cookie/1.4.1/jquery.cookie.js"></script>
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.1/bootstrap-table.min.js"></script>
-    <!-- Latest compiled and minified Locales -->
-    <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.1/locale/bootstrap-table-zh-CN.min.js"></script>
     <script type="text/javascript" src="../js/common.js"></script>
     <!-- E js E -->
 </cite>
