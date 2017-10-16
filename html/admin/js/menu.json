@@ -14,7 +14,7 @@
       {
         "text": "文章模块",
         "href": "",
-        "nodeIcon": "fa fa-balance-scale",
+        "nodeIcon": "fa fa-file-text-o",
         "iconSelected": "",
         "selectable": true,
         "state": {
@@ -25,8 +25,8 @@
         "nodes": [
           {
             "text": "文章内容",
-            "href": "article/article.html",
-            "nodeIcon": "fa fa-dashboard",
+            "href": "article/index.html",
+            "nodeIcon": "fa fa-file-word-o",
             "iconSelected": "",
             "selectable": true,
             "state": {
@@ -39,8 +39,8 @@
           },
           {
             "text": "文章评论",
-            "href": "article/articleComment.html",
-            "nodeIcon": "fa fa-dashboard",
+            "href": "articleComment/index.html",
+            "nodeIcon": "fa fa-comments-o",
             "iconSelected": "",
             "selectable": true,
             "state": {
@@ -53,8 +53,8 @@
           },
           {
             "text": "文章标签",
-            "href": "article/articleTag.html",
-            "nodeIcon": "fa fa-dashboard",
+            "href": "articleTag/index.html",
+            "nodeIcon": "fa fa-tags",
             "iconSelected": "",
             "selectable": true,
             "state": {
@@ -67,8 +67,8 @@
           },
           {
             "text": "文章分类",
-            "href": "article/articleCategory.html",
-            "nodeIcon": "fa fa-dashboard",
+            "href": "articleCategory/index.html",
+            "nodeIcon": "fa fa-tasks",
             "iconSelected": "",
             "selectable": true,
             "state": {
@@ -84,7 +84,7 @@
       {
         "text": "网站设置",
         "href": "",
-        "nodeIcon": "fa fa-balance-scale",
+        "nodeIcon": "fa fa-cogs",
         "iconSelected": "",
         "selectable": true,
         "state": {
@@ -95,8 +95,8 @@
         "nodes": [
           {
             "text": "网站导航",
-            "href": "navigation/navigation.html",
-            "nodeIcon": "fa fa-dashboard",
+            "href": "navigation/index.html",
+            "nodeIcon": "fa fa-navicon",
             "iconSelected": "",
             "selectable": true,
             "state": {
@@ -109,8 +109,8 @@
           },
           {
             "text": "友情链接",
-            "href": "friendLink/friendLink.html",
-            "nodeIcon": "fa fa-dashboard",
+            "href": "friendLink/index.html",
+            "nodeIcon": "fa fa-link",
             "iconSelected": "",
             "selectable": true,
             "state": {
@@ -123,8 +123,8 @@
           },
           {
             "text": "基础设置",
-            "href": "setting/setting.html",
-            "nodeIcon": "fa fa-dashboard",
+            "href": "setting/index.html",
+            "nodeIcon": "fa fa-cog",
             "iconSelected": "",
             "selectable": true,
             "state": {
