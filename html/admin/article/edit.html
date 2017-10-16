@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <!-- meta -->
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+    <meta charset="UTF-8"/>
+    <!-- responsive -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="renderer" content="webkit"/>
+    <meta name="author" content="Heanes heanes.com email(heanes@163.com)"/>
+    <meta name="keywords" content="软件,商务,HTML,tutorials,source codes"/>
+    <meta name="description" content="描述，不超过150个字符"/>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="/public/static/image/favicon/favicon.ico"/>
+    <link rel="bookmark" href="/public/static/image/favicon/favicon.ico"/>
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="//ui.heanes.com/dist/css/heanesUI.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/css.css"/>
+    <title>编辑文章 - 管理后台 - Heanes的博客</title>
+</head>
+<body>
+<div class="wrap">
+    <!-- S 主要内容 S -->
+    <div class="main">
+        <!-- 顶部全宽度内容区域 -->
+        <div class="main-top-block"></div>
+        <!-- 主体内容 -->
+        <div class="main-content main-wrap clearfix">
+            <!-- 左侧区域 -->
+            <div class="left-block left-wrap left-width"></div>
+            <!-- 中心区域 -->
+            <div class="center-block center-wrap">
+                <div class="page-breadcrumb bg-normal box-normal">
+                    <div class="breadcrumb-wrap">
+                        <div class="breadcrumb-cell breadcrumb-node breadcrumb-root">
+                            <span class="breadcrumb-text"><a href="javascript:void(0);">文章</a></span>
+                        </div>
+                        <div class="breadcrumb-cell breadcrumb-delimiter">
+                            <span class="separator">/</span>
+                        </div>
+                        <div class="breadcrumb-cell breadcrumb-node">
+                            <span class="breadcrumb-text"><a href="javascript:void(0);">编辑文章</a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="page-content">
+                    <!-- 全局消息显示区域 -->
+                    <div class="global-message hide" id="globalMessage">
+                        <div class="message message-success">
+                            <div class="message-handle">
+                                <span class="btn-close">x</span>
+                            </div>
+                            <div class="message-content">
+                                <p>恭喜你，操作成功。</p>
+                            </div>
+                        </div>
+                        <div class="message message-info">
+                            <div class="message-handle">
+                                <span class="btn-close">x</span>
+                            </div>
+                            <div class="message-content">
+                                <p>提醒，你还需要做某项操作。</p>
+                            </div>
+                        </div>
+                        <div class="message message-warning">
+                            <div class="message-handle">
+                                <span class="btn-close">x</span>
+                            </div>
+                            <div class="message-content">
+                                <p>警告，有某些情况出现。</p>
+                            </div>
+                        </div>
+                        <div class="message message-error">
+                            <div class="message-handle">
+                                <span class="btn-close">x</span>
+                            </div>
+                            <div class="message-content">
+                                <p>错误，出现了问题。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="data-edit">
+                        <div class="data-edit-form">
+                            <form class="form normal">
+                                <div class="line-group">
+                                    <div class="form-group inline">
+                                        <label class="control-label" for="id">ID：</label>
+                                        <input type="text" name="id" class="form-control" id="id" placeholder="请输入ID" value="233" readonly>
+                                    </div>
+                                </div>
+                                <div class="line-group">
+                                    <div class="form-group inline">
+                                        <label class="control-label" for="order">排序：</label>
+                                        <input type="text" name="order" class="form-control" id="order" placeholder="请输入序号">
+                                    </div>
+                                </div>
+                                <div class="line-group">
+                                    <div class="form-group">
+                                        <label class="control-label" for="articleTitle">标题：</label>
+                                        <textarea class="form-control textarea-title" name="articleTitle" id="articleTitle">请输入标题</textarea>
+                                    </div>
+                                </div>
+                                <div class="line-group">
+                                    <div class="form-group inline">
+                                        <label class="control-label" for="createTime">创建时间：</label>
+                                        <input type="text" name="createTime" class="form-control" id="createTime" placeholder="请选择创建时间">
+                                        <i class="fa fa-calendar control-icon" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="form-group inline">
+                                        <label class="control-label" for="updateTime">更新时间：</label>
+                                        <input type="text" name="updateTime" class="form-control" id="updateTime" placeholder="请选择更新时间">
+                                        <i class="fa fa-calendar control-icon" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <div class="line-group">
+                                    <div class="form-group inline">
+                                        <label class="control-label" for="articleCategory">选择分类：</label>
+                                        <select class="form-control" id="articleCategory">
+                                            <option value="0">请选择分类</option>
+                                            <option value="1">分类一</option>
+                                            <option value="2">分类二</option>
+                                            <option value="3">分类三</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="line-group">
+                                    <div class="form-group inline">
+                                        <label class="control-label">是否置顶：</label>
+                                        <input type="radio" class="" name="singleSelect" value="1" id="isTop"><label class="control-label input-show-value-text" for="isTop">是</label>
+                                        <input type="radio" class="" name="singleSelect" value="0" id="isNotTop"> <label class="control-label input-show-value-text" for="isNotTop">否</label>
+                                    </div>
+                                    <div class="form-group inline">
+                                        <label class="control-label">复选按钮：</label>
+                                        <input type="checkbox" class="" name="multipleSelect" value="1" id="value1"><label class="control-label input-show-value-text" for="value1">值1</label>
+                                        <input type="checkbox" class="" name="multipleSelect" value="0" id="value2"><label class="control-label input-show-value-text" for="value2">值2</label>
+                                    </div>
+                                </div>
+                                <div class="line-group">
+                                    <div class="form-group">
+                                        <label class="control-label" for="articleContent">内容：</label>
+                                        <textarea class="form-control textarea-content" name="articleContent" id="articleContent"></textarea>
+                                        <p class="kindEditor-count">
+                                            您当前输入了 <span class="word-count1">0</span> 个文字。（字数统计包含HTML代码。）<br />
+                                            您当前输入了 <span class="word-count2">0</span> 个文字。（字数统计包含纯文本、IMG、EMBED，不包含换行符，IMG和EMBED算一个文字。）
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="line-group">
+                                    <div class="form-group">
+                                        <label class="control-label" for="articleContentByUEditor">内容：</label>
+                                        <textarea class="form-control textarea-content uEditor" name="articleContentByUEditor" id="articleContentByUEditor"></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-handle">
+                                    <div class="handle-group line-group text-center">
+                                        <button type="button" class="handle btn">放弃</button>
+                                        <button type="submit" class="handle btn btn-primary btn-lg">提交</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 右侧区域 -->
+            <div class="right-block right-wrap"></div>
+        </div>
+        <!-- 底部区域 -->
+        <div class="main-bottom-content main-wrap"></div>
+        <!-- 底部全宽度内容区域 -->
+        <div class="main-bottom-block"></div>
+    </div>
+    <!-- E 主要内容 E -->
+</div>
+<cite>
+    <!-- S js S -->
+    <script type="text/javascript" src="/public/static/libs/js/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript" src="/public/static/libs/js/jquery.cookie/1.4.1/jquery.cookie.js"></script>
+    <script type="text/javascript" src="../js/common.js"></script>
+    <!-- E js E -->
+</cite>
+</body>
+</html>
