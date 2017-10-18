@@ -17,7 +17,7 @@ $rightWrapWidth:260px;
 /* PC */
 /* 此模式下左右工具栏展现 */
 @media screen and (min-width:1367px){
-    .main-wrap{width:90%;max-width:1740px;}
+    .main-wrap{width:94%;max-width:1740px;}
     .main-content .left-wrap{position:relative;width:$leftWrapWidth;margin-right:-$leftWrapWidth;z-index:2}
     .main-content .right-wrap{position:relative;width:$rightWrapWidth;margin-left:-$rightWrapWidth;}
     .center-wrap{width:100%;position:relative;}

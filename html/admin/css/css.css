@@ -279,7 +279,7 @@ i.fa.off {
   margin: 0; }
 
 .ke-container {
-  display: inline-block;
+  display: inline-block !important;
   vertical-align: top; }
 
 .data-edit-form .form .form-handle {

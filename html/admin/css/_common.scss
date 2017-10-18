@@ -147,7 +147,7 @@ $dataListFooterMargin:10px auto;
 .data-edit-form .form .form-group .form-control.textarea-content.uEditor.eui-default{height:auto;}
 .data-edit-form .form .form-group input[type="checkbox"],
 .data-edit-form .form .form-group input[type="radio"]{display:inline-block;vertical-align:middle;margin:0;}
-.ke-container{display:inline-block;vertical-align:top;}
+.ke-container{display:inline-block !important;vertical-align:top;}
 
 .data-edit-form .form .form-handle{margin:20px auto;}
 .data-edit-form .form .form-handle .handle-group{}

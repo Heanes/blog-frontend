@@ -15,10 +15,11 @@
     <link rel="bookmark" href="/public/static/image/favicon/favicon.ico"/>
     <!-- css -->
     <link rel="stylesheet" type="text/css" href="//ui.heanes.com/dist/css/heanesUI.css"/>
+    <link type="text/css" rel="stylesheet" href="/public/static/libs/js/autoCatalog/1.0/css/autoCatalog.css">
     <link rel="stylesheet" type="text/css" href="../css/css.css"/>
     <title>文章详情页面 - 文章模块</title>
 </head>
-<body>
+<body class="scrollbar scrollbar-mini">
 <!-- S 左侧功能区 S -->
 <div class="left-bar clearfix">
     <div class="left-bar-content"></div>
@@ -383,7 +384,9 @@
                     </div>
                 </div>
                 <!-- 右侧区域 -->
-                <div class="right-block right-wrap fl"></div>
+                <div class="right-block right-wrap fl">
+                    <div class="side-content" id="articleCatalog"></div>
+                </div>
             </div>
             <!-- 底部区域 -->
             <div class="main-bottom-content"></div>
@@ -406,10 +409,22 @@
 <cite>
     <!-- S js S -->
     <script type="text/javascript" src="/public/static/libs/js/jquery/2.1.4/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="/public/static/libs/js/autoCatalog/1.0/js/autoCatalog.js"></script>
     <script type="text/javascript" src="../js/common.js"></script>
     <script type="text/javascript">
         $(function () {
-            ;
+            var $articleContent = $('#articleContent');
+            /**
+             * @doc 仿百度百科自动生成文章目录导航
+             * @author Heanes
+             * @time 2016-04-13 18:07:26
+             */
+            $articleContent.autoCatalog({
+                catalogContainer: $('#articleCatalog'),        // 放置生成目录的容器dom
+                step:90,
+                alwaysShow:true
+            });
+
         });
     </script>
     <!-- E js E -->
