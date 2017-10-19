@@ -23,9 +23,13 @@
 .article-list-block .article-list-row .article-title.no-data h1{font-size:24px;color:#555;font-weight:300;}
 .article-list-block .article-list-row .article-info.no-data{text-align:center;border:none;}
 
-.article-list-block .article-list-row .article-info .article-tags{display:block;text-align:right}
-.article-list-block .article-list-row .article-info .article-tags dd{padding-left:6px;}
-.article-list-block .article-list-row .article-info .article-tags dd a:hover{background-color:#008fb5;color:#fff;}
+.article-list-block .article-list-row .article-info .article-attribute-info{}
+
+.article-list-block .article-list-row .article-info .article-category-info{text-align:right}
+.article-list-block .article-list-row .article-info .article-category-info .article-category{}
+.article-list-block .article-list-row .article-info .article-category-info .label-icon{margin-right:4px;}
+.article-list-block .article-list-row .article-info .article-category-info dd{padding-left:6px;}
+.article-list-block .article-list-row .article-info .article-category-info dd a:hover{background-color:#008fb5;color:#fff;}
 
 
 /**************************************文章详情页面*******************************/

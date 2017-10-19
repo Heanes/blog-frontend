@@ -439,14 +439,16 @@ iframe {
   text-align: center;
   border: none; }
 
-.article-list-block .article-list-row .article-info .article-tags {
-  display: block;
+.article-list-block .article-list-row .article-info .article-category-info {
   text-align: right; }
 
-.article-list-block .article-list-row .article-info .article-tags dd {
+.article-list-block .article-list-row .article-info .article-category-info .label-icon {
+  margin-right: 4px; }
+
+.article-list-block .article-list-row .article-info .article-category-info dd {
   padding-left: 6px; }
 
-.article-list-block .article-list-row .article-info .article-tags dd a:hover {
+.article-list-block .article-list-row .article-info .article-category-info dd a:hover {
   background-color: #008fb5;
   color: #fff; }
 
