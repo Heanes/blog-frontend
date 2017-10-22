@@ -306,6 +306,9 @@ a:active {
   color: #fff; }
 
 /* E 文字被选中样式 E */
+ul {
+  margin-left: 4em; }
+
 /**
  * @doc 前台公共样式
  * @author Heanes
@@ -448,7 +451,7 @@ iframe {
 .article-list-block .article-list-row .article-info .article-category-info dd {
   padding-left: 6px; }
 
-.article-list-block .article-list-row .article-info .article-category-info dd a:hover {
+.article-list-block .article-list-row .article-info dd a:hover {
   background-color: #008fb5;
   color: #fff; }
 
@@ -549,7 +552,8 @@ iframe {
 .article-detail-page .article-info .article-info-dl dd {
   display: inline-block;
   vertical-align: top;
-  font-size: 12px; }
+  font-size: 12px;
+  font-weight: 400; }
 
 .article-detail-page .article-info .article-info-dl dd {
   margin-right: 4px; }
