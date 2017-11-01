@@ -84,6 +84,12 @@
   .right-wrap {
     display: none; } }
 /* ipad */
+@media screen and (max-width: 479px) {
+  h1, h2 {
+    font-size: 16px; }
+
+  h3 {
+    font-size: 14px; } }
 /* iPhone 6plus */
 /* iPhone 6 */
 /* iPhone 3 4 5 */
@@ -275,7 +281,7 @@ body, button, input, select, textarea {
 /* E 字体样式 E */
 /* S 标题样式 S */
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 300; }
+  font-weight: 400; }
 
 /* E 标题样式 E */
 /* S 链接样式 S */
@@ -382,6 +388,21 @@ iframe {
 
 .fl {
   float: left; }
+
+/**
+ * @doc 页面面包屑导航
+ * @author Heanes
+ * @time 2017-10-23 11:46:46 周一
+ */
+.page-breadcrumb {
+  margin: 14px;
+  padding: 8px;
+  background-color: #fff;
+  border-bottom: 1px solid #f0efeb; }
+
+.page-breadcrumb.bg-normal {
+  background-color: #f5f5f5;
+  border: 1px solid #ddd; }
 
 /**
  * @doc article 文章
