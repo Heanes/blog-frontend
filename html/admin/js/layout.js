@@ -252,4 +252,11 @@ $(function () {
         }
     }
 
+    /**
+     * @doc 右上角宽度适应
+     */
+    var $userInfoWrap = $('.user-info-wrap')
+        , $userInfoCell = $('.user-info-cell');
+    $userInfoCell.css('width', $userInfoWrap.outerWidth(true));
+
 });
