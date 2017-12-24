@@ -413,68 +413,75 @@ iframe {
  * @time 2017-09-08 18:44:06 周五
  */
 /**************************************文章列表页面*******************************/
-.article-list-block {
+.article-list-wrap {
   padding: 30px 10px; }
 
-.article-list-block .article-list-row {
+.article-list-wrap .article-list-row {
   margin-bottom: 20px; }
 
-.article-list-block .article-list-row .article-title .title {
+.article-list-wrap .article-list-row .article-title .title {
   font-size: 24px;
   font-weight: 300;
   border-left: 6px solid #008fb5;
   padding-left: 24px; }
 
-.article-list-block .article-list-row .article-title .title a {
+.article-list-wrap .article-list-row .article-title .title a {
   line-height: 30px; }
 
-.article-list-block .article-list-row .article-title .title a:visited {
+.article-list-wrap .article-list-row .article-title .title a:visited {
   color: #6594b7; }
 
-.article-list-block .article-list-row .article-title .title a:hover {
+.article-list-wrap .article-list-row .article-title .title a:hover {
   background-color: #008fb5;
   color: #fff; }
 
-.article-list-block .article-list-row .article-info {
+.article-list-wrap .article-list-row .article-info {
   padding: 10px 6px 6px 30px;
   border-bottom: 1px #ddd dashed;
   color: #bbb; }
 
-.article-list-block .article-list-row .article-info dl,
-.article-list-block .article-list-row .article-info dl dt,
-.article-list-block .article-list-row .article-info dl dd {
+.article-list-wrap .article-list-row .article-info dl,
+.article-list-wrap .article-list-row .article-info dl dt,
+.article-list-wrap .article-list-row .article-info dl dd {
   display: inline-block;
   font-size: 13px;
   margin-bottom: 0; }
 
-.article-list-block .article-list-row .article-info dl {
+.article-list-wrap .article-list-row .article-info dl {
   margin-right: 14px;
   margin-bottom: 10px; }
 
-.article-list-block .article-list-row .article-title.no-data {
+.article-list-wrap .article-list-row .article-title.no-data {
   padding-left: 30px; }
 
-.article-list-block .article-list-row .article-title.no-data h1 {
+.article-list-wrap .article-list-row .article-title.no-data h1 {
   font-size: 24px;
   color: #555;
   font-weight: 300; }
 
-.article-list-block .article-list-row .article-info.no-data {
+.article-list-wrap .article-list-row .article-info.no-data {
   text-align: center;
   border: none; }
 
-.article-list-block .article-list-row .article-info .article-category-info {
+.article-list-wrap .article-list-row .article-info .article-category-info {
   text-align: right; }
 
-.article-list-block .article-list-row .article-info .article-category-info .label-icon {
+.article-list-wrap .article-list-row .article-info .article-category-info .label-icon {
   margin-right: 4px; }
 
-.article-list-block .article-list-row .article-info .article-category-info dd {
+.article-list-wrap .article-list-row .article-info .article-category-info dd {
   padding-left: 6px; }
 
-.article-list-block .article-list-row .article-info dd a:hover {
+.article-list-wrap .article-list-row .article-info dd a:hover {
   background-color: #008fb5;
   color: #fff; }
+
+/**
+ * @doc 文章分页
+ */
+.article-list-wrap .article-pager {
+  margin: 0 auto;
+  text-align: center; }
 
 /**************************************文章详情页面*******************************/
 .article-detail-page .article-content img {
