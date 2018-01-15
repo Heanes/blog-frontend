@@ -484,9 +484,6 @@ iframe {
   text-align: center; }
 
 /**************************************文章详情页面*******************************/
-.article-detail-page .article-content img {
-  max-width: 100%; }
-
 /* 面包屑导航 */
 .article-detail-page .page-breadcrumb {
   padding: 2px 5px;
@@ -602,9 +599,16 @@ iframe {
   background-color: #f1fff2; }
 
 /* 文章正文 */
+.article-detail-page .article-content img {
+  max-width: 100%;
+  max-height: 100%; }
+.article-detail-page .article-content ol, .article-detail-page .article-content ul {
+  margin-left: 2em; }
+
 .article-detail-page .article-content {
   _border-top: 1px solid #07adf9;
-  padding: 10px 30px; }
+  padding: 10px 30px;
+  word-break: break-all; }
 
 .article-detail-page .article-content h2.title-text {
   margin-bottom: 46px; }
