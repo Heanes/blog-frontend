@@ -601,7 +601,10 @@ iframe {
 /* 文章正文 */
 .article-detail-page .article-content img {
   max-width: 100%;
-  height: auto; }
+  height: auto;
+  box-shadow: 0 0 6px 2px #d3d3d3;
+  padding: 10px;
+  border: 1px solid #ddd; }
 .article-detail-page .article-content ol, .article-detail-page .article-content ul {
   margin-left: 2em; }
 
@@ -621,6 +624,12 @@ iframe {
   text-indent: 2em;
   line-height: 2em;
   font-size: 13px; }
+
+.article-detail-page .article-content p.img-desc {
+  text-indent: 0;
+  border-bottom: 1px dashed #ddd;
+  text-align: center;
+  margin: 10px 0; }
 
 /* 文章正文图片浮上时放大 */
 /*.article-detail-page .article-content img:hover{-webkit-transform:scale(1.01,1.01);-moz-transform:scale(1.01,1.01);-ms-transform:scale(1.01,1.01);-o-transform:scale(1.01,1.01);transform:scale(1.01,1.01);transition:.5s transform;-webkit-transition:.5s transform;border:0;box-shadow:0 0 13px 2px #aaa}*/
