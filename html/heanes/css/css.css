@@ -515,7 +515,7 @@ iframe {
 /* 操作图标不允许选中 */
 .article-detail-page .article-block .article-title-block .article-operate {
   position: absolute;
-  top: 8px;
+  top: -20px;
   right: 18px;
   color: #777;
   -moz-user-select: none;
@@ -560,7 +560,7 @@ iframe {
   vertical-align: middle; }
 
 .article-detail-page .article-block .article-title {
-  padding: 10px 0;
+  padding: 10px;
   text-align: center; }
 
 .article-detail-page .article-block .article-title .entry-title {
@@ -601,10 +601,11 @@ iframe {
 /* 文章正文 */
 .article-detail-page .article-content img {
   max-width: 100%;
-  height: auto;
   box-shadow: 0 0 6px 2px #d3d3d3;
   padding: 10px;
   border: 1px solid #ddd; }
+  .article-detail-page .article-content img:hover {
+    box-shadow: 0 0 9px 2px #8e8d8d; }
 .article-detail-page .article-content ol, .article-detail-page .article-content ul {
   margin-left: 2em; }
 
@@ -620,16 +621,24 @@ iframe {
   margin-bottom: 30px; }
 
 .article-detail-page .article-content p {
-  margin-bottom: 15px;
-  text-indent: 2em;
   line-height: 2em;
-  font-size: 13px; }
-
+  font-size: 13px;
+  margin-bottom: 15px; }
+.article-detail-page .article-content > p, .article-detail-page .article-content p.is-normal {
+  text-indent: 2em; }
 .article-detail-page .article-content p.img-desc {
   text-indent: 0;
   border-bottom: 1px dashed #ddd;
   text-align: center;
+  margin: 10px 0 30px; }
+.article-detail-page .article-content .update-info {
+  border: 2px dashed #ddd;
+  line-height: 2em;
+  padding: 4px 10px;
+  background-color: #eaf7f3;
   margin: 10px 0; }
+  .article-detail-page .article-content .update-info p {
+    margin: 0; }
 
 /* 文章正文图片浮上时放大 */
 /*.article-detail-page .article-content img:hover{-webkit-transform:scale(1.01,1.01);-moz-transform:scale(1.01,1.01);-ms-transform:scale(1.01,1.01);-o-transform:scale(1.01,1.01);transform:scale(1.01,1.01);transition:.5s transform;-webkit-transition:.5s transform;border:0;box-shadow:0 0 13px 2px #aaa}*/

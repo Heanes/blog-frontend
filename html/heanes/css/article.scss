@@ -56,7 +56,7 @@
 .article-detail-page .article-block .article-title-block.fixed{position:fixed;top:0;z-index:2;width:900px;background-color:rgb(255, 255, 255);}
 .article-detail-page .article-block .article-title-block-placeholder{}
 /* 操作图标不允许选中 */
-.article-detail-page .article-block .article-title-block .article-operate{position:absolute;top:8px;right:18px;color:#777;-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;}
+.article-detail-page .article-block .article-title-block .article-operate{position:absolute;top:-20px;right:18px;color:#777;-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;}
 .article-detail-page .article-block .article-title-block .article-operate span{cursor:pointer;}
 .article-detail-page .article-block .article-title-block .article-operate span:hover{color:#07adf9;}
 .article-detail-page .article-block .article-title-block .article-operate span::selection{background-color:#fff;color:#07adf9;}
@@ -69,7 +69,7 @@
 .article-detail-page .article-block .article-title-block .article-operate .op-share-btn{font-size:18px;}
 
 .article-detail-page .article-category .nav-sub{color:#999;padding:0 8px;font-size:18px;vertical-align:middle;}
-.article-detail-page .article-block .article-title{padding:10px 0;text-align:center;}
+.article-detail-page .article-block .article-title{padding:10px;text-align:center;}
 .article-detail-page .article-block .article-title .entry-title{font-size:23px}
 .article-detail-page .article-info{color:#666;padding:10px 0;}
 .article-detail-page .article-info .article-info-dl{text-align:center;}
@@ -85,10 +85,12 @@
 .article-detail-page .article-content{
   img{
     max-width:100%;
-    height:auto;
     box-shadow:0 0 6px 2px #d3d3d3;
     padding:10px;
     border:1px solid #ddd;
+    &:hover{
+      box-shadow: 0 0 9px 2px #8e8d8d;
+    }
   }
   ol, ul{
     margin-left:2em;
@@ -97,13 +99,22 @@
 .article-detail-page .article-content{_border-top:1px solid #07adf9;padding:10px 30px;word-break:break-all;}
 .article-detail-page .article-content h2.title-text{margin-bottom:46px;}
 .article-detail-page .article-content h3.title-text{margin-bottom:30px;}
-.article-detail-page .article-content p{margin-bottom:15px;text-indent:2em;line-height:2em;font-size:13px;}
 .article-detail-page .article-content{
+  p{line-height:2em;font-size:13px;margin-bottom:15px;}
+  > p,p.is-normal{text-indent:2em;}
   p.img-desc{
     text-indent:0;
     border-bottom:1px dashed #ddd;
     text-align:center;
-    margin:10px 0;
+    margin:10px 0 30px;
+  }
+  .update-info{
+    border: 2px dashed #ddd;
+    line-height:2em;
+    padding:4px 10px;
+    background-color:#eaf7f3;
+    p{margin:0}
+    margin:10px auto;
   }
 }
 
