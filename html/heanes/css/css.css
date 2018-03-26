@@ -601,7 +601,7 @@ iframe {
 /* 文章正文 */
 .article-detail-page .article-content {
   _border-top: 1px solid #07adf9;
-  padding: 10px 30px;
+  padding: 10px;
   word-break: break-all; }
   .article-detail-page .article-content h2.title-text {
     margin-bottom: 46px; }
