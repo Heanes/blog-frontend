@@ -93,7 +93,7 @@ $(function () {
      * @time 2016-11-29 16:40:18 周二
      */
     var getMenuData = function(){
-        var menuDataJsonUrl="js/menu.json";
+        var menuDataJsonUrl="static/js/menu.json";
         $.getJSON(menuDataJsonUrl, function(data){
             //renderMenu($menuLeftBlock, data);
             var $treeView = $('.left-block').treeView({
