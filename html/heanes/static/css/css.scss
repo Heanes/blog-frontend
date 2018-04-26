@@ -6,21 +6,25 @@
  */
 
 /**
- * @doc responsive
+ * @doc responsive 响应式
  */
-// 导入responsive-响应式样式
+// responsive 响应式样式
 @import 'responsive';
 
-// 导入layout-布局样式
+/**
+ * @doc layout 布局样式
+ */
+// layout 布局样式
 @import 'layout';
 
 /**
- * @doc common
+ * @doc common 公共
  */
-// 导入前台公共样式
+// common 公共样式
 @import "common";
 
 /**
  * @doc article 文章
  */
+// article 文章
 @import "article";
