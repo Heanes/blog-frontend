@@ -16,6 +16,7 @@
     <link rel="bookmark" href="/public/static/image/favicon/favicon.ico"/>
     <!-- css -->
     <link rel="stylesheet" type="text/css" href="//ui.heanes.com/dist/css/heanesUI.css"/>
+    <link type="text/css" rel="stylesheet" href="//r.html.heanes.com/work/heanes.com/autoCatalog.js/css/autoCatalog.css">
     <link rel="stylesheet" type="text/css" href="../static/css/css.css"/>
     <title>文章详情页面 - 文章模块</title>
 </head>
@@ -88,8 +89,8 @@
                                     </dl>
                                 </div>
                                 <div class="article-operate">
-                                    <span class="op-to-small-text" id="opToSmallTextBtn" title="减小正文字体">T</span>
-                                    <span class="op-to-large-text" id="opToLargeTextBtn" title="增大正文字体">T</span>
+                                    <span class="op-item op-to-small-text" id="opToSmallTextBtn" title="减小正文字体">T</span>
+                                    <span class="op-item op-to-large-text" id="opToLargeTextBtn" title="增大正文字体">T</span>
                                     <!--<span class="op-share-btn"><i class="fa fa-share-alt"></i></span>-->
                                 </div>
                             </div>
@@ -149,20 +150,20 @@
                                 <i style="background-image:url('../static/image/upload/user/avatar/anonymous.jpg')" class="avatar-img"></i>
                             </div>
                             <div class="author-info inline-block">
-                                <a href="javascript:;"><strong class="author-nickname inline-block">Heanes</strong></a>
+                                <a class="link author-link" href="javascript:;"><strong class="author-nickname inline-block">Heanes</strong></a>
                                 <p class="author-about">津乐网创始人，一个全栈爱好者</p>
                                 <p class="author-description">喜欢各种技术</p>
                                 <p class="author-links">
-                                    <a href="javascript:;" class="donate-to-author"><i class="fa fa-coffee" aria-hidden="true"></i>  请作者喝杯咖啡?</a>
+                                    <a class="link donate-to-author" href="javascript:;"><i class="fa fa-coffee" aria-hidden="true"></i>  请作者喝杯咖啡?</a>
                                     <span class="vertical-line-margin">|</span>
-                                    <a href="javascript:;">看他的专栏</a>
+                                    <a class="link" href="javascript:;">看他的专栏</a>
                                     <span class="vertical-line-margin">|</span>
-                                    <a href="javascript:;">新浪微博</a>
+                                    <a class="link" href="javascript:;">新浪微博</a>
                                     <span class="vertical-line-margin">|</span>
-                                    <a href="javascript:;">邮箱</a>
+                                    <a class="link" href="javascript:;">邮箱</a>
                                 </p>
                             </div>
-                            <div class="article-author-info-title absolute">
+                            <div class="article-author-info-title">
                                 <i class="fa fa-edit" aria-hidden="true"></i>
                                 <span>关于本文的作者</span>
                             </div>
@@ -170,26 +171,26 @@
                         <!-- 文章相关信息 -->
                         <div class="article-meta">
                             <dl class="meta-define-list">
-                                <dt>本文分类：</dt>
-                                <dd><a href="javascript:;">闲言碎语</a></dd>
+                                <dt class="item-name">本文分类：</dt>
+                                <dd class="item-value"><a href="javascript:;">闲言碎语</a></dd>
                             </dl>
                             <dl class="meta-define-list">
-                                <dt>本文标签：</dt>
-                                <dd><a href="javascript:;">漫画</a></dd>
-                                <dd>，<a href="javascript:;">友谊</a></dd>
-                                <dd>，<a href="javascript:;">网络</a></dd>
+                                <dt class="item-name">本文标签：</dt>
+                                <dd class="item-value"><a href="javascript:;">漫画</a></dd>
+                                <dd class="item-value">，<a href="javascript:;">友谊</a></dd>
+                                <dd class="item-value">，<a href="javascript:;">网络</a></dd>
                             </dl>
                             <dl class="meta-define-list">
-                                <dt>流行热度：</dt>
-                                <dd>已超过 6,998 人围观了本文</dd>
+                                <dt class="item-name">流行热度：</dt>
+                                <dd class="item-value">已超过 6,998 人围观了本文</dd>
                             </dl>
                             <dl class="meta-define-list">
-                                <dt>生产日期：</dt>
-                                <dd>异次纪元 16年07月8日 - 21时36分08秒</dd>
+                                <dt class="item-name">生产日期：</dt>
+                                <dd class="item-value">异次纪元 16年07月8日 - 21时36分08秒</dd>
                             </dl>
                             <dl class="meta-define-list">
-                                <dt>文章链接：</dt>
-                                <dd>
+                                <dt class="item-name">文章链接：</dt>
+                                <dd class="item-value">
                                     <strong class="url">http://blog.heanes.com/article/1.html</strong>
                                     <span class="copy-link">[<a href="javascript:;" id="copyUrl">复制</a>]</span>
                                     <span>(转载时请注明本文出处及文章链接)</span>
@@ -199,8 +200,8 @@
                         <!-- 文章相关交互 -->
                         <div class="article-handle">
                             <div class="article-vote">
-                                <span class="article-collect"><a href="javascript:;" class="collect-count" id="collectArticle"><i class="fa fa-star" aria-hidden="true"></i>收藏(<span id="articleCollectCount">134</span>)</a></span>
-                                <span class="article-thumbs-up"><a href="javascript:;" class="thumbs-up" id="thumbsUpArticle"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i>点赞(<span id="articleThumbsUpCount">247</span>)</a></span>
+                                <span class="article-collect"><a href="javascript:;" class="vote-link collect-count" id="collectArticle"><i class="vote-icon fa fa-star" aria-hidden="true"></i>收藏(<span id="articleCollectCount">134</span>)</a></span>
+                                <span class="article-thumbs-up"><a href="javascript:;" class="vote-link thumbs-up" id="thumbsUpArticle"><i class="vote-icon fa fa-thumbs-o-up" aria-hidden="true"></i>点赞(<span id="articleThumbsUpCount">247</span>)</a></span>
                             </div>
                             <!-- 文章分享按钮 -->
                             <div class="article-share-block">
@@ -240,25 +241,25 @@
                         <!-- 评论区域 -->
                         <div class="article-comment-block margin-common" id="comment">
                             <div class="add-comment-block">
-                                <h1 class="add-comment-title"><a id="add-comment">发表评论</a></h1>
+                                <h1 class="add-comment-title"><a class="link" id="add-comment">发表评论</a></h1>
                                 <p class="add-comment-remind">愿您的每句评论，都能给大家的生活添色彩，带来共鸣，带来思索，带来快乐。</p>
                                 <div class="add-comment">
                                     <form class="comment-add-form" id="commentAddForm">
                                         <div class="input-group inline">
                                             <label for="userName"><span class="must">*</span>姓名：</label>
-                                            <input type="text" name="userName" id="userName" />
+                                            <input type="text" class="form-control" name="userName" id="userName" />
                                         </div>
                                         <div class="input-group inline">
                                             <label for="email"><span class="must">*</span>E-Mail：</label>
-                                            <input type="text" name="email" id="email" />
+                                            <input type="text" class="form-control" name="email" id="email" />
                                         </div>
                                         <div class="input-group inline">
                                             <label for="website">你的网站：</label>
-                                            <input type="text" name="website" id="website" />
+                                            <input type="text" class="form-control" name="website" id="website" />
                                         </div>
                                         <div class="input-group">
                                             <label for="commentContent"></label>
-                                            <textarea name="commentContent" id="commentContent" class="comment-textarea"></textarea>
+                                            <textarea name="commentContent" id="commentContent" class="form-control comment-textarea"></textarea>
                                         </div>
                                         <div class="add-comment-handle">
                                             <input type="submit" class="btn submit-button button-normal" id="commentAddSubmit" />
@@ -266,7 +267,7 @@
                                     </form>
                                 </div>
                             </div>
-                            <div class="comment-list relative">
+                            <div class="comment-list-block relative">
                                 <!-- 评论列表刷新、排序 -->
                                 <div class="comment-list-handle">
                                     <div class="input-row inline-block">
@@ -277,19 +278,19 @@
                                         <label for="earliest">最早</label>
                                     </div>
                                 </div>
-                                <h3 class="comment-list-title"><a id="comment-list">评论列表</a></h3>
-                                <ul class="comment-list-ul">
-                                    <li>
-                                        <div class="no-data">
+                                <h3 class="comment-list-title"><a class="link" id="comment-list">评论列表</a></h3>
+                                <ul class="comment-list">
+                                    <li class="comment-wrap no-data-wrap">
+                                        <div class="comment-content">
                                             <p>暂无评论</p>
                                         </div>
                                     </li>
-                                    <li class="get-data-error" id="getCommentListDataError">
-                                        <div class="no-data">
+                                    <li class="comment-wrap no-data-wrap get-data-error" id="getCommentListDataError">
+                                        <div class="comment-content">
                                             <p>暂无评论</p>
                                         </div>
                                     </li>
-                                    <li>
+                                    <li class="comment-wrap">
                                         <div class="comment-info">
                                             <span class="comment-user-avatar"><i class="user-avatar" style="background-image:url('../static/image/upload/user/avatar/anonymous.jpg')"></i></span>
                                             <span class="comment-user-name"><a href="javascript:;" class="user-name-a">蒲常莹</a></span>
@@ -298,19 +299,19 @@
                                             <span class="comment-floor"><a id="comment-floor-4" class="comment-floor-a">4楼</a></span>
                                         </div>
                                         <div class="comment-content">
-                                            <p>楼下的一看就是小白。阿里微贷的1年利息接近10%。是工行的2倍，至于广发 平安更是高达17%-20%</p>
+                                            <p class="p">楼下的一看就是小白。阿里微贷的1年利息接近10%。是工行的2倍，至于广发 平安更是高达17%-20%</p>
                                         </div>
                                         <div class="comment-handle">
-                                            <span class="comment-complain"><a href="javascript:;">举报</a></span>
+                                            <a class="handle-item comment-complain" href="javascript:;">举报</a>
                                             <i class="border-separate"></i>
-                                            <span class="comment-vote-up"><a href="javascript:;">支持(46)</a></span>
+                                            <a class="handle-item comment-vote-up" href="javascript:;">支持(46)</a>
                                             <i class="border-separate"></i>
-                                            <span class="comment-vote-down"><a href="javascript:;">反对(0)</a></span>
+                                            <a class="handle-item comment-vote-down" href="javascript:;">反对(0)</a>
                                             <i class="border-separate"></i>
-                                            <span class="comment-reply"><a href="javascript:;">回复</a></span>
+                                            <a class="handle-item comment-reply" href="javascript:;">回复</a>
                                         </div>
                                     </li>
-                                    <li>
+                                    <li class="comment-wrap">
                                         <div class="comment-info">
                                             <span class="comment-user-avatar"><i class="user-avatar" style="background-image:url('../static/image/upload/user/avatar/anonymous.jpg')"></i></span>
                                             <span class="comment-user-name"><a href="javascript:;" class="user-name-a">蒲常莹</a></span>
@@ -319,20 +320,20 @@
                                             <span class="comment-floor"><a id="comment-floor-3" class="comment-floor-a">3楼</a></span>
                                         </div>
                                         <div class="comment-content">
-                                            <p>扯淡！就目前大数的利息来看还不是跟银行差不多？！根本就没有解决他所说的40%~70%的企业融资难的问题，准入条件还是限制了很多企业！
+                                            <p class="p">扯淡！就目前大数的利息来看还不是跟银行差不多？！根本就没有解决他所说的40%~70%的企业融资难的问题，准入条件还是限制了很多企业！
                                                 小编了解还很少！还有平安，南粤，友金所等等那些！</p>
                                         </div>
                                         <div class="comment-handle">
-                                            <span class="comment-complain"><a href="javascript:;">举报</a></span>
+                                            <a class="handle-item comment-complain" href="javascript:;">举报</a>
                                             <i class="border-separate"></i>
-                                            <span class="comment-vote-up"><a href="javascript:;">支持(46)</a></span>
+                                            <a class="handle-item comment-vote-up" href="javascript:;">支持(46)</a>
                                             <i class="border-separate"></i>
-                                            <span class="comment-vote-down"><a href="javascript:;">反对(0)</a></span>
+                                            <a class="handle-item comment-vote-down" href="javascript:;">反对(0)</a>
                                             <i class="border-separate"></i>
-                                            <span class="comment-reply"><a href="javascript:;">回复</a></span>
+                                            <a class="handle-item comment-reply" href="javascript:;">回复</a>
                                         </div>
                                     </li>
-                                    <li>
+                                    <li class="comment-wrap">
                                         <div class="comment-info">
                                             <span class="comment-user-avatar"><i class="user-avatar" style="background-image:url('../static/image/upload/user/avatar/anonymous.jpg')"></i></span>
                                             <span class="comment-user-name"><a href="javascript:;" class="user-name-a">蒲常莹</a></span>
@@ -341,19 +342,19 @@
                                             <span class="comment-floor"><a id="comment-floor-2" class="comment-floor-a">2楼</a></span>
                                         </div>
                                         <div class="comment-content">
-                                            <p>缺钱，小企业普遍遇到的问题。</p>
+                                            <p class="p">缺钱，小企业普遍遇到的问题。</p>
                                         </div>
                                         <div class="comment-handle">
-                                            <span class="comment-complain"><a href="javascript:;">举报</a></span>
+                                            <a class="handle-item comment-complain" href="javascript:;">举报</a>
                                             <i class="border-separate"></i>
-                                            <span class="comment-vote-up"><a href="javascript:;">支持(46)</a></span>
+                                            <a class="handle-item comment-vote-up" href="javascript:;">支持(46)</a>
                                             <i class="border-separate"></i>
-                                            <span class="comment-vote-down"><a href="javascript:;">反对(0)</a></span>
+                                            <a class="handle-item comment-vote-down" href="javascript:;">反对(0)</a>
                                             <i class="border-separate"></i>
-                                            <span class="comment-reply"><a href="javascript:;">回复</a></span>
+                                            <a class="handle-item comment-reply" href="javascript:;">回复</a>
                                         </div>
                                     </li>
-                                    <li>
+                                    <li class="comment-wrap">
                                         <div class="comment-info">
                                             <span class="comment-user-avatar"><i class="user-avatar" style="background-image:url('../static/image/upload/user/avatar/anonymous.jpg')"></i></span>
                                             <span class="comment-user-name"><a href="javascript:;" class="user-name-a">蒲常莹</a></span>
@@ -362,16 +363,16 @@
                                             <span class="comment-floor"><a id="comment-floor-1" class="comment-floor-a">1楼</a></span>
                                         </div>
                                         <div class="comment-content">
-                                            <p>呵呵</p>
+                                            <p class="p">呵呵</p>
                                         </div>
                                         <div class="comment-handle">
-                                            <span class="comment-complain"><a href="javascript:;">举报</a></span>
+                                            <a class="handle-item comment-complain" href="javascript:;">举报</a>
                                             <i class="border-separate"></i>
-                                            <span class="comment-vote-up"><a href="javascript:;">支持(46)</a></span>
+                                            <a class="handle-item comment-vote-up" href="javascript:;">支持(46)</a>
                                             <i class="border-separate"></i>
-                                            <span class="comment-vote-down"><a href="javascript:;">反对(0)</a></span>
+                                            <a class="handle-item comment-vote-down" href="javascript:;">反对(0)</a>
                                             <i class="border-separate"></i>
-                                            <span class="comment-reply"><a href="javascript:;">回复</a></span>
+                                            <a class="handle-item comment-reply" href="javascript:;">回复</a>
                                         </div>
                                     </li>
                                 </ul>
@@ -383,7 +384,9 @@
             <!-- E 中心区域 E -->
             <!-- S 中心-右侧边栏区域 S -->
             <div class="right-wrap fl">
-                <div class="right-content"></div>
+                <div class="right-content">
+                    <div class="article-catalog-wrap" id="articleCatalog"></div>
+                </div>
             </div>
             <!-- E 中心-右侧边栏区域 E -->
         </div>
