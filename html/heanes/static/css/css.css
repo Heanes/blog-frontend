@@ -487,7 +487,7 @@ iframe {
     margin-left: 10px;
     margin-right: 10px; }
   .article-detail-page .article-block {
-    padding-top: 20px;
+    padding: 20px 10px;
     /* 文章摘要 */
     /* 文章正文 */ }
     .article-detail-page .article-block .article-title-block {
@@ -502,7 +502,6 @@ iframe {
         width: 900px;
         background-color: white; }
       .article-detail-page .article-block .article-title-block .article-title {
-        padding: 10px;
         text-align: center; }
       .article-detail-page .article-block .article-title-block .article-title .entry-title {
         font-size: 23px; }
@@ -750,8 +749,8 @@ iframe {
     position: relative; }
     .article-detail-page .add-comment-block .add-comment .add-comment-handle .submit-button {
       position: absolute;
-      top: -66px;
-      right: 6px;
+      top: -60px;
+      right: 5px;
       background: #07adf9;
       color: #fff;
       width: 100px;
@@ -832,5 +831,19 @@ iframe {
   width: 100%; }
   .article-catalog-wrap .auto-catalog {
     width: 250px; }
+
+/**************************************文章列表索引页面*******************************/
+.article-index-wrap {
+  padding: 20px; }
+  .article-index-wrap .page-title {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center; }
+  .article-index-wrap .article-index-list-wrap {
+    list-style-position: inside; }
+    .article-index-wrap .article-index-list-wrap .list-item {
+      padding: 4px;
+      border-bottom: 1px dashed #eee;
+      line-height: 24px; }
 
 /*# sourceMappingURL=css.css.map */
