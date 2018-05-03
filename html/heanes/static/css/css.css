@@ -572,6 +572,14 @@ iframe {
         line-height: 2em;
         font-size: 13px;
         margin-bottom: 0.3em; }
+        .article-detail-page .article-block .article-content p kbd {
+          text-indent: 0;
+          margin: 0 2px; }
+        .article-detail-page .article-block .article-content p.tip {
+          text-indent: 0;
+          background-color: #f8f8f8;
+          border-left: 4px solid #f66;
+          padding: 12px 20px; }
       .article-detail-page .article-block .article-content > p, .article-detail-page .article-block .article-content p.is-normal {
         text-indent: 2em; }
       .article-detail-page .article-block .article-content p.img-desc {
@@ -579,6 +587,12 @@ iframe {
         border-bottom: 1px dashed #ddd;
         text-align: center;
         margin: 10px 0 30px; }
+      .article-detail-page .article-block .article-content .step-order-list {
+        list-style: none; }
+        .article-detail-page .article-block .article-content .step-order-list li {
+          line-height: 26px;
+          border-bottom: 1px dashed #eee;
+          margin-bottom: 10px; }
       .article-detail-page .article-block .article-content .update-info {
         border: 2px dashed #ddd;
         line-height: 2em;

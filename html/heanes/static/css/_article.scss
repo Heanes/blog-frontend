@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+$articleTipBgColor:#f8f8f8;
+$articleTipBorderColor:#f66;
 /**
  * @doc 文章相关
  * @author Heanes
@@ -220,6 +222,16 @@
                 line-height:2em;
                 font-size:13px;
                 margin-bottom:0.3em;
+                kbd{
+                    text-indent:0;
+                    margin:0 2px;
+                }
+                &.tip{
+                    text-indent:0;
+                    background-color:$articleTipBgColor;
+                    border-left:4px solid $articleTipBorderColor;
+                    padding: 12px 20px;
+                }
             }
             > p, p.is-normal{
                 text-indent:2em;
@@ -229,6 +241,14 @@
                 border-bottom:1px dashed #ddd;
                 text-align:center;
                 margin:10px 0 30px;
+            }
+            .step-order-list{
+                list-style:none;
+                li{
+                    line-height:26px;
+                    border-bottom:1px dashed #eee;
+                    margin-bottom:10px;
+                }
             }
             .update-info{
                 border:2px dashed #ddd;
