@@ -1,0 +1,120 @@
+/**
+ * @doc 仿iPlaySoft样式
+ * @author Heanes
+ * @time 2018-05-25 14:55:38 周五
+ */
+.article-content{
+    padding:10px;
+    word-break:break-all;
+    font-size:14px;
+
+    // 标题
+    h2{
+        color:#479ac1;
+        background:#f1f7fd;
+        border:1px solid #d2e8fa;
+        padding:10px;
+        margin-bottom:2em;
+        font-size:18px;
+    }
+    h3{
+        margin-bottom:1em;
+        color:#479ac1;
+        background:#f3f9ff;
+        border:1px solid #d2e8fa;
+        padding:4px;
+        font-size:16px;
+        margin-left:1em;
+    }
+    // 段落
+    p{
+        line-height:2em;
+        margin-bottom:0.3em;
+        &.tip{
+            text-indent:0;
+            background-color:$articleTipBgColor;
+            border-left:4px solid $articleTipBorderColor;
+            padding: 12px 20px;
+        }
+    }
+
+    > p, p.is-normal{
+        text-indent:2em;
+    }
+
+    // 列表
+    ol, ul{
+        margin-left:2em;
+    }
+
+    // 顺序列表
+    .step-order-list{
+        list-style:none;
+        li{
+            line-height:26px;
+            border-bottom:1px dashed #eee;
+            margin-bottom:10px;
+        }
+    }
+    // 更新信息
+    .update-info{
+        border:2px dashed #ddd;
+        line-height:2em;
+        padding:10px;
+        background-color:#eaf7f3;
+        p{
+            margin:0
+        }
+        margin:10px auto;
+    }
+
+    // 图片相关
+    // 图片说明
+    p.img-desc{
+        text-indent:0;
+        border-bottom:1px dashed #ddd;
+        text-align:center;
+        margin:10px 0 30px;
+    }
+    // 图片展示
+    img{
+        max-width:100%;
+
+        &.img-show{
+            box-shadow: 0 0 17px rgb(85, 85, 85);
+            border-radius: 7px;
+            &:hover{
+                box-shadow:0 0 6px 1px #8e8d8d;
+            }
+        }
+
+        /* 文章正文图片浮上时放大 */
+        /*&:hover{
+            transform:scale(1.01, 1.01);
+            transition:.5s transform;
+            border:0;
+            box-shadow:0 0 13px 2px #aaa
+        }*/
+    }
+
+    // 注解
+    .explain{
+        margin:2em;
+        padding:2em;
+        background-color:#f5f5f5;
+        font-size:12px;
+        border:1px solid #ddf0ed;
+        border-radius:6px;
+    }
+
+    // 键盘码
+    kbd{
+        text-indent:0;
+        margin:0 2px;
+    }
+
+    // 代码
+    .pre-wrap{
+        padding:0 2em;
+    }
+}

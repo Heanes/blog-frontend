@@ -17,6 +17,9 @@
     <!-- css -->
     <link rel="stylesheet" type="text/css" href="//ui.heanes.com/dist/css/heanesUI.css"/>
     <link type="text/css" rel="stylesheet" href="//r.html.heanes.com/work/heanes.com/autoCatalog.js/css/autoCatalog.css">
+    <link rel="stylesheet" type="text/css" href="/public/static/vendor/js/codeHighLight/syntaxhighlighter/3.0.83/styles/shCore.css"/>
+    <link rel="stylesheet" type="text/css" href="/public/static/vendor/js/codeHighLight/syntaxhighlighter/3.0.83/styles/shCoreDefault.css"/>
+    <link rel="stylesheet" type="text/css" href="/public/static/vendor/js/codeHighLight/syntaxhighlighter/3.0.83/styles/shThemeDefault.css"/>
     <link rel="stylesheet" type="text/css" href="../static/css/css.css"/>
     <title>CSS命名规范 - 文章详情页面 - 文章模块</title>
 </head>
@@ -102,6 +105,24 @@
                             <!-- 文章主体 -->
                             <div class="article-content" id="articleContent">
                                 <h2>文件规范</h2>
+                                <h3>文件均归档至约定的目录中</h3>
+                                <p>一般CSS分为两大类：通用类和业务类。</p>
+                                <h3>文件引入可通过外联或内联方式引入</h3>
+                                <div class="explain">
+                                    <p>外联是指在<code>head</code>中通过<code>link</code>的形式引入</p>
+                                    <pre class="brush: html">
+<link rel="stylesheet" type="text/css" href="//ui.heanes.com/dist/css/heanesUI.css"/>
+</pre>
+                                    <p>内联是指在页面中(一般是<code>head</code>中)通过<code>style</code>标签里直接书写css样式</p>
+                                    <pre class="brush: css">
+<style type="text/css">
+    .demo-style{
+        display:block;
+        background-color:#eee;
+    }
+</style>
+</pre>
+                                </div>
                                 <h2>注释规范</h2>
                                 <h2>命名规范</h2>
                                 <h2>书写规范</h2>
@@ -314,6 +335,17 @@
     <!-- S js S -->
     <script type="text/javascript" src="/public/static/vendor/js/jquery/2.1.4/jquery-2.1.4.min.js"></script>
     <script type="text/javascript" src="//r.html.heanes.com/work/heanes.com/autoCatalog.js/js/autoCatalog.js"></script>
+    <script type="text/javascript" src="/public/static/vendor/js/codeHighLight/syntaxhighlighter/3.0.83/scripts/shCore.js"></script>
+    <script type="text/javascript" src="/public/static/vendor/js/codeHighLight/syntaxhighlighter/3.0.83/scripts/shBrushXml.js"></script>
+    <script type="text/javascript" src="/public/static/vendor/js/codeHighLight/syntaxhighlighter/3.0.83/scripts/shBrushCss.js"></script>
+    <script type="text/javascript" src="/public/static/vendor/js/codeHighLight/syntaxhighlighter/3.0.83/scripts/shBrushPhp.js"></script>
+    <script type="text/javascript" src="/public/static/vendor/js/codeHighLight/syntaxhighlighter/3.0.83/scripts/shBrushJava.js"></script>
+    <script type="application/javascript">
+        SyntaxHighlighter.config.bloggerMode = true;
+        SyntaxHighlighter.config.toolbar = false;
+        SyntaxHighlighter.config.collapse = 'collapse';
+        SyntaxHighlighter.all();
+    </script>
     <script type="text/javascript" src="../static/js/common.js"></script>
     <script type="text/javascript">
         $(function () {
