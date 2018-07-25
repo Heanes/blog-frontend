@@ -629,7 +629,7 @@ iframe {
             box-shadow:0 0 13px 2px #aaa
         }*/ }
         .article-detail-page .article-block .article-content img.img-show {
-          box-shadow: 0 0 17px #555555;
+          box-shadow: 0 0 1px #555555;
           border-radius: 7px; }
           .article-detail-page .article-block .article-content img.img-show:hover {
             box-shadow: 0 0 6px 1px #8e8d8d; }
