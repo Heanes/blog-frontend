@@ -530,6 +530,9 @@ $articleTipBorderColor:#f66;
 /* 文章侧边目录 */
 .article-catalog-wrap{
     width:100%;
+    position: fixed;
+    height: 456px;
+    bottom: 10px;
     .auto-catalog{
         width:250px;
     }

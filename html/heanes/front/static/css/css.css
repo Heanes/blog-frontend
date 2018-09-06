@@ -883,7 +883,10 @@ iframe {
 
 /* 文章侧边目录 */
 .article-catalog-wrap {
-  width: 100%; }
+  width: 100%;
+  position: fixed;
+  height: 456px;
+  bottom: 10px; }
   .article-catalog-wrap .auto-catalog {
     width: 250px; }
 
