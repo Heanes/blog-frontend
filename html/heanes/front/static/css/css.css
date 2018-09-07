@@ -650,8 +650,10 @@ iframe {
       .article-detail-page .article-block .article-content kbd {
         text-indent: 0;
         margin: 0 2px; }
-      .article-detail-page .article-block .article-content .pre-wrap {
-        padding: 0 2em; }
+      .article-detail-page .article-block .article-content .pre-wrap,
+      .article-detail-page .article-block .article-content .pre-show,
+      .article-detail-page .article-block .article-content > pre {
+        margin: 0 2em; }
       .article-detail-page .article-block .article-content .syntaxhighlighter .container > div:nth-child(2n+1) {
         background-color: #f9f9f9 !important; }
   .article-detail-page .article-author-info {

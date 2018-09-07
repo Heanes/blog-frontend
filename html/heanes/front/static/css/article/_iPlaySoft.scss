@@ -141,8 +141,10 @@ $blockquoteColor:#555;
     }
 
     // 代码
-    .pre-wrap{
-        padding:0 2em;
+    .pre-wrap,
+    .pre-show,
+    > pre{
+        margin:0 2em;
     }
 
     /* 隔行换色 */
