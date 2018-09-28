@@ -401,7 +401,7 @@ iframe {
  * @time 2017-10-23 11:46:46 周一
  */
 .page-breadcrumb {
-  margin: 4px 14px;
+  margin: 4px 0;
   padding: 8px;
   background-color: #fff;
   border-bottom: 1px solid #f0efeb; }
@@ -487,7 +487,7 @@ iframe {
     margin-left: 10px;
     margin-right: 10px; }
   .article-detail-page .article-block {
-    padding: 20px 10px;
+    padding: 20px 0;
     /* 文章摘要 */
     /* 文章正文 */
     /**
@@ -661,7 +661,7 @@ iframe {
     border: 1px solid #ddd;
     border-radius: 10px;
     padding: 4px;
-    margin: 20px 30px;
+    margin: 20px;
     background-color: #f9f9f9; }
     .article-detail-page .article-author-info .link:hover {
       text-decoration: underline; }
@@ -720,7 +720,7 @@ iframe {
       font-size: 13px; }
   .article-detail-page .article-meta {
     margin: 10px 0;
-    padding: 0 30px; }
+    padding: 0 20px; }
     .article-detail-page .article-meta .meta-define-list {
       font-size: 13px;
       color: #444;

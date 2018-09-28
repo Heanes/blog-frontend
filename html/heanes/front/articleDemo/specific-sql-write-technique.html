@@ -104,7 +104,7 @@
                                 <h2>给查询记录添加行号</h2>
                                 <p>一般情况下，查询结果中没有每行的行号，此时用以下方法就可以解决了。</p>
                                 <h3>查询代码</h3>
-                                <pre>
+                                <pre class="brush:sql">
 select @row_no:=@row_no+1 as row_no, t.*
 from t_test1 t, (select @row_no:=0) b
 </pre>
@@ -117,7 +117,7 @@ from t_test1 t, (select @row_no:=0) b
                                 <h2>union查询中为结果添加来源表字段</h2>
                                 <p>有时候查问题时，若存在union查询的情况，查询出的结果有很多条时，要想知道每行结果到底是来自联合查询的哪个表时，就可以用一下方法。</p>
                                 <h3>查询代码</h3>
-                                <pre>
+                                <pre class="brush:sql">
 select 't1' as dbName, t1.* from t_test1 t1
 union
 select 't2' as dbName, t2.* from t_test2 t2
