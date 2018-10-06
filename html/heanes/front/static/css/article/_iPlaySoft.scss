@@ -147,6 +147,13 @@ $blockquoteColor:#555;
         margin:0 2em;
     }
 
+    // 注意信息
+    .notice{
+        padding: 10px;
+        border: 1px solid #eea236;
+        margin: 2em;
+    }
+
     /* 隔行换色 */
     .syntaxhighlighter .container > div:nth-child(2n+1){background-color:#f9f9f9 !important;}
 }
