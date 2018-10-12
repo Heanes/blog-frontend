@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <!-- meta -->
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+    <meta charset="UTF-8"/>
+    <!-- responsive -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="renderer" content="webkit"/>
+    <meta name="author" content="Heanes heanes.com email(heanes@163.com)"/>
+    <meta name="keywords" content="软件,商务,HTML,tutorials,source codes"/>
+    <meta name="description" content="描述，不超过150个字符"/>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="/public/static/image/favicon/favicon.ico"/>
+    <link rel="bookmark" href="/public/static/image/favicon/favicon.ico"/>
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="//ui.heanes.com/dist/css/heanesUI.css"/>
+    <link type="text/css" rel="stylesheet" href="/public/static/vendor/js/autoCatalog/1.0/dist/css/autoCatalog.css">
+    <link rel="stylesheet" type="text/css" href="/public/static/vendor/js/codeHighLight/syntaxhighlighter/3.0.83/styles/shCore.css"/>
+    <link rel="stylesheet" type="text/css" href="/public/static/vendor/js/codeHighLight/syntaxhighlighter/3.0.83/styles/shCoreDefault.css"/>
+    <link rel="stylesheet" type="text/css" href="/public/static/vendor/js/codeHighLight/syntaxhighlighter/3.0.83/styles/shThemeDefault.css"/>
+    <link rel="stylesheet" type="text/css" href="../static/css/css.css"/>
+    <title>CSS编写规范 - 文章详情页面 - 文章模块</title>
+</head>
+<body class="scrollbar scrollbar-mini responsive">
+<!-- S header 头部 S -->
+<div class="header"></div>
+<!-- E header 头部 E -->
+<!-- S main 主要内容 S -->
+<div class="main">
+    <!-- S main-top 主体顶部全宽度内容区域 S -->
+    <div class="main-top"></div>
+    <!-- E main-top 主体顶部全宽度内容区域 E -->
+    <div class="main-wrap">
+        <!-- S 主体顶部内容 S -->
+        <div class="main-content-top"></div>
+        <!-- E 主体顶部内容 E -->
+        <!-- S 主体内容 S -->
+        <div class="main-content clearfix">
+            <!-- S 中心-左侧边栏区域 S -->
+            <div class="left-wrap fl">
+                <div class="left-content"></div>
+            </div>
+            <!-- E 中心-左侧边栏区域 E -->
+            <!-- S 中心区域 S -->
+            <div class="center-wrap fl">
+                <div class="center-content">
+                    <div class="article-detail-page">
+                        <!-- 面包屑导航链接 -->
+                        <div class="page-breadcrumb article-category">
+                            <div class="breadcrumb-wrap">
+                                <div class="breadcrumb-cell breadcrumb-node breadcrumb-root">
+                                    <span class="breadcrumb-text"><a href="javascript:void(0);">首页</a></span>
+                                </div>
+                                <div class="breadcrumb-cell breadcrumb-delimiter">
+                                    <span class="separator"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+                                </div>
+                                <div class="breadcrumb-cell breadcrumb-node">
+                                    <span class="breadcrumb-text"><a href="javascript:void(0);">兴趣</a></span>
+                                </div>
+                                <div class="breadcrumb-cell breadcrumb-delimiter">
+                                    <span class="separator"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+                                </div>
+                                <div class="breadcrumb-cell breadcrumb-node">
+                                    <span class="breadcrumb-text"><a href="javascript:void(0);">漫画</a></span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 单篇文章 -->
+                        <div class="article-block">
+                            <div class="article-title-block">
+                                <!-- 文章标题 -->
+                                <div class="article-title">
+                                    <h1 class="entry-title">CSS编写规范</h1>
+                                </div>
+                                <!-- 文章相关属性信息 -->
+                                <div class="article-info">
+                                    <dl class="article-info-dl">
+                                        <dt>点击:</dt>
+                                        <dd>987</dd>
+                                        <dt><a href="#comment-list" class="comment-count">评论:</a></dt>
+                                        <dd><a href="#comment-list" class="comment-count">2</a></dd>
+                                        <dt>作者:</dt>
+                                        <dd>Heanes</dd>
+                                        <dt>责编:</dt>
+                                        <dd>Heanes</dd>
+                                        <dt>时间:</dt>
+                                        <dd>2015-05-19 09:46:35</dd>
+                                        <dt>来源:</dt>
+                                        <dd>原创</dd>
+                                    </dl>
+                                </div>
+                                <div class="article-operate">
+                                    <span class="op-item op-to-small-text" id="opToSmallTextBtn" title="减小正文字体">T</span>
+                                    <span class="op-item op-to-large-text" id="opToLargeTextBtn" title="增大正文字体">T</span>
+                                    <!--<span class="op-share-btn"><i class="fa fa-share-alt"></i></span>-->
+                                </div>
+                            </div>
+                            <div class="article-title-block-placeholder" id="articleTitleBlockPlaceholder"></div>
+                            <!-- 文章摘要 -->
+                            <!--<div class="article-abstract">
+                                <strong>摘要：</strong>摘要内容....
+                            </div>-->
+                            <!-- 文章主体 -->
+                            <div class="article-content" id="articleContent">
+                                <h2>文件规范</h2>
+                                <h3>文件均归档至约定的目录中</h3>
+                                <p>一般CSS分为两大类：通用类和业务类。</p>
+                                <p>通用的CSS文件，可放在如下目录中：</p>
+                                <pre class="brush:html">
+static/css/common   共同部分
+static/css/style    网站风格样式
+                                </pre>
+                                <p>业务类的CSS文件，可放在如下目录中：</p>
+                                <pre class="brush:html">
+static/css/article      文章
+static/css/project      项目
+static/css/book         书籍
+static/css/movie        电影
+static/css/music        音乐
+... 等等
+                                </pre>
+                                <h3>文件引入可通过外联或内联方式引入</h3>
+                                <p>link和style标签都应该放入head中，原则上，不允许在html上直接写样式。避免在CSS中使用@import，嵌套不要超过一层。</p>
+                                <p><strong>注：随着时代发展，不建议写内联样式。</strong></p>
+                                <div class="explain">
+                                    <p>外联是指在<code>head</code>中通过<code>link</code>的形式引入</p>
+                                    <pre class="brush:html">
+<link rel="stylesheet" type="text/css" href="//ui.heanes.com/dist/css/heanesUI.css"/>
+</pre>
+                                    <p>内联是指在页面中(一般是<code>head</code>中)通过<code>style</code>标签里直接书写css样式</p>
+                                    <pre class="brush: css">
+<style type="text/css">
+    .demo-style{
+        display:block;
+        background-color:#eee;
+    }
+</style>
+</pre>
+                                </div>
+                                <h3>组件化形式组织好css文件</h3>
+                                <p>组件化是指将网页上的各类元素总结归类，这样可以提高复用性，也好统一风格。</p>
+                                <p>例如：</p>
+                                <pre class="brush:html">
+static/css/button       按钮
+static/css/icon         图标
+static/css/text         文本
+static/css/input        表单输入
+static/css/select       表单下拉项
+static/css/table        表格
+static/css/pagination   分页
+... 等等
+                                </pre>
+                                <h2>注释规范</h2>
+                                <p>良好的注释可以帮助你在庞杂的css样式中找到需要修改的文件的大体位置。</p>
+                                <h3>1、文件顶部注释（推荐使用）</h3>
+                                <p>这部分主要是对整个文件做大体说明。</p>
+                                <pre class="brush:css">
+/**
+ * @doc 中/英文说明
+ * @author Heanes
+ * @time 2018-05-25 14:55:38 周五
+ */
+                                </pre>
+                                <h3>2、模块注释</h3>
+                                <pre class="brush:css">
+/* module: module1 by Heaness */
+…
+/* module: module2 by 张三 */
+                                </pre>
+                                <p>为方便区分和定位，还可以添加一定数量的分隔符，是模块的界限更明显：</p>
+                                <pre class="brush:css">
+/* -------------------- module: module1 by Heanes -------------------- */
+…
+/* -------------------- module: module1 by 张三 -------------------- */
+                                </pre>
+                                <h3>3、 单行注释与多行注释</h3>
+                                <p>单行注释可以写在单独一行，也可以写在行尾，注释中的每一行长度不超过40个汉字，或者80个英文字符。</p>
+                                <pre class="brush:css">
+/* this is a short comment */
+                                </pre>
+<pre class="brush:css">
+/**
+ * this is comment line 1.
+ * this is comment line 2.
+ */
+                                </pre>
+                                <h3>4、特殊注释</h3>
+                                <pre class="brush:css">
+/* 用于标注修改、待办等信息 */
+/* TODO: something by userName 2018-05-25 14:55:38 周五 */
+/* BUGFIX: something by userName 2018-05-25 14:55:38 周五 */
+                                </pre>
+                                <h3>5、区块注释</h3>
+                                <pre class="brush:css">
+/* Header */
+/* Footer */
+/* Gallery */
+                                </pre>
+                                <p>对一个代码区块注释（可选），将样式语句分区块并在新行中对其注释。</p>
+                                <h2>命名规范</h2>
+                                <h3>1. 使用有意义的或通用的class命名</h3>
+                                <p>
+                                    命名应反映该元素的功能或使用通用名称，而不要用抽象的晦涩的命名。
+                                    反映元素的使用目的是首选；使用通用名称代表该元素不表特定意义，与其同级元素无异，通常是用于辅助命名；
+                                    使用功能性或通用的名称可以更适用于文档或模版变化的情况。
+                                </p>
+                                <h3>2. 不建议使用ID选择器</h3>
+                                <p>ID一般是唯一标识，通用性不强，也就意味着重用性低。</p>
+                                <h3>3. 不建议使用太多的纯标签选择器</h3>
+                                <pre class="brush:css;">
+form{
+    margin:0;
+    padding:0
+}
+                                </pre>
+                                <h3>4. 命名时需要注意的点：</h3>
+                                <ol class="step-order-list">
+                                    <li>规则命名中，一律采用小写加中划线的方式，不允许使用大写字母或 _</li>
+                                    <li>命名避免使用中文拼音，应该采用更简明有语义的英文单词进行组合</li>
+                                    <li>命名注意缩写，但是不能盲目缩写，具体请参见常用的CSS命名规则</li>
+                                    <li>不允许通过1、2、3等序号进行命名</li>
+                                    <li>避免class与id重名</li>
+                                    <li>id用于标识模块或页面的某一个父容器区域，名称必须唯一，不要随意新建id</li>
+                                    <li>class用于标识某一个类型的对象，命名必须言简意赅。</li>
+                                    <li>尽可能提高代码模块的复用，样式尽量用组合的方式</li>
+                                    <li>规则名称中不应该包含颜色（red/blue）、定位（left/right）等与具体显示效果相关的信息。应该用意义命名，而不是样式显示结果命名。</li>
+                                </ol>
+                                <h3>5. 常用命名</h3>
+                                <h4>(1). 页面结构</h4>
+                                <div style="margin-left:2em">
+                                    <ul>
+                                        <li>容器: container</li>
+                                        <li>页头：header</li>
+                                        <li>内容：content/container</li>
+                                        <li>页面主体：main</li>
+                                        <li>页尾：footer</li>
+                                        <li>导航：nav</li>
+                                        <li>侧栏：sidebar</li>
+                                        <li>栏目：column</li>
+                                        <li>页面外围控制整体布局宽度：wrapper</li>
+                                        <li>左右中：left right center</li>
+                                    </ul>
+                                </div>
+                                <h4>(2). 导航</h4>
+                                <div style="margin-left:2em">
+                                    <ul>
+                                        <li>导航：nav</li>
+                                        <li>主导航：mainbav</li>
+                                        <li>子导航：subnav</li>
+                                        <li>顶导航：topnav</li>
+                                        <li>边导航：sidebar</li>
+                                        <li>左导航：leftsidebar</li>
+                                        <li>右导航：rightsidebar</li>
+                                        <li>菜单：menu</li>
+                                        <li>子菜单：submenu</li>
+                                        <li>标题: title</li>
+                                        <li>摘要: summary</li>
+                                    </ul>
+                                </div>
+                                <h4>(3). 功能</h4>
+                                <div style="margin-left:2em">
+                                    <ul>
+                                        <li>标志：logo</li>
+                                        <li>广告：banner</li>
+                                        <li>登陆：login</li>
+                                        <li>登录条：loginbar</li>
+                                        <li>注册：regisiter</li>
+                                        <li>搜索：search</li>
+                                        <li>功能区：shop</li>
+                                        <li>标题：title</li>
+                                        <li>加入：joinus</li>
+                                        <li>状态：status</li>
+                                        <li>按钮：btn</li>
+                                        <li>滚动：scroll</li>
+                                        <li>标签页：tab</li>
+                                        <li>文章列表：list</li>
+                                        <li>提示信息：msg</li>
+                                        <li>当前的: current</li>
+                                        <li>小技巧：tips</li>
+                                        <li>图标: icon</li>
+                                        <li>注释：note</li>
+                                        <li>指南：guild</li>
+                                        <li>服务：service</li>
+                                        <li>热点：hot</li>
+                                        <li>新闻：news</li>
+                                        <li>下载：download</li>
+                                        <li>投票：vote</li>
+                                        <li>合作伙伴：partner</li>
+                                        <li>友情链接：link</li>
+                                        <li>版权：copyright</li>
+                                    </ul>
+                                </div>
+                                <h2>书写规范</h2>
+                                <h3>1、排版规范</h3>
+                                <p>(1)使用4个空格，而不使用tab或者混用空格+tab作为缩进；</p>
+                                <p>(2)规则可以写成单行，或者多行，但是整个文件内的规则排版必须统一；</p>
+                                <p>每一个属性值后必须添加分号; </p>
+                                <p>多个selector共用一个样式集，则多个selector必须写成多行形式 ；</p>
+                                <h3>2、属性编写顺序</h3>
+                                <ol class="step-order-list">
+                                    <li>显示属性：display/list-style/position/float/clear …</li>
+                                    <li>自身属性（盒模型）：width/height/margin/padding/border</li>
+                                    <li>背景：background</li>
+                                    <li>行高：line-height</li>
+                                    <li>文本属性：color/font/text-decoration/text-align/text-indent/vertical-align/white-space/content…</li>
+                                    <li>其他：cursor/z-index/zoom/overflow</li>
+                                    <li>CSS3属性：transform/transition/animation/box-shadow/border-radius</li>
+                                    <li>如果使用CSS3的属性，如果有必要加入浏览器前缀，则按照 -webkit- / -moz- / -ms- / -o- / std的顺序进行添加，标准属性写在最后。</li>
+                                    <li>链接的样式请严格按照如下顺序添加： a:link -&gt; a:visited -&gt; a:hover -&gt; a:active</li>
+                                </ol>
+                                <h3>3、规则书写规范</h3>
+                                <div style="margin-left:2em">
+                                    <ul>
+                                        <li>使用单引号，不允许使用双引号;</li>
+                                        <li>每个声明结束都应该带一个分号，不管是不是最后一个声明;</li>
+                                        <li>除字体设置外，CSS文件中的所有的代码都应该小写;</li>
+                                        <li>除了重置浏览器默认样式外，禁止直接为html tag添加css样式设置;</li>
+                                        <li>每一条规则应该确保选择器唯一，禁止直接为全局.nav/.header/.body等类设置属性;</li>
+                                    </ul>
+                                </div>
+                                <h3>4、代码性能优化</h3>
+                                <div style="margin-left:2em">
+                                    <ul>
+                                        <li>合并margin、padding、border的-left/-top/-right/-bottom的设置，尽量使用短名称。</li>
+                                        <li>选择器应该在满足功能的基础上尽量简短，减少选择器嵌套，查询消耗。但是一定要避免覆盖全局样式设置。</li>
+                                        <li>注意选择器的性能，不要使用低性能的选择器。</li>
+                                        <li>禁止在css中使用*选择符。</li>
+                                        <li>除非必须，否则，一般有class或id的，不需要再写上元素对应的tag。</li>
+                                        <li>0后面不需要单位，比如0px可以省略成0，0.8px可以省略成.8px。</li>
+                                        <li>如果可以，颜色尽量用三位字符表示，例如<code>#dddddd</code>写成<code>#ddd</code> 。</li>
+                                        <li>如果没有边框时，不要写成border:0，应该写成border:none 。</li>
+                                        <li>尽量避免使用AlphaImageLoader 。</li>
+                                        <li>在保持代码解耦的前提下，尽量合并重复的样式。</li>
+                                        <li>background、font等可以缩写的属性，尽量使用缩写形式 。</li>
+                                    </ul>
+                                </div>
+                                <h3>5、字体规则</h3>
+                                <div style="margin-left:2em">
+                                    <ul>
+                                        <li>为了防止文件合并及编码转换时造成问题，建议将样式中文字体名字改成对应的英文名字，如：黑体(SimHei) 宋体(SimSun) 微软雅黑 (Microsoft Yahei，几个单词中间有空格组成的必须加引号)</li>
+                                        <li>字体粗细采用具体数值，粗体bold写为700，正常normal写为400</li>
+                                        <li>font-size必须以px或pt为单位，推荐用px（注：pt为打印版字体大小设置），不允许使用xx-small/x-small/small/medium/large/x-large/xx-large等值</li>
+                                        <li>为了对font-family取值进行统一，更好的支持各个操作系统上各个浏览器的兼容性，font-family不允许在业务代码中随意设置</li>
+                                    </ul>
+                                </div>
+                                <h2>测试规范</h2>
+                                <h3>1、了解浏览器特效支持</h3>
+                                <h3>2、设定浏览器支持标准</h3>
+                                <h3>3、常用样式测试工具</h3>
+                                <div style="margin-left:2em">
+                                    <ul>
+                                        <li>W3C CSS validator：<a href="http://jigsaw.w3.org/css-validator/">http://jigsaw.w3.org/css-validator/</a></li>
+                                        <li>CSS Lint：<a href="http://csslint.net/">http://csslint.net/</a></li>
+                                        <li>CSS Usage：<a href="https://addons.mozilla.org/en-us/firefox/addon/css-usage/">https://addons.mozilla.org/en-us/firefox/addon/css-usage/</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 作者相关信息 -->
+                        <div class="article-author-info relative">
+                            <div class="author-avatar inline-block">
+                                <i style="background-image:url('../static/image/upload/user/avatar/anonymous.jpg')" class="avatar-img"></i>
+                            </div>
+                            <div class="author-info inline-block">
+                                <a class="link author-link" href="javascript:;"><strong class="author-nickname inline-block">Heanes</strong></a>
+                                <p class="author-about">津乐网创始人，一个全栈爱好者</p>
+                                <p class="author-description">喜欢各种技术</p>
+                                <p class="author-links">
+                                    <a class="link donate-to-author" href="javascript:;"><i class="fa fa-coffee" aria-hidden="true"></i>  请作者喝杯咖啡?</a>
+                                    <span class="vertical-line-margin">|</span>
+                                    <a class="link" href="javascript:;">看他的专栏</a>
+                                    <span class="vertical-line-margin">|</span>
+                                    <a class="link" href="javascript:;">新浪微博</a>
+                                    <span class="vertical-line-margin">|</span>
+                                    <a class="link" href="javascript:;">邮箱</a>
+                                </p>
+                            </div>
+                            <div class="article-author-info-title">
+                                <i class="fa fa-edit" aria-hidden="true"></i>
+                                <span>关于本文的作者</span>
+                            </div>
+                        </div>
+                        <!-- 文章相关信息 -->
+                        <div class="article-meta">
+                            <dl class="meta-define-list">
+                                <dt class="item-name">本文分类：</dt>
+                                <dd class="item-value"><a href="javascript:;">闲言碎语</a></dd>
+                            </dl>
+                            <dl class="meta-define-list">
+                                <dt class="item-name">本文标签：</dt>
+                                <dd class="item-value"><a href="javascript:;">漫画</a></dd>
+                                <dd class="item-value">，<a href="javascript:;">友谊</a></dd>
+                                <dd class="item-value">，<a href="javascript:;">网络</a></dd>
+                            </dl>
+                            <dl class="meta-define-list">
+                                <dt class="item-name">流行热度：</dt>
+                                <dd class="item-value">已超过 6,998 人围观了本文</dd>
+                            </dl>
+                            <dl class="meta-define-list">
+                                <dt class="item-name">生产日期：</dt>
+                                <dd class="item-value">异次纪元 16年07月8日 - 21时36分08秒</dd>
+                            </dl>
+                            <dl class="meta-define-list">
+                                <dt class="item-name">文章链接：</dt>
+                                <dd class="item-value">
+                                    <strong class="url">http://blog.heanes.com/article/1.html</strong>
+                                    <span class="copy-link">[<a href="javascript:;" id="copyUrl">复制</a>]</span>
+                                    <span>(转载时请注明本文出处及文章链接)</span>
+                                </dd>
+                            </dl>
+                        </div>
+                        <!-- 文章相关交互 -->
+                        <div class="article-handle">
+                            <div class="article-vote">
+                                <span class="article-collect"><a href="javascript:;" class="vote-link collect-count" id="collectArticle"><i class="vote-icon fa fa-star" aria-hidden="true"></i>收藏(<span id="articleCollectCount">134</span>)</a></span>
+                                <span class="article-thumbs-up"><a href="javascript:;" class="vote-link thumbs-up" id="thumbsUpArticle"><i class="vote-icon fa fa-thumbs-o-up" aria-hidden="true"></i>点赞(<span id="articleThumbsUpCount">247</span>)</a></span>
+                            </div>
+                            <!-- 文章分享按钮 -->
+                            <div class="article-share-block">
+                                <div class="share-title">
+                                    <span class="share-title-text">分享给小伙伴</span>
+                                </div>
+                                <!-- 百度分享 -->
+                                <div class="bdsharebuttonbox">
+                                    <a href="#" class="bds_more" data-cmd="more"></a>
+                                    <a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+                                    <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+                                    <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+                                    <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+                                    <a href="#" class="bds_douban" data-cmd="douban" title="分享到豆瓣"></a>
+                                    <a href="#" class="bds_youdao" data-cmd="youdao" title="分享到有道云笔记"></a>
+                                    <a class="bds_more" data-cmd="more"></a>
+                                    <a class="bds_count" data-cmd="count"></a>
+                                </div>
+                                <script>
+                                    window._bd_share_config = {
+                                        "common": {
+                                            "bdSnsKey": {},
+                                            "bdText": "",
+                                            "bdMini": "2",
+                                            "bdMiniList": false,
+                                            "bdPic": "",
+                                            "bdStyle": "0",
+                                            "bdSize": "32"
+                                        },
+                                        "share": {}
+                                    };
+                                    with (document)0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src =
+                                        '//sharebaidu.heanes.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];
+                                </script>
+                            </div>
+                        </div>
+                        <!-- 评论区域 -->
+                        <div class="article-comment-block margin-common" id="comment">
+                            <div class="add-comment-block">
+                                <h1 class="add-comment-title"><a class="link" id="add-comment">发表评论</a></h1>
+                                <p class="add-comment-remind">愿您的每句评论，都能给大家的生活添色彩，带来共鸣，带来思索，带来快乐。</p>
+                                <div class="add-comment">
+                                    <form class="comment-add-form" id="commentAddForm">
+                                        <div class="input-group inline">
+                                            <label for="userName"><span class="must">*</span>姓名：</label>
+                                            <input type="text" class="form-control" name="userName" id="userName" />
+                                        </div>
+                                        <div class="input-group inline">
+                                            <label for="email"><span class="must">*</span>E-Mail：</label>
+                                            <input type="text" class="form-control" name="email" id="email" />
+                                        </div>
+                                        <div class="input-group inline">
+                                            <label for="website">你的网站：</label>
+                                            <input type="text" class="form-control" name="website" id="website" />
+                                        </div>
+                                        <div class="input-group">
+                                            <label for="commentContent"></label>
+                                            <textarea name="commentContent" id="commentContent" class="form-control comment-textarea"></textarea>
+                                        </div>
+                                        <div class="add-comment-handle">
+                                            <input type="submit" class="btn submit-button button-normal" id="commentAddSubmit" />
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="comment-list-block relative">
+                                <!-- 评论列表刷新、排序 -->
+                                <div class="comment-list-handle">
+                                    <div class="input-row inline-block">
+                                        <a href="javascript:;" id="refreshCommentList" class="refresh-comment-list">刷新</a>
+                                        <input type="radio" name="sort" id="newest"/>
+                                        <label for="newest">最新</label>
+                                        <input type="radio" name="sort" id="earliest"/>
+                                        <label for="earliest">最早</label>
+                                    </div>
+                                </div>
+                                <h3 class="comment-list-title"><a class="link" id="comment-list">评论列表</a></h3>
+                                <ul class="comment-list">
+                                    <li class="comment-wrap no-data-wrap">
+                                        <div class="comment-content">
+                                            <p>暂无评论</p>
+                                        </div>
+                                    </li>
+                                    <li class="comment-wrap no-data-wrap get-data-error" id="getCommentListDataError">
+                                        <div class="comment-content">
+                                            <p>暂无评论</p>
+                                        </div>
+                                    </li>
+                                    <li class="comment-wrap">
+                                        <div class="comment-info">
+                                            <span class="comment-user-avatar"><i class="user-avatar" style="background-image:url('../static/image/upload/user/avatar/anonymous.jpg')"></i></span>
+                                            <span class="comment-user-name"><a href="javascript:;" class="user-name-a">蒲常莹</a></span>
+                                            <span class="comment-user-ip">北京海淀</span>
+                                            <span>2015-05-19 17:26:28</span>
+                                            <span class="comment-floor"><a id="comment-floor-1" class="comment-floor-a">1楼</a></span>
+                                        </div>
+                                        <div class="comment-content">
+                                            <p class="p">呵呵</p>
+                                        </div>
+                                        <div class="comment-handle">
+                                            <a class="handle-item comment-complain" href="javascript:;">举报</a>
+                                            <i class="border-separate"></i>
+                                            <a class="handle-item comment-vote-up" href="javascript:;">支持(46)</a>
+                                            <i class="border-separate"></i>
+                                            <a class="handle-item comment-vote-down" href="javascript:;">反对(0)</a>
+                                            <i class="border-separate"></i>
+                                            <a class="handle-item comment-reply" href="javascript:;">回复</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- E 中心区域 E -->
+            <!-- S 中心-右侧边栏区域 S -->
+            <div class="right-wrap fl">
+                <div class="right-content">
+                    <div class="article-catalog-wrap" id="articleCatalog"></div>
+                </div>
+            </div>
+            <!-- E 中心-右侧边栏区域 E -->
+        </div>
+        <!-- S 主体底部区域 S -->
+        <div class="main-content-bottom"></div>
+        <!-- E 主体底部区域 E -->
+    </div>
+    <!-- S 底部全宽度内容区域 S -->
+    <div class="main-bottom"></div>
+    <!-- S 底部全宽度内容区域 S -->
+</div>
+<!-- E main 主要内容 E -->
+<!-- S footer 脚部 S -->
+<div class="footer"></div>
+<!-- E footer 脚部 E -->
+
+<!-- S 左侧钉住功能区 S -->
+<div class="left-bar"></div>
+<!-- E 左侧钉住功能区 E -->
+<!-- S 右侧钉住功能区 S -->
+<div class="right-bar"></div>
+<!-- E 右侧钉住功能区 E -->
+
+<div class="static-resource">
+    <!-- S js S -->
+    <script type="text/javascript" src="/public/static/vendor/js/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript" src="/public/static/vendor/js/autoCatalog/1.0/dist/js/autoCatalog.js"></script>
+    <script type="text/javascript" src="/public/static/vendor/js/codeHighLight/syntaxhighlighter/3.0.83/scripts/shCore.js"></script>
+    <script type="text/javascript" src="/public/static/vendor/js/codeHighLight/syntaxhighlighter/3.0.83/scripts/shBrushXml.js"></script>
+    <script type="text/javascript" src="/public/static/vendor/js/codeHighLight/syntaxhighlighter/3.0.83/scripts/shBrushCss.js"></script>
+    <script type="text/javascript" src="/public/static/vendor/js/codeHighLight/syntaxhighlighter/3.0.83/scripts/shBrushPhp.js"></script>
+    <script type="text/javascript" src="/public/static/vendor/js/codeHighLight/syntaxhighlighter/3.0.83/scripts/shBrushJava.js"></script>
+    <script type="application/javascript">
+        SyntaxHighlighter.config.bloggerMode = true;
+        SyntaxHighlighter.defaults.toolbar = false;
+        SyntaxHighlighter.config.collapse = 'collapse';
+        SyntaxHighlighter.all();
+    </script>
+    <script type="text/javascript" src="../static/js/common.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            var $articleContent = $('#articleContent');
+            /**
+             * @doc 仿百度百科自动生成文章目录导航
+             * @author Heanes
+             * @time 2016-04-13 18:07:26
+             */
+            $articleContent.autoCatalog({
+                catalogContainer: $('#articleCatalog'),        // 放置生成目录的容器dom
+                step:90,
+                alwaysShow:true
+            });
+
+        });
+    </script>
+    <!-- E js E -->
+</div>
+</body>
+</html>
