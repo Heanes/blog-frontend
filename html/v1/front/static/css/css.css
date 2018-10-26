@@ -153,11 +153,11 @@
   .responsive .left-bar {
     left: 0;
     width: 50px;
-    background: rgba(215, 230, 233, 0.5); }
+    /*background:rgba(215, 230, 233, 0.5)*/ }
   .responsive .right-bar {
     right: 0;
     width: 35px;
-    background: rgba(0, 0, 0, 0.5); }
+    /*background:rgba(0, 0, 0, .5)*/ }
 
 /* 页面框架示例布局 */
 .responsive-example {
@@ -189,10 +189,10 @@
           height: 600px; }
   .responsive-example .left-bar {
     width: 50px;
-    background: rgba(215, 230, 233, 0.5); }
+    /*background:rgba(215, 230, 233, 0.5)*/ }
   .responsive-example .right-bar {
     width: 35px;
-    background: rgba(0, 0, 0, 0.5); }
+    /*background:rgba(0, 0, 0, .5)*/ }
   .responsive-example.marked .header:before,
   .responsive-example.marked .footer:before {
     display: inline-block;
