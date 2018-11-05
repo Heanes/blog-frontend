@@ -661,6 +661,8 @@ iframe {
         padding: 10px;
         border: 1px solid #eea236;
         margin: 2em; }
+      .article-detail-page .article-block .article-content .notice-important {
+        color: #f00; }
       .article-detail-page .article-block .article-content .syntaxhighlighter .container > div:nth-child(2n+1) {
         background-color: #f9f9f9 !important; }
   .article-detail-page .article-author-info {

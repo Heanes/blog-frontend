@@ -154,6 +154,10 @@ $blockquoteColor:#555;
         margin: 2em;
     }
 
+    .notice-important{
+        color:#f00;
+    }
+
     /* 隔行换色 */
     .syntaxhighlighter .container > div:nth-child(2n+1){background-color:#f9f9f9 !important;}
 }
