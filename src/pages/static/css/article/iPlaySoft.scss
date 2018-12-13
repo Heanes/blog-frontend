@@ -1,0 +1,168 @@
+/**
+ * @doc 仿iPlaySoft样式
+ * @author Heanes
+ * @time 2018-05-25 14:55:38 周五
+ */
+
+// 注意说明相关
+$articleTipBgColor:#f8f8f8;
+$articleTipBorderColor:#f66;
+
+// 标题相关颜色
+$titleBgColor:#f1f7fd;
+$titleColor:#479ac1;
+$titleBorderColor:#d2e8fa;
+
+// explain相关颜色
+$explainBgColor:#fbfbfb;
+$explainColor:#888;
+$explainBorderColor:#f2f2f2;
+
+// blockquote相关颜色
+$blockquoteBorder:2px solid #72a0ce;
+$blockquotePadding:12px;
+$blockquoteBgColor:#fbfbfb;
+$blockquoteColor:#555;
+
+.article-content{
+    padding:10px;
+    line-height:1.5em;
+    word-break:break-all;
+    font-size:14px;
+
+    // 标题
+    h1,h2{
+        color:$titleColor;
+        background:$titleBgColor;
+        border:1px solid $titleBorderColor;
+    }
+    h2{
+        padding:10px;
+        margin:1.5em 0;
+        font-size:18px;
+    }
+    h3{
+        padding:4px;
+        font-size:16px;
+        margin:1em 0 1em 1em;
+    }
+    h4{
+        margin-left:2em;
+    }
+    // 段落
+    p{
+        line-height:2em;
+        margin-bottom:0.3em;
+        &.tip{
+            text-indent:0;
+            background-color:$articleTipBgColor;
+            border-left:4px solid $articleTipBorderColor;
+            padding: 12px 20px;
+        }
+    }
+
+    > p, p.is-normal{
+        text-indent:2em;
+    }
+
+    // 列表
+    ol, ul{
+        margin-left:2em;
+    }
+
+    // 顺序列表
+    .step-order-list{
+        list-style-position:inside;
+        li{
+            line-height:26px;
+            border-bottom:1px dashed #eee;
+            margin-bottom:10px;
+        }
+    }
+    // 更新信息
+    .update-info{
+        border:2px dashed #ddd;
+        line-height:2em;
+        padding:10px;
+        background-color:#eaf7f3;
+        p{
+            margin:0
+        }
+        margin:10px auto;
+    }
+
+    // 图片相关
+    // 图片说明
+    p.img-desc{
+        text-indent:0;
+        border-bottom:1px dashed #ddd;
+        text-align:center;
+        margin:10px 0 30px;
+    }
+    // 图片展示
+    img{
+        max-width:100%;
+
+        &.img-show{
+            box-shadow: 0 0 1px rgb(85, 85, 85);
+            border-radius: 7px;
+            &:hover{
+                box-shadow:0 0 6px 1px #8e8d8d;
+            }
+        }
+
+        /* 文章正文图片浮上时放大 */
+        /*&:hover{
+            transform:scale(1.01, 1.01);
+            transition:.5s transform;
+            border:0;
+            box-shadow:0 0 13px 2px #aaa
+        }*/
+    }
+
+    // 注解
+    .explain{
+        margin:2em;
+        padding:2em;
+        font-size:12px;
+        border:1px solid $explainBorderColor;
+        border-radius:6px;
+        color:$explainColor;
+        background-color:$explainBgColor;
+    }
+    // 引用
+    blockquote{
+        border:$blockquoteBorder;
+        padding:$blockquotePadding;
+        margin:1em 2em;
+        background-color:$blockquoteBgColor;
+        color:$blockquoteColor;
+    }
+
+    // 键盘码
+    kbd{
+        text-indent:0;
+        margin:0 2px;
+    }
+
+    // 代码
+    .pre-wrap,
+    .pre-show,
+    > pre{
+        margin:0 2em;
+    }
+
+    // 注意信息
+    .notice{
+        padding: 10px;
+        border: 1px solid #eea236;
+        margin: 2em;
+    }
+
+    .notice-important{
+        color:#f00;
+    }
+
+    /* 隔行换色 */
+    .syntaxhighlighter .container > div:nth-child(2n+1){background-color:#f9f9f9 !important;}
+}

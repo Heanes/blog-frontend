@@ -1,0 +1,70 @@
+{
+    "name": "blog-ui",
+    "version": "1.0.0",
+    "description": "blog-ui, use webpack",
+    "private": true,
+    "scripts": {
+        "start": "webpack-dev-server --inline --progress --config build/webpack.dev.js",
+        "dev": "webpack --progress --colors --bail --config build/webpack.dev.js",
+        "build": "webpack --progress --colors --bail --config build/webpack.prod.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Heanes/blog-ui.git"
+    },
+    "keywords": [],
+    "author": "Heanes",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Heanes/blog-ui/issues"
+    },
+    "homepage": "https://github.com/Heanes/blog-ui#readme",
+    "devDependencies": {
+        "@babel/core": "^7.2.0",
+        "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+        "@babel/preset-env": "^7.2.0",
+        "babel-eslint": "^10.0.1",
+        "babel-loader": "^8.0.4",
+        "clean-webpack-plugin": "^1.0.0",
+        "copy-webpack-plugin": "^4.6.0",
+        "css-loader": "^1.0.1",
+        "eslint": "^5.9.0",
+        "eslint-config-standard": "^12.0.0",
+        "eslint-friendly-formatter": "^4.0.1",
+        "eslint-loader": "^2.1.1",
+        "eslint-plugin-html": "^5.0.0",
+        "eslint-plugin-import": "^2.7.0",
+        "eslint-plugin-node": "^8.0.0",
+        "eslint-plugin-promise": "^4.0.1",
+        "eslint-plugin-standard": "^4.0.0",
+        "eslint-plugin-vue": "^5.0.0",
+        "file-loader": "^2.0.0",
+        "friendly-errors-webpack-plugin": "^1.7.0",
+        "glob": "^7.1.3",
+        "html-webpack-plugin": "^3.2.0",
+        "mini-css-extract-plugin": "^0.4.4",
+        "node-notifier": "^5.3.0",
+        "node-sass": "^4.10.0",
+        "optimize-css-assets-webpack-plugin": "^5.0.1",
+        "portfinder": "latest",
+        "postcss-loader": "^3.0.0",
+        "sass-loader": "^7.1.0",
+        "shelljs": "^0.8.3",
+        "style-loader": "^0.23.1",
+        "uglifyjs-webpack-plugin": "latest",
+        "url-loader": "^1.1.2",
+        "vue-loader": "^15.4.2",
+        "vue-style-loader": "^4.1.2",
+        "vue-template-compiler": "^2.5.17",
+        "webpack": "^4.27.0",
+        "webpack-cli": "^3.1.2",
+        "webpack-dev-server": "^3.1.10",
+        "webpack-merge": "^4.1.4",
+        "webpack-module-hot-accept": "^1.0.5"
+    },
+    "dependencies": {
+        "jquery": "^3.3.1",
+        "vue": "^2.5.17",
+        "vue-router": "^3.0.2"
+    }
+}
