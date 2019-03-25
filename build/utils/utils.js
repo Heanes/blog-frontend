@@ -31,116 +31,141 @@
  * @author Heanes
  * @time 2018-11-13 11:48:38 周二
  */
-function getFormatDate(format, date, language) {
-
-    // 自动补零
-    let zeroize = function (value, length) {
-        if (!length) length = 2;
-        value = String(value);
-        let zeros = '';
-        for (let i = 0; i < (length - value.length); i++) {
-            zeros += '0';
-        }
-        return zeros + value;
-    };
-
-    // 补充默认值
-    date = date || new Date();
-    format = format || 'yyyy-MM-dd HH:mm:ss ddd';
-    language = language || 'chinese';
-
-    // 星期字符库
-    let week = {
-        chinese: {
-            short: ['周天', '周一', '周二', '周三', '周四', '周五', '周六'],
-            long: ['星期天', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六'],
-        },
-        english: {
-            short: ['Sun', 'Mon', 'Tue', 'Wed', 'Thr', 'Fri', 'Sat'],
-            long: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
-        }
-    };
-
-    // 月份字符库
-    let month = {
-        chinese: {
-            short: ['一月', '二月', '三月', '四月', '五月', '六月', '七月', '八月', '九月', '十月', '十一月', '十二月'],
-            long: ['一月', '二月', '三月', '四月', '五月', '六月', '七月', '八月', '九月', '十月', '十一月', '十二月'],
-        },
-        english: {
-            short: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
-            long: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
-        }
-    };
-
-    // 语言别名库
-    let languageLib = {
-        chinese: ['chinese', 'cn', 'zh', 'zh-cn'],
-        english: ['english', 'en', 'us', 'en-us']
-    };
-    for(let field in languageLib){
-        let item = languageLib[field];
-        if(item.includes(language)){
-            language = field;
-            break;
-        }
+function getFormatDate (format, date, language) {
+  // 自动补零
+  let zeroize = function (value, length) {
+    if (!length) length = 2;
+    value = String(value);
+    let zeros = '';
+    for (let i = 0; i < (length - value.length); i++) {
+      zeros += '0';
     }
+    return zeros + value;
+  };
 
-    return format.replace(/"[^"]*"|'[^']*'|\b(?:d{1,4}|M{1,4}|yy(?:yy)?|([hHmstTql])\1?|[lLZ])\b/g, function($0) {
-        switch ($0) {
-            case 'd': return date.getDate();
-            case 'dd': return zeroize(date.getDate());
-            case 'ddd': return week[language]['short'][date.getDay()];
-            case 'dddd': return week[language]['long'][date.getDay()];
-            case 'q': return Math.floor((date.getMonth() + 3) / 3); //季度
-            case 'M': return date.getMonth() + 1;
-            case 'MM': return zeroize(date.getMonth() + 1);
-            case 'MMM': return month[language]['short'][date.getMonth()];
-            case 'MMMM': return month[language]['long'][date.getMonth()];
-            case 'yy': return String(date.getFullYear()).substr(2);
-            case 'yyyy': return date.getFullYear();
-            case 'h': return date.getHours() % 12 || 12;
-            case 'hh': return zeroize(date.getHours() % 12 || 12);
-            case 'H': return date.getHours();
-            case 'HH': return zeroize(date.getHours());
-            case 'm': return date.getMinutes();
-            case 'mm': return zeroize(date.getMinutes());
-            case 's': return date.getSeconds();
-            case 'ss': return zeroize(date.getSeconds());
-            case 'l': return date.getMilliseconds();
-            case 'L':
-                let m = date.getMilliseconds();
-                if (m > 99) m = Math.round(m / 10);
-                return zeroize(m);
-            case 'll': return zeroize(date.getMilliseconds(), 3);
-            case 'tt': return date.getHours() < 12 ? 'am' : 'pm';
-            case 'TT': return date.getHours() < 12 ? 'AM' : 'PM';
-            case 'Z': return d.toUTCString().match(/[A-Z]+$/);
-            default: return $0.substr(1, $0.length - 2);
-        }
-    });
+  // 补充默认值
+  date = date || new Date();
+  format = format || 'yyyy-MM-dd HH:mm:ss ddd';
+  language = language || 'chinese';
+
+  // 星期字符库
+  let week = {
+    chinese: {
+      short: ['周天', '周一', '周二', '周三', '周四', '周五', '周六'],
+      long: ['星期天', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六']
+    },
+    english: {
+      short: ['Sun', 'Mon', 'Tue', 'Wed', 'Thr', 'Fri', 'Sat'],
+      long: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
+    }
+  };
+
+  // 月份字符库
+  let month = {
+    chinese: {
+      short: ['一月', '二月', '三月', '四月', '五月', '六月', '七月', '八月', '九月', '十月', '十一月', '十二月'],
+      long: ['一月', '二月', '三月', '四月', '五月', '六月', '七月', '八月', '九月', '十月', '十一月', '十二月']
+    },
+    english: {
+      short: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+      long: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+    }
+  };
+
+  // 语言别名库
+  let languageLib = {
+    chinese: ['chinese', 'cn', 'zh', 'zh-cn'],
+    english: ['english', 'en', 'us', 'en-us']
+  };
+  for (let field in languageLib) {
+    let item = languageLib[field];
+    if (item[language]) {
+      language = field;
+      break;
+    }
+  }
+
+  return format.replace(/"[^"]*"|'[^']*'|\b(?:d{1,4}|M{1,4}|yy(?:yy)?|([hHmstTql])\1?|[lLZ])\b/g, function ($0) {
+    switch ($0) {
+      case 'd':
+        return date.getDate();
+      case 'dd':
+        return zeroize(date.getDate());
+      case 'ddd':
+        return week[language]['short'][date.getDay()];
+      case 'dddd':
+        return week[language]['long'][date.getDay()];
+      case 'q':
+        return Math.floor((date.getMonth() + 3) / 3); // 季度
+      case 'M':
+        return date.getMonth() + 1;
+      case 'MM':
+        return zeroize(date.getMonth() + 1);
+      case 'MMM':
+        return month[language]['short'][date.getMonth()];
+      case 'MMMM':
+        return month[language]['long'][date.getMonth()];
+      case 'yy':
+        return String(date.getFullYear()).substr(2);
+      case 'yyyy':
+        return date.getFullYear();
+      case 'h':
+        return date.getHours() % 12 || 12;
+      case 'hh':
+        return zeroize(date.getHours() % 12 || 12);
+      case 'H':
+        return date.getHours();
+      case 'HH':
+        return zeroize(date.getHours());
+      case 'm':
+        return date.getMinutes();
+      case 'mm':
+        return zeroize(date.getMinutes());
+      case 's':
+        return date.getSeconds();
+      case 'ss':
+        return zeroize(date.getSeconds());
+      case 'l':
+        return date.getMilliseconds();
+      case 'L':
+        let m = date.getMilliseconds();
+        if (m > 99) m = Math.round(m / 10);
+        return zeroize(m);
+      case 'll':
+        return zeroize(date.getMilliseconds(), 3);
+      case 'tt':
+        return date.getHours() < 12 ? 'am' : 'pm';
+      case 'TT':
+        return date.getHours() < 12 ? 'AM' : 'PM';
+      case 'Z':
+        return date.toUTCString().match(/[A-Z]+$/);
+      default:
+        return $0.substr(1, $0.length - 2);
+    }
+  });
 }
 
 const packageConfig = require('../../package.json');
-function createNotifierCallback() {
-    const notifier = require('node-notifier');
 
-    return (severity, errors) => {
-        if (severity !== 'error') return;
+function createNotifierCallback () {
+  const notifier = require('node-notifier');
 
-        const error = errors[0];
-        const filename = error.file && error.file.split('!').pop();
+  return (severity, errors) => {
+    if (severity !== 'error') return;
 
-        notifier.notify({
-            title: packageConfig.name,
-            message: severity + ': ' + error.name,
-            subtitle: filename || '',
-            //icon: path.join(__dirname, 'logo.png')
-        })
-    };
+    const error = errors[0];
+    const filename = error.file && error.file.split('!').pop();
+
+    notifier.notify({
+      title: packageConfig.name,
+      message: severity + ': ' + error.name,
+      subtitle: filename || ''
+      // icon: path.join(__dirname, 'logo.png')
+    })
+  };
 }
 
 module.exports = {
-    getFormatDate,
-    createNotifierCallback
+  getFormatDate,
+  createNotifierCallback
 };

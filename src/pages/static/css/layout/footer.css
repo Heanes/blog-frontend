@@ -132,32 +132,34 @@
           color: #5d5d5d; }
           .footer .footer-content .footer-bottom-wrap .copyright .p .span a:hover {
             color: #7c94e8; }
-  .footer .footer-decorate .footer-animal {
-    position: relative;
-    bottom: 0;
-    height: 60px; }
-    .footer .footer-decorate .footer-animal .footer-footprint {
-      position: absolute;
-      left: 0;
+  .footer .footer-decorate {
+    background-color: #fff; }
+    .footer .footer-decorate .footer-animal {
+      position: relative;
       bottom: 0;
-      width: 100%;
-      height: 35px;
-      background: url(../../image/footer/other/footprint-to-right.png) repeat-x;
-      background-size: contain; }
-    .footer .footer-decorate .footer-animal .footer-footprint img {
-      width: 70px;
-      -webkit-transform: rotate(90deg); }
-    .footer .footer-decorate .footer-animal .footer-cat {
-      position: absolute;
-      right: 0;
-      width: 200px;
-      bottom: 0;
-      padding-left: 20px;
-      z-index: 2;
-      background-color: #fff;
-      border-radius: 50% 0 0 50%; }
-    .footer .footer-decorate .footer-animal .footer-cat img {
-      max-width: 70px; }
+      height: 60px; }
+      .footer .footer-decorate .footer-animal .footer-footprint {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 35px;
+        background: url(../../image/footer/other/footprint-to-right.png) repeat-x;
+        background-size: contain; }
+      .footer .footer-decorate .footer-animal .footer-footprint img {
+        width: 70px;
+        -webkit-transform: rotate(90deg); }
+      .footer .footer-decorate .footer-animal .footer-cat {
+        position: absolute;
+        right: 0;
+        width: 200px;
+        bottom: 0;
+        padding-left: 20px;
+        z-index: 2;
+        background-color: #fff;
+        border-radius: 50% 0 0 50%; }
+      .footer .footer-decorate .footer-animal .footer-cat img {
+        max-width: 70px; }
 
 /* E 脚部 E */
 

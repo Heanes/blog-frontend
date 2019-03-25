@@ -24,7 +24,11 @@ let devServer = {
   // 使用history模式后，本地刷新页面后cannot get问题解决
   historyApiFallback: {
     rewrites: [
-      { from: /^\/article/, to: '/article/archive.html' },
+      // 文章详情
+      { from: /^\/article/, to: '/article/detail.html' },
+      // 文章归档
+      { from: /^\/article\/archive/, to: '/article/archive.html' },
+      // 404页面
       { from: /./, to: '/404.html' }
     ]
   }

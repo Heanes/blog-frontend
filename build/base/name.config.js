@@ -1,3 +1,3 @@
 let config = {
-    runtimeChunk: 'manifest'
+  runtimeChunk: 'manifest'
 };

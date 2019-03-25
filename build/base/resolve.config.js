@@ -3,6 +3,7 @@ const dirVars = require('../base/dirVars.config');
 const path = require('path');
 
 module.exports = {
+  modules: [path.resolve(dirVars.rootDir, 'node_modules')],
   alias: {
     // 定义src源目录别名
     '@': dirVars.srcRootDir,

@@ -48,6 +48,8 @@
         text-align: right; }
         .article-list-wrap .article-item .article-info .article-category-info .item-value {
           padding-left: 6px; }
+        .article-list-wrap .article-item .article-info .article-category-info .article-category .category-separator {
+          margin: 0 1px; }
         .article-list-wrap .article-item .article-info .article-category-info .article-category .item-name {
           padding-left: 6px; }
           .article-list-wrap .article-item .article-info .article-category-info .article-category .item-name .label-icon {

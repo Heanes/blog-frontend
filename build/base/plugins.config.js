@@ -24,7 +24,7 @@ pageEntries.forEach(item => {
     filename: htmlFileName,
     template: templateName,
     chunks: ['manifest', 'vendors', 'common'],
-    hash: true, // 为静态资源生成hash值
+    // hash: true, // 为静态资源生成hash值
     xhtml: true,
     baseUrl: '../'
   };
@@ -40,11 +40,15 @@ pageEntries.forEach(item => {
   // console.log('\n');
 });
 
+// 构建 文件大小分析
+//const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+
+// 多线程构建
+//const HappyPack = require('happypack');
+
 let plugins = [
   // 清理构建目录
-  new CleanWebpackPlugin([dirVars.distDirName], {
-    root: dirVars.rootDir // 根目录
-  }),
+  new CleanWebpackPlugin(),
 
   // 添加banner
   pluginBanner,
@@ -62,10 +66,23 @@ let plugins = [
   new CopyWebpackPlugin([
     {
       from: dirVars.rootDir + '/public',
-      to: 'public'
-      // ignore: ['.*']
+      to: 'public',
+      ignore: ['.*'],
+      cache: true
     }
   ])
+
+  /* new BundleAnalyzerPlugin({
+    analyzerMode: 'server',
+    analyzerHost: '127.0.0.1',
+    analyzerPort: 8888,
+    reportFilename: 'report.html',
+    defaultSizes: 'parsed',
+    openAnalyzer: true,
+    generateStatsFile: false,
+    statsFilename: 'stats.json',
+    logLevel: 'info'
+  }) */
 ];
 
 module.exports = plugins;

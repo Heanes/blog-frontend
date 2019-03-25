@@ -6,8 +6,8 @@
       <div class="header-top main-width">
         <div class="top-left">
           <ul class="header-notice-list" id="headerNoticeList">
-            <li class="notice-item"><a href="../article/notice.html">公告1： 公告内容公告内容公告内容公告内容公告内容</a></li>
-            <li class="notice-item"><a href="../article/notice.html">公告2： 公告内容公告内容公告内容公告内容公告内容</a></li>
+            <li class="notice-item"><a href="/notice/1.html">公告1： 公告内容公告内容公告内容公告内容公告内容</a></li>
+            <li class="notice-item"><a href="/notice/2.html">公告2： 公告内容公告内容公告内容公告内容公告内容</a></li>
           </ul>
         </div>
         <div class="top-right">
@@ -36,40 +36,43 @@
     <div class="header-nav-wrap">
       <ul class="nav-list main-width">
         <li class="nav-item active">
-          <a class="nav-link" target="_blank" href="/">首页</a>
+          <a class="nav-link" href="/">首页</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" target="_blank" href="../article/detail.html">技术</a>
+          <a class="nav-link" href="/article/list.html">技术</a>
           <ul class="nav-sub">
-            <li class="nav-item"><a class="nav-link" href="../article/detail.html">后端</a></li>
-            <li class="nav-item"><a class="nav-link" href="../article/detail.html">前端</a></li>
-            <li class="nav-item"><a class="nav-link" href="../article/detail.html">运维</a></li>
-            <li class="nav-item"><a class="nav-link" href="../article/detail.html">客户端</a></li>
+            <li class="nav-item"><a class="nav-link" href="/article/list.html">后端</a></li>
+            <li class="nav-item"><a class="nav-link" href="/article/list.html">前端</a></li>
+            <li class="nav-item"><a class="nav-link" href="/article/list.html">运维</a></li>
+            <li class="nav-item"><a class="nav-link" href="/article/list.html">客户端</a></li>
           </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link" target="_blank" href="../article/detail.html">新闻</a>
+          <a class="nav-link" href="/article/list.html">新闻</a>
           <ul class="nav-sub">
-            <li class="nav-item"><a class="nav-link" href="../article/detail.html">重大新闻</a></li>
-            <li class="nav-item"><a class="nav-link" href="../article/detail.html">时事观点</a></li>
+            <li class="nav-item"><a class="nav-link" href="/article/list.html">重大新闻</a></li>
+            <li class="nav-item"><a class="nav-link" href="/article/list.html">时事观点</a></li>
           </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link" target="_blank" href="../article/detail.html">专栏</a>
+          <a class="nav-link" href="/article/list.html">专栏</a>
           <ul class="nav-sub">
-            <li class="nav-item"><a class="nav-link" href="../article/detail.html">日记</a></li>
+            <li class="nav-item"><a class="nav-link" href="/article/list.html">日记</a></li>
           </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link" target="_blank" href="../article/detail.html">阅读</a>
+          <a class="nav-link" href="/article/list.html">阅读</a>
           <ul class="nav-sub">
-            <li class="nav-item"><a class="nav-link" href="../article/detail.html">技术</a></li>
-            <li class="nav-item"><a class="nav-link" href="../article/detail.html">文学</a></li>
-            <li class="nav-item"><a class="nav-link" href="../article/detail.html">历史</a></li>
+            <li class="nav-item"><a class="nav-link" href="/article/list.html">技术</a></li>
+            <li class="nav-item"><a class="nav-link" href="/article/list.html">文学</a></li>
+            <li class="nav-item"><a class="nav-link" href="/article/list.html">历史</a></li>
           </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link" target="_blank" href="../article/detail.html">关于</a>
+          <a class="nav-link" href="/article/list.html">关于</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/article/archive.html">文章归档</a>
         </li>
       </ul>
     </div>
@@ -85,8 +88,8 @@ import $ from 'jquery';
 export default {
   name: 'Header',
   mounted () {
-    let $headerNoticeList = $('#headerNoticeList');
-    this.showScrollNotice($headerNoticeList);
+    /* let $headerNoticeList = $('#headerNoticeList');
+    this.showScrollNotice($headerNoticeList); */
   },
   methods: {
     /**

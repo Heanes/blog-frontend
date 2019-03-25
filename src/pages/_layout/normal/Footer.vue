@@ -2,23 +2,25 @@
   <!-- S footer 脚部 S -->
   <div class="footer footer-wrap" slot="footer">
     <!-- S 页脚装饰 S -->
-    <div class="footer-decorate">
+    <!--<div class="footer-decorate">
       <div class="footer-animal main-width">
         <div class="footer-footprint"></div>
         <div class="footer-cat">
           <img src="../../static/image/footer/other/little-cat.png" alt="">
         </div>
       </div>
-    </div>
+    </div>-->
     <!-- E 页脚装饰 E -->
     <div class="footer-content footer-top-border">
       <div class="footer-top-wrap main-width">
-        <div class="footer-website-logo">
+        <!--页脚logo-->
+        <!--<div class="footer-website-logo">
           <a href="" class="footer-website-home-link">
             <img class="logo-img" :src="logoImgSrc" alt="">
           </a>
-        </div>
-        <div class="add-link">
+        </div>-->
+        <!-- 页脚链接 -->
+        <!--<div class="add-link">
           <ul class="link-group">
             <li>
               <h3 class="link-category">分类一</h3>
@@ -121,7 +123,7 @@
               </ul>
             </li>
           </ul>
-        </div>
+        </div>-->
         <!-- S 关于站长 S -->
         <div class="about-web-owner"></div>
         <!-- E 关于站长 E -->
@@ -151,6 +153,7 @@
 </template>
 
 <script>
+import '../../static/css/common/animation.scss'
 import '../../static/css/layout/footer.scss'
 
 export default {

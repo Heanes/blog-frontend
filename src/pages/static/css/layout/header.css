@@ -16,6 +16,8 @@
       float: left; }
       .header .header-top-wrap .header-top .top-left .header-notice-list {
         position: relative; }
+        .header .header-top-wrap .header-top .top-left .header-notice-list .notice-item {
+          list-style: none; }
     .header .header-top-wrap .header-top .top-right {
       float: right; }
       .header .header-top-wrap .header-top .top-right .top-right-link {

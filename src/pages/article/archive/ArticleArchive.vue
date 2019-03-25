@@ -1,3 +1,8 @@
+<!--
+@doc 文章归档页面
+@author Heanes
+@time 2018-12-13 18:22:34 周四
+-->
 <template>
   <he-layout>
     <router-view slot="main"></router-view>
@@ -5,11 +10,6 @@
 </template>
 
 <script>
-/**
- * @doc 文章归档页面
- * @author Heanes
- * @time 2018-12-13 18:22:34 周四
- */
 import HeLayout from '../../_layout/normal/Layout';
 
 import '../../static/css/article/archive.scss';
@@ -36,7 +36,7 @@ export default {
     }
   },
   mounted () {
-
+    console.log(this.$route.params.articleQueryParam);
   },
   created () {
     document.title = this.pageTitle;
@@ -44,8 +44,8 @@ export default {
   watch: {
     '$route' (to, from) {
       // 对路由变化作出响应...
-      if(to.path !== '/archive.html'){
-        console.log('非索引页');
+      if (to.path !== '/archive.html') {
+        // console.log('非索引页');
       }
     }
   }

@@ -78,6 +78,18 @@
           <router-link class="article-link" to="/maven-snapshot-definition.html">Maven快照机制定义</router-link>
           <span class="article-create-time">2018-11-05 15:11:49 周一</span>
         </li>
+        <li class="list-item date-group date-2019-01">
+          <router-link class="article-link" to="/idea-common-shortcut.html">Idea常用快捷键总结记录</router-link>
+          <span class="article-create-time">2019-01-06 15:44:11 周日</span>
+        </li>
+        <li class="list-item">
+          <router-link class="article-link" to="/nginx-configuration-manual.html">nginx自主手动编译安装</router-link>
+          <span class="article-create-time">2019-01-25 12:10:13 周五</span>
+        </li>
+        <li class="list-item date-group date-2019-02">
+          <router-link class="article-link" to="/js-type-judgment-and-duck-type.html">js类型判断及鸭式辨型</router-link>
+          <span class="article-create-time">2019-02-22 16:06:49 周五</span>
+        </li>
       </ol>
     </div>
   </div>
