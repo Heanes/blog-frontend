@@ -25,7 +25,7 @@
                     <dt>作者:</dt>
                     <dd v-if="article.author !== undefined">{{article.author.name}}</dd>
                     <dt>时间:</dt>
-                    <dd>{{article.publishDateTimeFormative}}</dd>
+                    <dd>{{article.publishTimeFormative}}</dd>
                     <dt>来源:</dt>
                     <dd>原创</dd>
                   </dl>

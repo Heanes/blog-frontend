@@ -1,7 +1,7 @@
 <template>
   <div class="article-item">
     <div class="article-title">
-      <h1 class="title"><a class="link title-link" :href="linkCode ? 'article/detail/'+ linkCode + '.html' : false">{{title}}</a></h1>
+      <h1 class="title"><a class="link title-link" :href="linkCode !== '' ? '/article/detail/'+ linkCode + '.html' : false">{{title}}</a></h1>
     </div>
     <div class="article-info">
       <div class="article-attribute-info">
@@ -11,7 +11,7 @@
         </dl>
         <dl class="info-item">
           <dt class="item-name">日期:</dt>
-          <dd class="item-value">{{publishDateTimeFormative}}</dd>
+          <dd class="item-value">{{publishTimeFormative}}</dd>
         </dl>
         <dl class="info-item">
           <dt class="item-name">点击:</dt>
@@ -53,7 +53,7 @@ export default {
     },
     // 链接
     linkCode: {
-      type: String,
+      type: [String, Number],
       default: ''
     },
     // 作者
@@ -78,18 +78,18 @@ export default {
       }
     },
     // 日期
-    publishDateTimeFormative: {
+    publishTimeFormative: {
       type: String,
       default: ''
     },
     // 点击数
     clickCount: {
-      type: [String, Number],
+      type: Number,
       default: 0
     },
     // 点击数
     commentCount: {
-      type: [String, Number],
+      type: Number,
       default: 0
     }
   },

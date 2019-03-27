@@ -2,6 +2,7 @@
 node_modules
 # /dist
 .cache-loader
+/dist/public/static/vendor
 
 # local env files
 .env.local

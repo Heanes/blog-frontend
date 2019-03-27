@@ -7,11 +7,11 @@ Vue.use(Router);
 
 export default new Router({
   mode: 'history',
-  base: '/article',
+  base: '/article/detail',
   routes: [
     {
       path: '/:articleQueryParam?.html',
-      // component: ArticleDetail
+      component: ArticleDetail
     }
   ],
   // 记录之前保存的滚动条位置

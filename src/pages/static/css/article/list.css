@@ -27,7 +27,8 @@
       border-left: 6px solid #008fb5;
       padding-left: 24px; }
       .article-list-wrap .article-item .article-title .title .title-link {
-        line-height: 30px; }
+        line-height: 30px;
+        word-break: break-all; }
         .article-list-wrap .article-item .article-title .title .title-link:visited {
           color: #6594b7; }
         .article-list-wrap .article-item .article-title .title .title-link:hover {
