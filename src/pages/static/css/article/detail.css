@@ -121,7 +121,7 @@
     padding: 10px;
     word-break: break-all;
     line-height: 2;
-    font-family: "微软雅黑",HelveticaNeue-Light,"Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "微软雅黑", HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
     /* 隔行换色 */ }
     .article-detail .article-content h1, .article-detail .article-content h2, .article-detail .article-content h3, .article-detail .article-content h4, .article-detail .article-content h5, .article-detail .article-content h6 {
       border-bottom: 1px solid #ddd; }

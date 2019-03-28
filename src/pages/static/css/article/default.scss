@@ -23,7 +23,7 @@ $blockquoteColor: #555;
   padding: 10px;
   word-break: break-all;
   line-height: 2;
-  font-family: "微软雅黑",HelveticaNeue-Light,"Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "微软雅黑", HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
   h1, h2, h3, h4, h5, h6 {
     border-bottom: 1px solid #ddd;
@@ -156,10 +156,11 @@ $blockquoteColor: #555;
   }
 
   // 提示信息
-  .notice{
+  .notice {
     padding: 15px;
     margin: 2em;
-    >p{
+
+    > p {
       margin: 0;
     }
 
@@ -168,11 +169,13 @@ $blockquoteColor: #555;
       background-color: #dff0d8;
       border: 1px solid #c5e2ac;
     }
+
     &.warning {
       color: #343434;
       background-color: #fdf7cf;
       border: 1px solid #fbe4c3;
     }
+
     &.danger {
       color: #542828;
       background-color: #ffe8e8;
@@ -181,11 +184,12 @@ $blockquoteColor: #555;
   }
 
   // 原生折叠
-  .details{
+  .details {
     cursor: default;
     outline: none;
     padding: 16px;
-    .summary{
+
+    .summary {
       margin-bottom: 10px;
       outline: none;
     }

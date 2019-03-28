@@ -33,6 +33,10 @@ export default {
   data () {
     return {
       pageTitle: '首页',
+      articleQueryParam: {
+        pageSize: 10,
+        pageNumber: 1
+      },
       articleList: {
         items: [],
         page: {

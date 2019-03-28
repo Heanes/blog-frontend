@@ -5,64 +5,71 @@
  * @time 2018-12-10 19:39:49 周一
  */
 
-$borderBottomColor:#ddd;
-$dateGroupTitleHeight:50px;
-.article-archive-wrap{
-  padding:20px;
-  .page-title{
-    font-size:20px;
-    font-weight:600;
-    text-align:center;
+$borderBottomColor: #ddd;
+$dateGroupTitleHeight: 50px;
+.article-archive-wrap {
+  padding: 20px;
+
+  .page-title {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
   }
 
-  .article-archive-list{
+  .article-archive-list {
     list-style-position: inside;
-    .list-item{
-      position:relative;
-      border-bottom:1px dashed $borderBottomColor;
-      line-height:24px;
-      padding:4px 170px 4px 4px;
-      overflow:hidden;
-      .article-link{
-        z-index:2;
+
+    .list-item {
+      position: relative;
+      border-bottom: 1px dashed $borderBottomColor;
+      line-height: 24px;
+      padding: 4px 170px 4px 4px;
+      overflow: hidden;
+
+      .article-link {
+        z-index: 2;
       }
-      .article-create-time{
-        position:absolute;
-        right:0;
-        z-index:1;
+
+      .article-create-time {
+        position: absolute;
+        right: 0;
+        z-index: 1;
         top: 50%;
         transform: translateY(-50%);
       }
 
-      &.date-group{
-        padding-top:$dateGroupTitleHeight;
-        margin-top:10px;
-        &:before{
-          position:absolute;
-          top:0;
-          left:0;
-          width:100%;
-          font-size:16px;
-          background-color:#f1f7fd;
-          color:#479ac1;
-          padding:10px;
+      &.date-group {
+        padding-top: $dateGroupTitleHeight;
+        margin-top: 10px;
+
+        &:before {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          font-size: 16px;
+          background-color: #f1f7fd;
+          color: #479ac1;
+          padding: 10px;
           border: 1px solid #d2e8fa;
         }
+
         @for $i from 2017 through 2020 {
-          @for $j from 1 through 12{
-            $temp:$j;
-            @if $j < 10{
-              $temp:0#{$j};
+          @for $j from 1 through 12 {
+            $temp: $j;
+            @if $j < 10 {
+              $temp: 0#{$j};
             }
-            &.date-#{$i}-#{$temp}{
-              &:before{
-                content:'#{$i}-#{$temp}';
+            &.date-#{$i}-#{$temp} {
+              &:before {
+                content: '#{$i}-#{$temp}';
               }
             }
           }
         }
-        .article-create-time{
-          top:0;
+
+        .article-create-time {
+          top: 0;
           transform: translateY($dateGroupTitleHeight);
         }
       }

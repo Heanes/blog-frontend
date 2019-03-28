@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": ";AACA;;;;GAIG;AACH,cAAc;AACd,+BAUC;EATC,EAAE;IACA,iBAAiB,EAAC,YAAY;EAEhC,GAAG;IACD,iBAAiB,EAAC,cAAc;EAElC,IAAI;IACF,iBAAiB,EAAC,cAAc",
+"mappings": ";AACA;;;;GAIG;AACH,cAAc;AACd,+BAUC;EATC,EAAG;IACD,iBAAiB,EAAE,YAAY;EAEjC,GAAI;IACF,iBAAiB,EAAE,cAAc;EAEnC,IAAK;IACH,iBAAiB,EAAE,cAAc",
 "sources": ["animation.scss"],
 "names": [],
 "file": "animation.css"
