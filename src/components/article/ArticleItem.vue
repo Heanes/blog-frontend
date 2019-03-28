@@ -1,7 +1,7 @@
 <template>
   <div class="article-item">
     <div class="article-title">
-      <h1 class="title"><a class="link title-link" :href="linkCode !== '' ? '/article/detail/'+ linkCode + '.html' : false">{{title}}</a></h1>
+      <h1 class="title"><a class="link title-link" :href="semanticLink !== '' ? '/article/detail/'+ semanticLink + '.html' : false">{{title}}</a></h1>
     </div>
     <div class="article-info">
       <div class="article-attribute-info">
@@ -52,7 +52,7 @@ export default {
       default: 'Article title'
     },
     // 链接
-    linkCode: {
+    semanticLink: {
       type: [String, Number],
       default: ''
     },

@@ -51,7 +51,7 @@ let plugins = [
   new CleanWebpackPlugin(),
 
   // 添加banner
-  pluginBanner,
+  // pluginBanner,
   new VueLoaderPlugin(),
 
   // 输出html
