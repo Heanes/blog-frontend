@@ -27,13 +27,13 @@
           <dt class="item-name"><i class="fa fa-tasks label-icon" aria-hidden="true"></i><span>分类:</span></dt>
           <dd class="item-value" v-for="(category, index) in categories" :key="index">
             <i class="category-separator" v-show="index > 0">/</i>
-            <a class="link item-link" :href="category.link">{{category.name}}</a>
+            <a class="link item-link" :href="category.linkCode !== '' ? '/articleCategory/'+ category.linkCode + '.html' : false">{{category.name}}</a>
           </dd>
         </dl>
         <dl class="info-item article-tags">
           <dt class="item-name"><i class="fa fa-tags label-icon" aria-hidden="true"></i><span>标签:</span></dt>
           <dd class="item-value" v-for="(tag, index) in tags" :key="index">
-            <a class="link item-link" :href="tag.link">{{tag.name}}</a>
+            <a class="link item-link" :href="tag.linkCode !== '' ? '/articleTag/'+ tag.linkCode + '.html' : false">{{tag.name}}</a>
           </dd>
         </dl>
       </div>

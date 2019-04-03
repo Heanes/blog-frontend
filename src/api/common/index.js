@@ -3,7 +3,7 @@ import API from '../ajax';
 export default {
 
   /**
-   * @doc 获取基础信息
+   * @doc 获取基础信息，传入不同参数获取对应数据[setting, navList, announcement, friendlyLink]
    * @param params
    * @param callback
    * @returns {*}

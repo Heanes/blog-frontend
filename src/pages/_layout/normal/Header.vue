@@ -1,6 +1,6 @@
 <template>
   <!-- S header 头部 S -->
-  <div class="header" slot="header">
+  <div class="header">
     <!-- S top bar S -->
     <div class="header-top-wrap">
       <div class="header-top main-width">
@@ -24,7 +24,7 @@
     <!-- E top bar E -->
     <div class="web-logo">
       <div class="web-header-logo">
-        <img class="web-logo" src="" alt="" />
+        <img class="web-logo" src="" alt=""/>
         <button class="nav-bar-toggle collapsed">
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
@@ -34,47 +34,7 @@
     </div>
     <!-- S nav bar S -->
     <div class="header-nav-wrap">
-      <ul class="nav-list main-width">
-        <li class="nav-item active">
-          <a class="nav-link" href="/">首页</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/article/list.html">技术</a>
-          <ul class="nav-sub">
-            <li class="nav-item"><a class="nav-link" href="/article/list.html">后端</a></li>
-            <li class="nav-item"><a class="nav-link" href="/article/list.html">前端</a></li>
-            <li class="nav-item"><a class="nav-link" href="/article/list.html">运维</a></li>
-            <li class="nav-item"><a class="nav-link" href="/article/list.html">客户端</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/article/list.html">新闻</a>
-          <ul class="nav-sub">
-            <li class="nav-item"><a class="nav-link" href="/article/list.html">重大新闻</a></li>
-            <li class="nav-item"><a class="nav-link" href="/article/list.html">时事观点</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/article/list.html">专栏</a>
-          <ul class="nav-sub">
-            <li class="nav-item"><a class="nav-link" href="/article/list.html">日记</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/article/list.html">阅读</a>
-          <ul class="nav-sub">
-            <li class="nav-item"><a class="nav-link" href="/article/list.html">技术</a></li>
-            <li class="nav-item"><a class="nav-link" href="/article/list.html">文学</a></li>
-            <li class="nav-item"><a class="nav-link" href="/article/list.html">历史</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/article/list.html">关于</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/article/archive.html">文章归档</a>
-        </li>
-      </ul>
+      <he-navigation :nav-list="navList" :styleClass="'main-width'"></he-navigation>
     </div>
     <!-- E nav bar E -->
   </div>
@@ -84,14 +44,27 @@
 <script>
 import '../../static/css/layout/header.scss'
 
+import api from '@/api';
+import HeNavigation from '@/components/common/Navigation';
 import $ from 'jquery';
+
 export default {
   name: 'Header',
-  mounted () {
-    /* let $headerNoticeList = $('#headerNoticeList');
-    this.showScrollNotice($headerNoticeList); */
+  components: {
+    'he-navigation': HeNavigation
+  },
+  data () {
+    return {
+      navList: []
+    }
   },
   methods: {
+    getBaseCommon (param) {
+      api.common.getBaseCommon(param)
+        .then(response => {
+          this.navList = response.data.navList;
+        });
+    },
     /**
      * @doc 显示动态循环显示的公告栏
      * @param $headerNoticeList
@@ -100,8 +73,8 @@ export default {
      * @author Heanes
      * @time 2018-10-13 20:57:38 周六
      */
-    showScrollNotice($headerNoticeList, delay, animateDelay){
-      if(!$headerNoticeList){
+    showScrollNotice ($headerNoticeList, delay, animateDelay) {
+      if (!$headerNoticeList) {
         return false;
       }
       delay = delay || 2000;
@@ -111,11 +84,11 @@ export default {
       let scrollCount = 0;
       let scrollTotal = $headerNoticeList.length;
       $headerNoticeList.append($headerNoticeList.children().clone(true));
-      let scrollNotice = function(){
-        if(scrollCount < scrollTotal){
+      let scrollNotice = function () {
+        if (scrollCount < scrollTotal) {
           $headerNoticeList.animate({'top': $headerNoticeList.position().top - noticeItemHeight}, animateDelay);
           scrollCount++;
-        }else{
+        } else {
           $headerNoticeList.animate({'top': -noticeItemHeight}, 0);
           $headerNoticeList.animate({'top': $headerNoticeList.position().top - noticeItemHeight}, animateDelay);
           scrollCount = 0;
@@ -131,6 +104,13 @@ export default {
         scrollInterval = setInterval(scrollNotice, delay);
       });
     }
+  },
+  created () {
+    this.getBaseCommon();
+  },
+  mounted () {
+    /* let $headerNoticeList = $('#headerNoticeList');
+     this.showScrollNotice($headerNoticeList); */
   }
 }
 </script>

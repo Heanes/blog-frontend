@@ -1,6 +1,6 @@
 <template>
   <!-- S footer 脚部 S -->
-  <div class="footer footer-wrap" slot="footer">
+  <div class="footer footer-wrap">
     <!-- S 页脚装饰 S -->
     <!--<div class="footer-decorate">
       <div class="footer-animal main-width">

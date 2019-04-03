@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import '~/public/static/vendor/heanesUI/1.0.0/dist/css/heanesUI.min.css';
+import '~/public/static/vendor/heanesUI/1.0.1/dist/css/heanesUI.min.css';
 import HeHeader from '../../_layout/normal/Header'
 import HeFooter from '../../_layout/normal/Footer'
 import '../../static/css/common/common.scss'

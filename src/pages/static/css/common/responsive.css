@@ -32,7 +32,19 @@
     width: 33.3333%; }
 
   .header .header-nav-wrap {
-    position: relative; }
+    position: relative;
+    /*.nav-list{
+      display: block;
+      .nav-item{
+        display: block;
+        height: auto;
+        line-height: 40px;
+        border-bottom: 1px solid #238eda;
+        .nav-sub{
+          position: relative;
+        }
+      }
+    }*/ }
     .header .header-nav-wrap .nav-bar-toggle {
       display: block;
       position: relative;
@@ -52,16 +64,7 @@
         border-radius: 1px;
         background-color: #563d7c; }
         .header .header-nav-wrap .nav-bar-toggle .icon-bar + .icon-bar {
-          margin-top: 4px; }
-    .header .header-nav-wrap .nav-list {
-      display: block; }
-      .header .header-nav-wrap .nav-list .nav-item {
-        display: block;
-        height: auto;
-        line-height: 40px;
-        border-bottom: 1px solid #238eda; }
-        .header .header-nav-wrap .nav-list .nav-item .nav-sub {
-          position: relative; } }
+          margin-top: 4px; } }
 /* ------------------------------ 手机屏 ------------------------------ */
 @media screen and (max-width: 479px) {
   h1, h2 {

@@ -15,7 +15,8 @@
     .header .header-top-wrap .header-top .top-left {
       float: left; }
       .header .header-top-wrap .header-top .top-left .header-notice-list {
-        position: relative; }
+        position: relative;
+        margin-left: 10px; }
         .header .header-top-wrap .header-top .top-left .header-notice-list .notice-item {
           list-style: none; }
     .header .header-top-wrap .header-top .top-right {
