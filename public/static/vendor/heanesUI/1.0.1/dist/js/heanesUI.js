@@ -1,7 +1,7 @@
 /*!
  * ui.heanes.com 1.0.1
  * @author: Heanes
- * @time: 2019-04-02 17:15:14 周二
+ * @time: 2019-04-13 21:07:18 周六
  * (c) 2014-2019 Heanes
  * Released under the MIT License.
  */
@@ -71,7 +71,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "883d0c6a9417e785802a";
+/******/ 	var hotCurrentHash = "3ec4f095e5a00723797a";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -844,7 +844,8 @@ __webpack_require__.r(__webpack_exports__);
 // font-awesome图标4.7.0版 @see https://fontawesome.com/v4.7.0/
 // import '../../public/static/vendor/fonts/font-awesome/4.7.0/css/font-awesome.min.css';
 // font-awesome图标5.8.1-free-web版 @see https://fontawesome.com/icons
- // UI
+ //import '../../public/static/vendor/fonts/font-awesome/5.8.1-pro/css/all.css';
+// UI
 
 
 

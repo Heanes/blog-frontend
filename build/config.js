@@ -10,6 +10,9 @@ module.exports = {
   copyrightYear: utils.getFormatDate('yyyy'),
   generateTime: utils.getFormatDate(),
 
+  // 构建目标
+  buildTarget: 'production',
+
   dev: {
     host: 'localhost',      // 地址 can be overwritten by process.env.HOST
     port: 8080,             // 端口 can be overwritten by process.env.PORT, if port is in use, a free one will be determined

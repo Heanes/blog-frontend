@@ -44,8 +44,8 @@ import HeArticleDetailContent from '@/components/article/ArticleDetailContent';
 import HeArticleDetailTitle from '@/components/article/ArticleDetailTitle';
 
 import jQuery from 'jquery';
-import '~/public/static/vendor/autoCatalog/1.0.0/js/autoCatalog.js';
-import '~/public/static/vendor/autoCatalog/1.0.0/css/autoCatalog.css';
+import '~/public/static/vendor/autoCatalog/1.0.0/dist/js/autoCatalog.js';
+import '~/public/static/vendor/autoCatalog/1.0.0/dist/css/autoCatalog.css';
 
 import '@/pages/static/css/article/detail.scss'
 import '@/pages/static/css/common/responsive.scss';

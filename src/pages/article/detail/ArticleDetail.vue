@@ -58,11 +58,11 @@
 <script>
 import HeLayout from '../../_layout/normal/Layout';
 import HeBreadcrumb from '@/components/common/Breadcrumb';
-import api from '@/api';
+import api from '@/api/api.js';
 
 import jQuery from 'jquery';
-import '~/public/static/vendor/autoCatalog/1.0.0/js/autoCatalog.js';
-import '~/public/static/vendor/autoCatalog/1.0.0/css/autoCatalog.css';
+import '~/public/static/vendor/autoCatalog/1.0.0/dist/js/autoCatalog.js';
+import '~/public/static/vendor/autoCatalog/1.0.0/dist/css/autoCatalog.css';
 
 import '@/pages/static/css/article/detail.scss'
 import '@/pages/static/css/common/responsive.scss';
@@ -107,7 +107,7 @@ export default {
      * @time 2019-02-19 10:56:29 周二
      */
     getArticleDetail(param) {
-      api.article.getDetail(param)
+      api.article.queryArticleDetail(param)
         .then(response => {
           this.article = response.data;
         });
@@ -125,6 +125,7 @@ export default {
           return chapter.outline.join('.') + '.' + chapter.text;
         },
         step: 90,
+        showChapterNumber: false,
         alwaysShow: true
       });
     }
@@ -146,7 +147,7 @@ export default {
      */
     'articleQueryParam': {
       handler: function (newVal, oldVal) {
-        this.getArticleDetail({params: this.articleQueryParam});
+        this.getArticleDetail(this.articleQueryParam);
       }
     },
     /**

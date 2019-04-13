@@ -44,7 +44,7 @@
 <script>
 import '../../static/css/layout/header.scss'
 
-import api from '@/api';
+import api from '@/api/api.js';
 import HeNavigation from '@/components/common/Navigation';
 import $ from 'jquery';
 
@@ -60,7 +60,7 @@ export default {
   },
   methods: {
     getBaseCommon (param) {
-      api.common.getBaseCommon(param)
+      api.common.queryBaseCommon(param)
         .then(response => {
           this.navList = response.data.navList;
         });

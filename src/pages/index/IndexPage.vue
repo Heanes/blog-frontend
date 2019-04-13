@@ -21,7 +21,7 @@ import HeArticleList from '@/components/article/ArticleList';
 import '../static/css/index/index.scss'
 import '../static/css/common/responsive.scss';
 
-import api from '@/api';
+import api from '@/api/api';
 
 export default {
   name: 'Index',
@@ -54,7 +54,7 @@ export default {
      * @time 2019-02-19 10:56:29 周二
      */
     getArticleList(param) {
-      api.article.getList(param)
+      api.article.queryArticleList(param)
         .then(response => {
           this.articleList = response.data;
         });
@@ -77,7 +77,7 @@ export default {
      * @time 2019-02-19 10:59:27 周二
      */
     changeArticleQueryParam(newVal, oldVal){
-      this.getArticleList({params: this.articleQueryParam});
+      this.getArticleList(this.articleQueryParam);
     }
   },
   created () {

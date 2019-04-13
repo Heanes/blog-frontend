@@ -4,6 +4,8 @@
  * @author Heanes
  * @time 2018-12-06 19:25:55 周四
  */
+@import "../mixin/mixin.scss";
+
 $sidebarRightWidth: 300px;
 $sidebarPaddingLeftWidth: 10px;
 
@@ -556,5 +558,34 @@ $sidebarPaddingLeftWidth: 10px;
 
   .auto-catalog {
     width: 100%;
+    .catalog-toolbar-wrap{
+      .catalog-toolbar{
+        text-align: right;
+      }
+    }
+  }
+}
+
+
+@include res(xs){
+  .main{
+    .main-content{
+      .main-area{
+        padding-right: 0;
+      }
+    }
+
+    .sidebar-right{
+      .article-catalog-wrap{
+        right: 0;
+        background-color: unset;
+
+        .auto-catalog{
+          .catalog-wrap{
+            background-color: #fff;
+          }
+        }
+      }
+    }
   }
 }

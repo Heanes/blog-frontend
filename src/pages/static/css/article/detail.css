@@ -4,6 +4,20 @@
  * @author Heanes
  * @time 2018-12-06 19:25:55 周四
  */
+/**
+ * @doc mixin
+ * @author Heanes
+ * @time 2019-04-13 19:20:27 周六
+ */
+/**
+ * @doc 响应式断点
+ * @author Heanes
+ * @time 2019-04-13 18:25:12 周六
+ */
+/* Break-point
+--------------------------*/
+/* Break-points
+ -------------------------- */
 .main .main-content .main-area {
   float: left;
   width: 100%;
@@ -164,6 +178,8 @@
       border-bottom: 1px dashed #ddd;
       text-align: center;
       margin: 10px 0 30px; }
+    .article-detail .article-content .img-wrap {
+      margin: 10px auto; }
     .article-detail .article-content img {
       max-width: 100%;
       /* 文章正文图片浮上时放大 */
@@ -462,5 +478,16 @@
   background-color: #fff; }
   .article-catalog-wrap .auto-catalog {
     width: 100%; }
+    .article-catalog-wrap .auto-catalog .catalog-toolbar-wrap .catalog-toolbar {
+      text-align: right; }
+
+@media only screen and (max-width: 767px) {
+  .main .main-content .main-area {
+    padding-right: 0; }
+  .main .sidebar-right .article-catalog-wrap {
+    right: 0;
+    background-color: unset; }
+    .main .sidebar-right .article-catalog-wrap .auto-catalog .catalog-wrap {
+      background-color: #fff; } }
 
 /*# sourceMappingURL=detail.css.map */

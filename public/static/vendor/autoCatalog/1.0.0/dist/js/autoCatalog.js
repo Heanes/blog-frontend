@@ -509,8 +509,8 @@
             </div>
             <div class="catalog-toolbar-wrap">
                 <div class="catalog-toolbar">
-                    <a class="handle-btn toggle-show-btn" href="javascript:;"><i class="fa fa-list"></i></a>
-                    <a class="handle-btn go-top-btn" href="javascript:;"><i class="fa fa-angle-up"></i></a>
+                    <a class="handle-btn toggle-show-btn" href="javascript:;"><i class="fas fa-list-ul"></i></a>
+                    <a class="handle-btn go-top-btn" href="javascript:;"><i class="fas fa-chevron-up"></i></a>
                 </div>
             </div>
         </div>`,

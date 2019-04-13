@@ -1,4 +1,5 @@
 const dirVars = require('./dirVars.config.js');
+const buildConfig = require('../config.js');
 const path = require('path');
 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -19,6 +20,10 @@ pageEntries.forEach(item => {
   let htmlFileName = `${item}.html`;
 
   let templateName = 'src/public/index.html';
+  // 不同环境不同模版
+  if(buildConfig.buildTarget === 'dev') {
+    templateName = 'src/public/index.dev.html';
+  }
 
   let htmlWebpackPluginOption = {
     filename: htmlFileName,
