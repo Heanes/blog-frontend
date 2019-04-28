@@ -52,12 +52,12 @@ function handleAxiosResponse (response, callback) {
     callback && callback(response.data);
     return response.data;
   } else {
+    let msg = `query '${response.config.url}' error: ${response.data.msg}`;
     /* Notification.error({
      title: '提示',
      message: response.data.msg,
      duration: 10000
      }); */
-    let msg = `query '${response.config.url}' error: ${response.data.msg}`;
     // alert(msg);
 
     return response;

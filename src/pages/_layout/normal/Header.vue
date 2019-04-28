@@ -45,7 +45,7 @@
 import '../../static/css/layout/header.scss'
 
 import api from '@/api/api.js';
-import HeNavigation from '@/components/common/Navigation';
+import HeNavigation from '@/components/common/navigation/Navigation';
 import $ from 'jquery';
 
 export default {

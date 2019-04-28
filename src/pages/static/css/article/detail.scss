@@ -64,10 +64,10 @@ $sidebarPaddingLeftWidth: 10px;
 
     .article-title {
       text-align: center;
-    }
-
-    .article-title .entry-title {
-      font-size: 23px
+      .entry-title {
+        font-size: 23px;
+        word-break: break-all;
+      }
     }
 
     .article-info {
@@ -558,11 +558,6 @@ $sidebarPaddingLeftWidth: 10px;
 
   .auto-catalog {
     width: 100%;
-    .catalog-toolbar-wrap{
-      .catalog-toolbar{
-        text-align: right;
-      }
-    }
   }
 }
 
@@ -583,6 +578,11 @@ $sidebarPaddingLeftWidth: 10px;
         .auto-catalog{
           .catalog-wrap{
             background-color: #fff;
+          }
+          .catalog-toolbar-wrap{
+            .catalog-toolbar{
+              text-align: right;
+            }
           }
         }
       }

@@ -128,6 +128,7 @@ export default {
         showChapterNumber: false,
         alwaysShow: true
       });
+      // todo 滚动到文章底部时，去除position:fixed
     }
 
   },

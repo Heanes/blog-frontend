@@ -18,6 +18,11 @@
 --------------------------*/
 /* Break-points
  -------------------------- */
+/**
+ * @doc 响应式断点
+ * @author Heanes
+ * @time 2019-04-13 18:25:12 周六
+ */
 .main .main-content .main-area {
   float: left;
   width: 100%;
@@ -73,8 +78,9 @@
       background-color: white; }
     .article-detail .article-title-wrap .article-title {
       text-align: center; }
-    .article-detail .article-title-wrap .article-title .entry-title {
-      font-size: 23px; }
+      .article-detail .article-title-wrap .article-title .entry-title {
+        font-size: 23px;
+        word-break: break-all; }
     .article-detail .article-title-wrap .article-info {
       color: #666;
       padding: 10px 0; }
@@ -478,8 +484,6 @@
   background-color: #fff; }
   .article-catalog-wrap .auto-catalog {
     width: 100%; }
-    .article-catalog-wrap .auto-catalog .catalog-toolbar-wrap .catalog-toolbar {
-      text-align: right; }
 
 @media only screen and (max-width: 767px) {
   .main .main-content .main-area {
@@ -488,6 +492,8 @@
     right: 0;
     background-color: unset; }
     .main .sidebar-right .article-catalog-wrap .auto-catalog .catalog-wrap {
-      background-color: #fff; } }
+      background-color: #fff; }
+    .main .sidebar-right .article-catalog-wrap .auto-catalog .catalog-toolbar-wrap .catalog-toolbar {
+      text-align: right; } }
 
 /*# sourceMappingURL=detail.css.map */
