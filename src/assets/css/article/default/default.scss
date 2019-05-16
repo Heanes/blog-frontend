@@ -1,0 +1,211 @@
+@charset "UTF-8";
+/**
+ * @doc 默认主题的文章样式
+ * @author Heanes
+ * @time 2018-05-25 14:52:57 周五
+ */
+
+// 注意说明相关
+$articleTipBgColor: #f8f8f8;
+$articleTipBorderColor: #f66;
+
+// explain相关颜色
+$explainBgColor: #fbfbfb;
+$explainColor: #888;
+$explainBorderColor: #f2f2f2;
+
+// blockquote相关颜色
+$blockquoteBorder: 2px solid #e6e6e6;
+$blockquotePadding: 15px;
+$blockquoteBgColor: #fbfbfb;
+$blockquoteColor: #555;
+
+.article-detail{
+  padding: 20px 0;
+  .article-content {
+    padding: 10px;
+    word-break: break-all;
+    line-height: 2;
+    font-family: "微软雅黑", HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+    h1, h2, h3, h4, h5, h6 {
+      border-bottom: 1px solid #ddd;
+    }
+
+    // 标题
+    h2 {
+      margin: 20px 0;
+      line-height: 2.3em;
+    }
+
+    > h3 {
+      margin: 10px 0;
+      line-height: 2em;
+    }
+
+    h4 {
+      margin: 1em 0 1em 2em;
+    }
+
+    // 段落
+    p {
+      font-size: 14px;
+      margin-bottom: 0.3em;
+
+      &.tip {
+        text-indent: 0;
+        background-color: $articleTipBgColor;
+        border-left: 4px solid $articleTipBorderColor;
+        padding: 12px 20px;
+      }
+    }
+
+    > p, p.is-normal {
+      text-indent: 2em;
+    }
+
+    // 列表
+    ol, ul {
+      margin-left: 2em;
+    }
+
+    // 顺序列表
+    .step-order-list {
+      list-style: none;
+
+      li {
+        line-height: 26px;
+        border-bottom: 1px dashed #eee;
+        margin-bottom: 10px;
+      }
+    }
+
+    // 更新信息
+    .update-info {
+      border: 2px dashed #ddd;
+      line-height: 2em;
+      padding: 10px;
+      background-color: #eaf7f3;
+
+      p {
+        margin: 0
+      }
+
+      margin: 10px auto;
+    }
+
+    // 图片相关
+    // 图片说明
+    p.img-desc {
+      text-indent: 0;
+      border-bottom: 1px dashed #ddd;
+      text-align: center;
+      margin: 10px 0 30px;
+    }
+
+    // 图片展示
+    .img-wrap{
+      margin: 10px auto;
+    }
+    img {
+      max-width: 100%;
+
+      &.img-show {
+        box-shadow: 0 0 1px rgb(85, 85, 85);
+        border-radius: 7px;
+
+        &:hover {
+          box-shadow: 0 0 6px 1px #8e8d8d;
+        }
+      }
+
+      /* 文章正文图片浮上时放大 */
+      /*&:hover{
+          transform:scale(1.01, 1.01);
+          transition:.5s transform;
+          border:0;
+          box-shadow:0 0 13px 2px #aaa
+      }*/
+    }
+
+    // 注解
+    .explain {
+      margin: 2em;
+      padding: 2em;
+      font-size: 12px;
+      border: 1px solid $explainBorderColor;
+      border-radius: 6px;
+      color: $explainColor;
+      background-color: $explainBgColor;
+    }
+
+    // 引用
+    blockquote {
+      border: $blockquoteBorder;
+      padding: $blockquotePadding;
+      margin: 1em 2em;
+      background-color: $blockquoteBgColor;
+      color: $blockquoteColor;
+    }
+
+    // 键盘码
+    kbd {
+      text-indent: 0;
+      margin: 0 2px;
+    }
+
+    // 代码
+    .pre-wrap,
+    .pre-show,
+    > pre {
+      margin: 0 2em;
+    }
+
+    // 提示信息
+    .notice {
+      padding: 15px;
+      margin: 2em;
+
+      > p {
+        margin: 0;
+      }
+
+      &.success {
+        color: #3c763d;
+        background-color: #dff0d8;
+        border: 1px solid #c5e2ac;
+      }
+
+      &.warning {
+        color: #343434;
+        background-color: #fdf7cf;
+        border: 1px solid #fbe4c3;
+      }
+
+      &.danger {
+        color: #542828;
+        background-color: #ffe8e8;
+        border: 1px solid #fdd2d2;
+      }
+    }
+
+    // 原生折叠
+    .details {
+      cursor: default;
+      outline: none;
+      padding: 16px;
+
+      .summary {
+        margin-bottom: 10px;
+        outline: none;
+      }
+    }
+
+    /* 隔行换色 */
+    .syntaxhighlighter .container > div:nth-child(2n+1) {
+      background-color: #f9f9f9 !important;
+    }
+
+  }
+}
+

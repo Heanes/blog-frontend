@@ -1,0 +1,11 @@
+/**
+ * @doc 文章主题样式
+ * @author Heanes
+ * @time 2018-05-28 09:47:00 周一
+ */
+$articleTheme: (
+  default: "default",
+  iPlaySoft: "iPlaySoft"
+);
+
+@import "./default.scss";
