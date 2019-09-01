@@ -3,13 +3,14 @@
     <hec-header></hec-header>
     <router-view/>
     <hec-footer></hec-footer>
-    <hec-line-mark></hec-line-mark>
+    <hec-line-mark v-if="siteConfig.showLineMark"></hec-line-mark>
   </div>
 </template>
 
 <script>
 import '@/assets/css/common/common.scss'
 import http from '@/api/index.js';
+import siteConfig from '@/config/index.js';
 
 import HecHeader from '@/components/layout/normal/Header';
 import HecFooter from '@/components/layout/normal/Footer';
@@ -24,7 +25,8 @@ export default {
   },
   data () {
     return {
-      baseCommon: {}
+      baseCommon: {},
+      siteConfig: siteConfig
     }
   },
   methods: {
