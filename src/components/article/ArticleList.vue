@@ -10,6 +10,7 @@ import HecArticleListItemMeta from './ArticleListItemMeta.vue';
 import '@/assets/css/article/default/list.scss'
 export default {
   name: 'ArticleList',
+  inheritAttrs: false,
   props: {
     articleList: {
       type: Array

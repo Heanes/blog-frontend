@@ -44,6 +44,7 @@
 <script>
 export default {
   name: 'ArticleListItemMeta',
+  inheritAttrs: false,
   props: {
     // 标题
     title: {
