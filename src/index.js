@@ -5,6 +5,7 @@ import store from './store/index.js';
 
 import HeUI from 'he-ui-vue';
 import 'he-ui-vue/src/theme/default/index.css';
+import '@/assets/css/common/common.scss';
 
 Vue.config.productionTip = false;
 

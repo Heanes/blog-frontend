@@ -8,7 +8,6 @@
 </template>
 
 <script>
-import '@/assets/css/common/common.scss'
 import http from '@/api/index.js';
 import siteConfig from '@/config/index.js';
 

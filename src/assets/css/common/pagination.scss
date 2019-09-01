@@ -1,0 +1,16 @@
+@charset "UTF-8";
+/**
+ * @doc 分页样式重设
+ * @author Heanes
+ * @time 2019-09-01 21:37:54 周日
+ */
+.he-pagination{
+  .page-item,
+  .pagination-btn{
+    line-height: 1.4em;
+    .page-link{
+      padding: 8px 12px;
+    }
+  }
+}
+
