@@ -10,18 +10,18 @@ export default {
     const apis = {};
     apiGroups.forEach(group => {
       const apiConfigItem = apiConfig[group];
-      console.log(apiConfigItem);
+      // console.log(apiConfigItem);
       const allApis = {};
       if (apiConfigItem) {
         const apiConfigType = Object.keys(apiConfigItem);
-        console.log(apiConfigType);
+        // console.log(apiConfigType);
         apiConfigType.forEach(type => {
           http.makeApiMethod(apiConfigItem[type], serverBasePath, allApis, type)
         });
       }
       apis[group] = allApis
     });
-    console.log(apis);
+    // console.log(apis);
     return apis;
   }
 }

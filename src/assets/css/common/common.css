@@ -149,7 +149,7 @@ a:active {
 /* 小屏 */
 @media only screen and (max-width: 600px) {
   .main-width {
-    width: 98%; } }
+    width: 100%; } }
 /* 普通屏 */
 @media only screen and (min-width: 768px) {
   .main-width {

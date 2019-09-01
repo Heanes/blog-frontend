@@ -43,7 +43,7 @@ export default {
      * @time 2019-02-19 10:56:29 周二
      */
     getArticleList (param) {
-      http.article.queryArticleList(param)
+      return http.article.queryArticleList(param)
         .then(response => {
           this.articleList = response.data;
         });
@@ -82,7 +82,7 @@ export default {
      * @time 2019-05-13 14:58:27 周一
      */
     getRouterArticlePageNumber () {
-      return parseInt(this.$route.params.articlePageNumber);
+      return parseInt(this.$route.params.articlePageNumber ? this.$route.params.articlePageNumber : 1);
     }
   },
   created () {

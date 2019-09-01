@@ -18,7 +18,7 @@ export default {
       test: 'http://blog.test.heanes.com/api',
       // 线上环境
       production: '/api',
-      productionReal: 'https://blog.heanes.com/api'
+      productionAbsolute: 'https://blog.heanes.com/api'
     },
     // 返回api接口地址
     getApiServerUrl (){

@@ -7,8 +7,6 @@ export default {
   /* ****************************** article 文章 ****************************** */
   article: {
     get: {
-      queryArticleList: '/article/list',
-      queryArticleDetail: '/article/detail'
     },
     post: {
       /**

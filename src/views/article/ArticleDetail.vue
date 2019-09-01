@@ -19,6 +19,7 @@ export default {
   name: 'ArticleDetail',
   data () {
     return {
+      pageTitle: '文章详情',
       articleDetailQueryParam: {},
       articleDetail: {}
     }
@@ -37,7 +38,7 @@ export default {
      * @param param
      */
     getArticleDetail (param) {
-      http.article.queryArticleDetail(param)
+      return http.article.queryArticleDetail(param)
         .then(response => {
           this.articleDetail = response.data;
         });
@@ -49,7 +50,9 @@ export default {
     this.articleDetailQueryParam = {
       param: this.getRouterArticleDetailParam()
     };
-    this.getArticleDetail(this.articleDetailQueryParam);
+    this.getArticleDetail(this.articleDetailQueryParam).then(() => {
+      document.title = `${this.pageTitle} - ${this.articleDetail.title}`;
+    });
   }
 }
 </script>
