@@ -1,10 +1,12 @@
 <template>
-  <div class="article-list-wrap main-width">
-    <!-- 文章列表 -->
-    <hec-article-list :article-list="articleList.items"></hec-article-list>
-    <div class="article-pager">
-      <!-- 文章分页 -->
-      <he-pagination v-bind="articleList.page" background :page-link="getArticlePaginationPageLink"></he-pagination>
+  <div class="page-wrap">
+    <div class="article-list-wrap main-width">
+      <!-- 文章列表 -->
+      <hec-article-list :article-list="articleList.items"></hec-article-list>
+      <div class="article-pager">
+        <!-- 文章分页 -->
+        <he-pagination v-bind="articleList.page" background :page-link="getArticlePaginationPageLink"></he-pagination>
+      </div>
     </div>
   </div>
 </template>

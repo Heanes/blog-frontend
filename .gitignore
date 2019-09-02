@@ -1,8 +1,7 @@
 .DS_Store
 node_modules
-# /dist
+/dist
 .cache-loader
-/dist/public/static/vendor
 
 # local env files
 .env.local
