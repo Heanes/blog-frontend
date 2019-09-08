@@ -3,6 +3,10 @@ node_modules
 /dist
 .cache-loader
 
+# build file or cache file
+src/**/*.css
+src/**/*.map
+
 # local env files
 .env.local
 .env.*.local
