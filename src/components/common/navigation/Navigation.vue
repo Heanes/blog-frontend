@@ -13,6 +13,7 @@
 <script>
 export default {
   name: 'HecNavigation',
+  inheritAttrs: false,
   props: {
     navList: {
       type: Array

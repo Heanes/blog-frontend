@@ -10,6 +10,7 @@
 <script>
 export default {
   name: 'Breadcrumb',
+  inheritAttrs: false,
   props: {
     breadcrumbList: {
       type: Array,

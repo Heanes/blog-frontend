@@ -5,3 +5,11 @@ My personal blog style
 
 1. 组件名称
   组件内定义的名称都应以`hec`为前缀
+
+## 路由说明
+
+```text
+1. article 文章
+  p/:pageNumber.html
+  :articleDetail.html
+```

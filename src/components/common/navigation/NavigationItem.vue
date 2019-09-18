@@ -23,6 +23,7 @@
 import HeNavigation from './Navigation';
 export default {
   name: 'HeNavigationItem',
+  inheritAttrs: false,
   props: {
     // 名称
     name: {

@@ -1,11 +1,13 @@
 <template>
-  <div class="page-wrap">
-    <div class="article-list-wrap main-width">
-      <!-- 文章列表 -->
-      <hec-article-list :article-list="articleList.items"></hec-article-list>
-      <div class="article-pager">
-        <!-- 文章分页 -->
-        <he-pagination v-bind="articleList.page" background :page-link="getArticlePaginationPageLink"></he-pagination>
+  <div class="main">
+    <div class="page-wrap">
+      <div class="article-list-wrap main-width">
+        <!-- 文章列表 -->
+        <hec-article-list :article-list="articleList.items"></hec-article-list>
+        <div class="article-pager">
+          <!-- 文章分页 -->
+          <he-pagination v-bind="articleList.page" background :page-link="getArticlePaginationPageLink"></he-pagination>
+        </div>
       </div>
     </div>
   </div>
@@ -58,14 +60,14 @@ export default {
      * @time 2019-02-19 10:58:26 周二
      */
     changeArticlePage (pageNumberTo, pageNumberFrom) {
-      this.$router.push({path: `/article/p/${pageNumberTo}.html`});
+      this.$router.push({path: `/p/${pageNumberTo}.html`});
       this.articleQueryParam.pageNumber = pageNumberTo;
     },
     /**
      * @doc 获取文章分页链接
      */
     getArticlePaginationPageLink (pageNumber) {
-      return `/article/p/${pageNumber}.html`;
+      return `/p/${pageNumber}.html`;
     },
     /**
      * @doc 文章查询参数改变后的动作

@@ -1,13 +1,15 @@
 <template>
-  <div class="page-wrap">
-    <div class="article-detail main-width">
-      <div class="article-title-wrap">
-        <!-- 文章标题 -->
-        <div class="article-title">
-          <h1 class="entry-title" v-html="articleDetail.title"></h1>
+  <div class="main">
+    <div class="page-wrap">
+      <div class="article-detail main-width">
+        <div class="article-title-wrap">
+          <!-- 文章标题 -->
+          <div class="article-title">
+            <h1 class="entry-title" v-html="articleDetail.title"></h1>
+          </div>
         </div>
+        <div class="article-content" id="articleContent" v-html="articleDetail.content"></div>
       </div>
-      <div class="article-content" id="articleContent" v-html="articleDetail.content"></div>
     </div>
   </div>
 </template>

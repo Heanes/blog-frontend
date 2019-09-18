@@ -1,19 +1,19 @@
 import axios from 'axios';
 import siteConfig from '../../config/index.js';
-
+import {Message} from 'he-ui-vue';
 // 添加一个请求拦截器
 axios.defaults.baseURL = siteConfig.api.getApiServerUrl();
 // axios.defaults.headers.post['Content-Type'] = 'application/json';
 // axios.defaults.timeout = 1000;
 // axios.defaults.withCredentials = true;
 
-/* // 请求拦截器
+// 请求拦截器
 axios.interceptors.request.use(
   config => {
     return config;
   },
   error => {
-    handleAxiosException(error);
+    handleAxiosResponse(error);
     return Promise.reject(error);
   }
 );
@@ -21,12 +21,16 @@ axios.interceptors.request.use(
 // 添加一个响应拦截器
 axios.interceptors.response.use(
   function (res) {
-    return res;
+    console.info('res');
+    let a = handleAxiosResponse(res);
+    return handleAxiosResponse(res);
+    // return res;
   },
   function (error) {
+    handleAxiosException(error);
     return Promise.resolve(error);
   }
-); */
+);
 
 /**
  * @doc 处理异常
@@ -40,7 +44,12 @@ function handleAxiosException (error) {
     // do something to notify
     console.error(msg);
     console.info(error);
-    alert(error);
+    Message({
+      type: 'error',
+      message: msg,
+      duration: 0,
+      showClose: true
+    });
 
     return error;
   }
@@ -62,6 +71,12 @@ function handleAxiosResponse (response, callback) {
 
       // do something to notify
       console.error(msg);
+      Message({
+        type: 'error',
+        message: msg,
+        duration: 0,
+        showClose: true
+      });
 
       return response;
     }
@@ -71,6 +86,12 @@ function handleAxiosResponse (response, callback) {
     // do something to notify
     console.error(msg);
     console.info(response);
+    Message({
+      type: 'error',
+      message: msg,
+      duration: 0,
+      showClose: true
+    });
 
     return response;
   }
@@ -81,18 +102,10 @@ export default {
   // 允许的请求方法
   allowMethod: ['get', 'post'],
   get (url, params, callback) {
-    return this.http.get(url, params).then(response => {
-      return handleAxiosResponse(response, callback);
-    }).catch(function (error) {
-      return handleAxiosException(error);
-    });
+    return this.http.get(url, params);
   },
   post (url, params, callback, config) {
-    return this.http.post(url, params, config).then(response => {
-      return handleAxiosResponse(response, callback);
-    }).catch(function (error) {
-      return handleAxiosException(error);
-    });
+    return this.http.post(url, params, config);
   },
   /**
    * @doc 根据配置生成api方法

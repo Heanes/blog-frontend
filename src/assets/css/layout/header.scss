@@ -93,10 +93,12 @@ $headerNavSubHeight: 40px;
           .nav-sub {
             display: none;
             position: absolute;
+            left: 0;
             min-width: 100%;
             background-color: $headerNavBgColor;
             z-index: 2;
-
+            border: 1px solid rgba(220, 220, 220, 0.5);
+            box-shadow: 0 1px 4px 1px rgba(220, 220, 220, 0.5);
             .nav-item {
             }
           }
@@ -113,7 +115,6 @@ $headerNavSubHeight: 40px;
 
             .nav-sub {
               display: block;
-              left: 0;
 
               .nav-item {
                 display: block;
