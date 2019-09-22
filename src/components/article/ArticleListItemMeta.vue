@@ -7,7 +7,7 @@
       <div class="article-attribute-info">
         <dl class="info-item">
           <dt class="item-name">作者:</dt>
-          <dd class="item-value"><a class="link item-link" :href="(author && author.link) ? author.link : false">{{author.name || 'author'}}</a></dd>
+          <dd class="item-value"><a class="link item-link" :href="articleAuthorLink(author)">{{author.name || 'author'}}</a></dd>
         </dl>
         <dl class="info-item">
           <dt class="item-name">日期:</dt>
@@ -92,6 +92,13 @@ export default {
     commentCount: {
       type: Number,
       default: 0
+    }
+  },
+  computed: {
+  },
+  methods: {
+    articleAuthorLink (author) {
+      return (author && author.link) ? author.link : `user/${author.name}.html`;
     }
   },
   mounted () {

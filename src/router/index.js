@@ -1,12 +1,18 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import routerArticleConf from './article.router.js';
+import routerArticle from './article.router.js';
+import routerUser from './user.router.js';
 
 Vue.use(Router);
 
 export default new Router({
   mode: 'history',
   routes: [
+
+    /* ****************************** article 文章 ****************************** */
+    ...routerArticle,
+    /* ****************************** user 用户 ****************************** */
+    ...routerUser,
 
     /* ****************************** about 关于 ****************************** */
     {
@@ -51,8 +57,6 @@ export default new Router({
         }
       ]
     },
-    /* ****************************** article 文章 ****************************** */
-    ...routerArticleConf,
 
     {
       path: '*',

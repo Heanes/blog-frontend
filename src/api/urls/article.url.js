@@ -42,7 +42,11 @@ export default {
       /**
        * @doc 获取文章标签列表
        */
-      queryArticleTagList: '/articleTag/list'
+      queryArticleTagList: '/articleTag/list',
+      /**
+       * @doc 获取文章标签详情
+       */
+      queryArticleTagDetail: '/articleTag/detail'
     }
   }
 }

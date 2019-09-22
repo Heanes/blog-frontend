@@ -1,9 +1,16 @@
 export default [
+  /* ****************************** archive 归档 ****************************** */
+  {
+    path: '/articleArchive.html',
+    name: 'articleArchive',
+    component: () => import(/* webpackChunkName: "articleArchive" */ '../views/articleArchive/PageArticleArchive.vue')
+  },
+
   /* ****************************** article 文章 ****************************** */
   {
     path: '/article',
     name: 'article',
-    component: () => import(/* webpackChunkName: "pageArticle" */ '../views/article/PageArticle.vue'),
+    component: () => import(/* webpackChunkName: "article" */ '../views/article/PageArticle.vue'),
     children: [
       // 文章翻页
       {
@@ -21,17 +28,16 @@ export default [
   {
     path: '/articleCategory',
     name: 'articleCategory',
-    component: () => import(/* webpackChunkName: "pageArticleCategory" */ '../views/article/PageArticle.vue'),
+    component: () => import(/* webpackChunkName: "articleCategory" */ '../views/articleCategory/PageArticleCategory.vue'),
     children: [
       // 文章分类翻页
       {
         path: ':articleCategoryCode/p/:articleCategoryPageNumber.html',
-        // component: () => import(/* webpackChunkName: "articleCategoryPageList" */ '../views/article/ArticlePageList.vue')
         component: () => import(/* webpackChunkName: "articleCategoryPageList" */ '../views/articleCategory/PageArticleCategory.vue')
       },
-      // 文章详情
+      // 文章分类信息
       {
-        path: ':articleQueryParam.html',
+        path: ':articleCategoryCode.html',
         component: () => import(/* webpackChunkName: "articleCategoryArticleList" */ '../views/article/ArticlePageList.vue')
       }
     ]
@@ -40,26 +46,18 @@ export default [
   {
     path: '/articleTag',
     name: 'articleTag',
-    component: () => import(/* webpackChunkName: "pageArticleTag" */ '../views/articleTag/PageArticleTag.vue'),
+    component: () => import(/* webpackChunkName: "articleTag" */ '../views/articleTag/PageArticleTag.vue'),
     children: [
-      // 文章分类翻页
+      // 文章标签翻页
       {
-        path: ':articleCategoryCode/p/:articleCategoryPageNumber.html',
-        // component: () => import(/* webpackChunkName: "articleCategoryPageList" */ '../views/article/ArticlePageList.vue')
-        component: () => import(/* webpackChunkName: "articleCategoryPageList" */ '../views/articleCategory/PageArticleCategory.vue')
+        path: ':articleTagCode/p/:articleTagPageNumber.html',
+        component: () => import(/* webpackChunkName: "articleTagPageList" */ '../views/articleTag/PageArticleTag.vue')
       },
-      // 文章详情
+      // 文章标签信息
       {
         path: ':articleQueryParam.html',
-        component: () => import(/* webpackChunkName: "articleCategoryArticleList" */ '../views/article/ArticlePageList.vue')
+        component: () => import(/* webpackChunkName: "articleTagArticleList" */ '../views/article/ArticlePageList.vue')
       }
     ]
-  },
-
-  /* ****************************** archive 归档 ****************************** */
-  {
-    path: '/articleArchive.html',
-    name: 'articleArchive',
-    component: () => import(/* webpackChunkName: "articleArchive" */ '../views/archive/PageArchive.vue')
   }
 ];

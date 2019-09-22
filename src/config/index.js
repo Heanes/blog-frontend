@@ -4,7 +4,10 @@
  * @time 2019-04-13 21:21:40 周六
  */
 export default {
+  // 显示辅助线
   showLineMark: false,
+  // 分页大小
+  pageSize: 20,
   // api相关配置
   api: {
     // 环境

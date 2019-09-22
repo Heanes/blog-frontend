@@ -8,6 +8,16 @@
 .article-list-wrap {
   padding: 30px 10px;
 
+  /**
+   * @doc 文章分页
+   */
+  .article-pager {
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+.article-list{
   .article-item {
     margin-bottom: 20px;
 
@@ -93,13 +103,5 @@
       }
 
     }
-  }
-
-  /**
-   * @doc 文章分页
-   */
-  .article-pager {
-    margin: 0 auto;
-    text-align: center;
   }
 }

@@ -25,7 +25,7 @@ export default {
   methods: {
   },
   created () {
-    document.title = this.pageTitle;
+    this.setPageTitle();
   },
   mounted () {
   },

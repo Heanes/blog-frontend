@@ -90,7 +90,7 @@ export default {
     }
   },
   created () {
-    document.title = this.pageTitle;
+    this.setPageTitle();
   },
   mounted () {
     this.articleQueryParam.pageNumber = this.getRouterArticlePageNumber();

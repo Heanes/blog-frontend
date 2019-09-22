@@ -5,6 +5,7 @@
  * @time 2019-04-13 19:20:27 周六
  */
 @import "../common/var.scss";
+@import "./config.scss";
 
 /**
  * @doc 响应式断点
@@ -19,5 +20,46 @@
     }
   } @else {
     @warn "Undefeined points: `#{$map}`";
+  }
+}
+
+/* ****************************** BEM ****************************** */
+// 区块
+@mixin b($block) {
+  $B: $namespace + '-' + $block !global;
+
+  .#{$B} {
+    @content;
+  }
+}
+
+// 元素
+@mixin e($element) {
+  $currentSelector: & + $element-separator + $element;
+
+  @at-root {
+    #{$currentSelector} {
+      @content;
+    }
+  }
+}
+
+/// 修饰符，todo 支持多个修饰符列表
+@mixin m($modifier) {
+  $currentSelector: & + $modifier-separator + $modifier;
+
+  @at-root {
+    #{$currentSelector} {
+      @content;
+    }
+  }
+}
+
+/* ****************************** 状态修饰 ****************************** */
+@mixin when($state) {
+  @at-root {
+    &.#{$state-prefix + $state} {
+      @content;
+    }
   }
 }

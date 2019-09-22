@@ -21,10 +21,7 @@ axios.interceptors.request.use(
 // 添加一个响应拦截器
 axios.interceptors.response.use(
   function (res) {
-    console.info('res');
-    let a = handleAxiosResponse(res);
     return handleAxiosResponse(res);
-    // return res;
   },
   function (error) {
     handleAxiosException(error);

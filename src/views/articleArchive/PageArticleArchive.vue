@@ -1,19 +1,15 @@
 <!--
- * @doc 文章分类浏览页面
+ * @doc 文章归档浏览页面
  * @author Heanes
- * @time 2019-09-22 00:26:54 周日
+ * @time 2019-09-22 16:07:18 周日
 -->
 <template>
   <div class="main main-width">
     <div class="page-header">
-      <p class="article-category-title">正在显示<span class="article-category-title__category-name">「{{articleCategory.detail.name}}」</span>分类的文章</p>
+      <p>文章归档</p>
     </div>
     <div class="page-content">
       <div class="article-list-wrap">
-        <div class="article-pager">
-          <!-- 文章分页 -->
-          <he-pagination v-bind="articleCategory.articleList.page" background :page-link="getArticlePaginationPageLink"></he-pagination>
-        </div>
         <!-- 文章列表 -->
         <hec-article-list :article-list="articleCategory.articleList.items"></hec-article-list>
         <div class="article-pager">
@@ -28,7 +24,6 @@
 <script>
 import http from '@/api/index.js';
 import HecArticleList from '@/components/article/ArticleList.vue';
-import '@/assets/css/article/default/category.scss';
 
 export default {
   name: 'HecPageArticleCategory',
@@ -38,16 +33,9 @@ export default {
   data () {
     return {
       pageTitle: '文章分类',
-      // 文章分类信息
       articleCategory: {
-        detail: {},
+        categoryDetail: {},
         articleList: []
-      },
-
-      articleCategoryQueryParam: {
-        articleCategoryCode: this.$route.params.articleCategoryCode,
-        pageNumber: this.$route.params.articleCategoryPageNumber,
-        pageSize: 20
       }
     }
   },
@@ -62,19 +50,11 @@ export default {
      * @doc 获取文章分页链接
      */
     getArticlePaginationPageLink (pageNumber) {
-      const articleCategoryDetail = this.articleCategory.detail;
-      return `/articleCategory/${articleCategoryDetail.code}/p/${pageNumber}.html`;
-    },
-    getArticlePageQueryParam(){
-      const categoryCode = this.$route.params.articleCategoryCode;
-      return {
-        categoryCode: categoryCode,
-        pageNumber: this.$route.params.articleCategoryPageNumber
-      };
+      return `/p/${pageNumber}.html`;
     }
   },
-  mounted () {
-    this.getArticleCategoryDetail(this.articleCategoryQueryParam);
+  mounted(){
+    this.getArticleCategoryDetail();
   },
   created () {
     this.setPageTitle();

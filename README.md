@@ -10,6 +10,10 @@ My personal blog style
 
 ```text
 1. article 文章
-  p/:pageNumber.html
-  :articleDetail.html
+    p/:pageNumber.html 
+    :articleDetail.html
+
+2. articleCategory 文章分类
+    articleCategory/:categoryCode.html
+    getArticleTagDetail
 ```

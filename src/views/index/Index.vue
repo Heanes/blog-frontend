@@ -1,7 +1,6 @@
 <template>
   <div class="main index">
     <div class="article-list-wrap main-width">
-      <router-view/>
       <!-- 文章列表 -->
       <hec-article-list :article-list="articleList.items"></hec-article-list>
       <div class="article-pager">
@@ -18,7 +17,6 @@ import HecArticleList from '@/components/article/ArticleList.vue';
 
 export default {
   name: 'PageIndex',
-
   components: {
     HecArticleList
   },
@@ -90,7 +88,7 @@ export default {
     }
   },
   created () {
-    document.title = this.pageTitle;
+    this.setPageTitle();
   },
   mounted () {
     this.articleQueryParam.pageNumber = this.getRouterArticlePageNumber();
